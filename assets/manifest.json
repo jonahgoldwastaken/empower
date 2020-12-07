@@ -1,0 +1,9 @@
+{
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "name": "EMPOWER 2.0",
+  "short_name": "EMPOWER",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": []
+}

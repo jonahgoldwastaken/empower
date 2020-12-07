@@ -1,0 +1,14 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "netlify build"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "netlify deploy"
+    }
+  },
+  "identifier" : "FE84E361-AD1F-437B-B414-F6E8B60005EA",
+  "openLogOnRun" : "start"
+}

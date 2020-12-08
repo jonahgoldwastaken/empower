@@ -1,9 +1,4 @@
-**/node_modules/
-/dist/
+node_modules
+build
 .DS_Store
-**/.history
-src/tmp/
-.routify
-.netlify
-assets/build
-.vercel
+yarn-error.log

@@ -1,10 +1,16 @@
-<script lang="ts">
-  import { Router } from "@roxi/routify";
-  import { routes } from "../.routify/routes";
+<script lang="typescript">
+  import { Router, Route } from 'svelte-routing'
+  import Index from './pages/Index.svelte'
+
+  export let url = ''
 </script>
 
-<style  global>
-  @import "../assets/normalize.css";
+<style global>
+  @import 'normalize.css/opinionated.css';
 </style>
 
-<Router {routes} />
+<Router {url}>
+  <Route path="/">
+    <Index />
+  </Route>
+</Router>

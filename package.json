@@ -28,12 +28,15 @@
     "@rollup/plugin-typescript": "^8.0.0",
     "@roxi/routify": "^2.5.1-next-major",
     "@tsconfig/svelte": "^1.0.0",
+    "@types/d3": "^6.2.0",
     "cross-env": "^7.0.2",
     "fs-extra": "^9.0.1",
     "nollup": "^0.13.13",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.1.4",
     "postcss-import": "^13.0.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-svelte": "^1.4.2",
     "rollup": "^2.33.1",
     "rollup-plugin-hot": "^0.1.1",
     "rollup-plugin-livereload": "^2.0.0",
@@ -67,5 +70,8 @@
     "blacklist": [
       "/example/modal/basic/4"
     ]
+  },
+  "dependencies": {
+    "d3": "^6.3.0"
   }
 }

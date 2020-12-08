@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "run" : {
+      "enabled" : true,
+      "script" : "yarn dev:ssr"
+    }
+  },
+  "identifier" : "0DD91609-F142-4A9C-BCF4-75202EC6465C"
+}

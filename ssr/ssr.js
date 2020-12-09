@@ -1,6 +1,5 @@
-const app = require('../build/_dist_/App.js')
-
-exports.handler = function (event) {
+exports.handler = async function (event) {
+  const app = await import('/_dist_/App.js').default
   const { html } = app.render({ url: event.path })
   const body = `
     <!DOCTYPE html>

@@ -1,10 +1,8 @@
 [build]
-  functions = "ssr/"
-  command = "yarn build && cd ssr && yarn && yarn build"
-  
+  command = "yarn build"
 
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/ssr"
+  to = "/index.html
   status = 200
   

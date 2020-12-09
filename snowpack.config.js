@@ -5,15 +5,9 @@ module.exports = {
     src: '/_dist_',
   },
   plugins: [
-    [
-      '@snowpack/plugin-svelte',
-      {
-        compilerOptions: {
-          generate: 'ssr',
-        },
-      },
-    ],
+    '@snowpack/plugin-svelte',
     '@snowpack/plugin-typescript',
+    '@snowpack/plugin-webpack',
   ],
   install: [
     /* ... */

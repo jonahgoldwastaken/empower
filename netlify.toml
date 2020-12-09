@@ -1,0 +1,10 @@
+[build]
+  publish = "build"
+  functions = "ssr/"
+  command = "yarn build && cd ssr && yarn build"
+  
+[[redirects]]
+  # SSR and SPA
+  from = "/*"
+  to = "/.netlify/functions/ssr"
+  status = 200

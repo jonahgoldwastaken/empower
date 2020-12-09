@@ -4,8 +4,7 @@
     "node_modules",
     ".netlify",
     ".routify",
-    ".nova",
-    "dist"
+    ".nova"
   ],
   "index.use_scm_ignored_files" : true,
   "prettier.default-config.arrowParens" : "avoid",

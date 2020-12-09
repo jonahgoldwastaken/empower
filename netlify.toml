@@ -1,6 +1,6 @@
 [build]
   functions = "ssr"
-  command = "yarn build && cd ssr && yarn build"
+  command = "yarn build && cd ssr && yarn && yarn build"
   
 
 [[redirects]]

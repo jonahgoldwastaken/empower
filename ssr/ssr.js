@@ -1,4 +1,4 @@
-const app = require('../_dist_/App.js')
+const app = require('../build/_dist_/App.js')
 
 exports.handler = function (event) {
   const { html } = app.render({ url: event.path })

@@ -1,4 +1,5 @@
 exports.handler = async function (event) {
+  console.log(__dirname, process.cwd())
   const app = await import('../../_dist_/App.js').default
   const { html } = app.render({ url: event.path })
   const body = `

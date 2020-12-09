@@ -4,7 +4,17 @@ module.exports = {
     public: '/',
     src: '/_dist_',
   },
-  plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-typescript'],
+  plugins: [
+    [
+      '@snowpack/plugin-svelte',
+      {
+        compilerOptions: {
+          generate: 'ssr',
+        },
+      },
+    ],
+    '@snowpack/plugin-typescript',
+  ],
   install: [
     /* ... */
   ],

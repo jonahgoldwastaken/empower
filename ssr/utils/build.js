@@ -10,9 +10,7 @@ build({ entryPoints: [scriptsPath], outfile: bundlePath, bundle: true }).then(
   () => {
     const bundle = {
       date: new Date(),
-      script: scripts
-        .map(script => readFileSync(resolve(bundlePath, script)))
-        .join(''),
+      script: readFileSync(scriptsPath, 'utf8'),
       template: readFileSync(templatePath, 'utf8'),
     }
 

@@ -33,8 +33,7 @@
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^1.4.2",
     "rollup": "^2.34.2",
-    "snowpack": "^2.18.2",
-    "snowpack-plugin-rollup-bundle": "^0.3.3"
+    "snowpack": "^2.18.2"
   },
   "browserslist": "last 2 versions"
 }

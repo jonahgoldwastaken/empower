@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "snowpack dev",
-    "build": "snowpack build && node scripts/build-html.js"
+    "build": "snowpack build"
   },
   "dependencies": {
     "d3": "^6.3.0",

@@ -1,5 +1,4 @@
 <script>
-  import D3Test from '../components/D3Test.svelte'
   import { Link } from 'svelte-routing'
   import Button from '../components/atoms/Button.svelte'
   import Toggle from '../components/atoms/Toggle.svelte'

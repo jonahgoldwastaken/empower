@@ -21,7 +21,7 @@ exports.handler = async function (event) {
   let image = await findWeaponInBucket(parsedMunicipality)
   if (!image) {
     image = await scrapeWeapon(parsedMunicipality)
-    sendUnknownImageToUploader(event, image, parsedMunicipality)
+    await sendUnknownImageToUploader(event, image, parsedMunicipality)
   }
 
   return {
@@ -30,14 +30,14 @@ exports.handler = async function (event) {
   }
 }
 
-function sendUnknownImageToUploader(event, image, parsedMunicipality) {
+async function sendUnknownImageToUploader(event, image, parsedMunicipality) {
   const url = `${
     event.headers.host.includes('http')
       ? event.headers.host
       : `http://${event.headers.host}`
   }/api/arms-background`
   try {
-    got(url, {
+    await got(url, {
       searchParams: {
         originalURL: image,
         newKey: `${parsedMunicipality}.svg`,

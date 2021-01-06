@@ -1,5 +1,5 @@
 const AWS = require('aws-sdk')
-const puppeteer = require('puppeteer')
+const chromium = require('chrome-aws-lambda')
 const got = require('got')
 const stream = require('stream')
 const { promisify } = require('util')
@@ -7,7 +7,12 @@ const { promisify } = require('util')
 const pipeline = promisify(stream.pipeline)
 
 exports.handler = async function (event) {
-  const browser = await puppeteer.launch()
+  const browser = await chromium.puppeteer.launch({
+    executablePath: await chromium.executablePath,
+    args: chromium.args,
+    defaultViewport: chromium.defaultViewport,
+    headless: chromium.headless,
+  })
 
   const { BB_KEYID, BB_APPKEY } = process.env
   AWS.config.credentials = {

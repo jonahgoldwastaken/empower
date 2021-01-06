@@ -2,6 +2,7 @@ const chromium = require('chrome-aws-lambda')
 const got = require('got')
 
 exports.handler = async function (event) {
+  console.log(event.headers.host)
   const { municipality } = event.queryStringParameters
   if (!municipality)
     return {
@@ -30,20 +31,18 @@ exports.handler = async function (event) {
 }
 
 function sendUnknownImageToUploader(event, image, parsedMunicipality) {
+  const url = `${
+    event.headers.host.includes('http')
+      ? event.headers.host
+      : `http://${event.headers.host}`
+  }/api/arms-background`
   try {
-    got(
-      `${
-        event.headers.host.includes('http')
-          ? event.headers.host
-          : `http://${event.headers.host}`
-      }/api/arms-background`,
-      {
-        searchParams: {
-          originalURL: image,
-          newKey: `${parsedMunicipality}.svg`,
-        },
-      }
-    )
+    got(url, {
+      searchParams: {
+        originalURL: image,
+        newKey: `${parsedMunicipality}.svg`,
+      },
+    })
   } catch (err) {
     console.error(err)
   }

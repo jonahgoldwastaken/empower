@@ -7,13 +7,6 @@ const { promisify } = require('util')
 const pipeline = promisify(stream.pipeline)
 
 exports.handler = async function (event) {
-  const browser = await chromium.puppeteer.launch({
-    executablePath: await chromium.executablePath,
-    args: chromium.args,
-    defaultViewport: chromium.defaultViewport,
-    headless: chromium.headless,
-  })
-
   const { BB_KEYID, BB_APPKEY } = process.env
   AWS.config.credentials = {
     accessKeyId: BB_KEYID,
@@ -39,15 +32,18 @@ exports.handler = async function (event) {
 
   const parsedMunicipality = municipality.replace(/\s/g, '_')
 
-  const bucketImage = await findWeaponInBucket(s3, parsedMunicipality)
-
-  let image
-  if (!bucketImage) {
+  let image = await findWeaponInBucket(parsedMunicipality)
+  if (!image) {
+    const browser = await chromium.puppeteer.launch({
+      executablePath: await chromium.executablePath,
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      headless: chromium.headless,
+    })
     const href = await scrapeWeapon(browser, parsedMunicipality)
     image = await uploadWeaponToBucket(s3, href, parsedMunicipality)
-  } else image = bucketImage
-
-  await browser.close()
+    await browser.close()
+  }
 
   return {
     statusCode: 200,
@@ -55,18 +51,24 @@ exports.handler = async function (event) {
   }
 }
 
-async function findWeaponInBucket(s3, municipality) {
-  return await s3
-    .getObject({
-      Bucket: 'empower',
-      Key: `${municipality}.svg`,
-    })
-    .promise()
-    .then(
-      () =>
-        `https://empower.s3.eu-central-003.backblazeb2.com/${municipality}.svg`
-    )
-    .catch(console.error)
+async function findWeaponInBucket(municipality) {
+  const hasImage = await got(
+    `https://empower.s3.eu-central-003.backblazeb2.com/${municipality}.svg`
+  )
+    .then(res => res.statusCode === 200)
+    .catch(() => false)
+
+  return hasImage
+    ? `https://empower.s3.eu-central-003.backblazeb2.com/${municipality}.svg`
+    : false
+  // return await s3
+  //   .getObject({
+  //     Bucket: 'empower',
+  //     Key: `${municipality}.svg`,
+  //   })
+  //   .promise()
+  //   .then(() => ``)
+  //   .catch(console.error)
 }
 
 async function uploadWeaponToBucket(s3, image, municipality) {

@@ -55,9 +55,12 @@ async function uploadWeaponToBucket(image, municipality) {
   const s3 = new AWS.S3({
     endpoint: 's3.eu-central-003.backblazeb2.com',
   })
+
+  console.log('connected to S3')
   const pass = new stream.PassThrough()
   pipeline(got.stream(image), pass)
 
+  console.log('Uploading file')
   await s3
     .upload({ Bucket: 'empower', Key: municipality + '.svg', Body: pass })
     .promise()
@@ -71,6 +74,7 @@ async function scrapeWeapon(municipality) {
     headless: chromium.headless,
   })
   const page = await browser.newPage()
+  console.log('page created')
 
   await page.setRequestInterception(true)
 
@@ -78,18 +82,27 @@ async function scrapeWeapon(municipality) {
     if (request.resourceType() === 'image') request.abort()
     else request.continue()
   })
+  console.log('added request event listener')
 
   await page.goto(
-    'https://nl.wikipedia.org/wiki/Lijst_van_wapens_van_Nederlandse_gemeenten',
-    { waitUntil: 'networkidle2' }
+    'https://nl.wikipedia.org/wiki/Lijst_van_wapens_van_Nederlandse_gemeenten'
   )
+
+  console.log('navigated to page')
+
   const href = await page.$eval(
     `.gallery a.image[href*="${municipality.toLowerCase()}" i]`,
     a => a.href
   )
+
   await page.goto(href)
   await page.waitForSelector('a.internal')
+
+  console.log('navigated to image page')
+
   const imageHref = await page.$eval('a.internal', a => a.href)
+
+  console.log('got image url')
 
   await page.close()
   return imageHref

@@ -71,22 +71,25 @@ async function scrapeWeapon(municipality) {
     headless: chromium.headless,
   })
   const page = await browser.newPage()
+
+  await page.setRequestInterception(true)
+
+  page.on('request', request => {
+    if (request.resourceType() === 'image') request.abort()
+    else request.continue()
+  })
+
   await page.goto(
     'https://nl.wikipedia.org/wiki/Lijst_van_wapens_van_Nederlandse_gemeenten',
     { waitUntil: 'networkidle2' }
   )
-  const allImageLinks = await page.$$eval(
-    '#bodyContent #mw-content-text a.image',
-    anchors => anchors.map(a => a.href)
-  )
-  const href = allImageLinks.find(href =>
-    href.toLowerCase().includes(municipality.toLowerCase())
-  )
-  await page.goto(href, { waitUntil: 'networkidle2' })
-  const imageHref = await page.$eval(
-    '#bodyContent .fullMedia a.internal',
+  const href = await page.$eval(
+    `.gallery a.image[href*="${municipality.toLowerCase()}" i]`,
     a => a.href
   )
+  await page.goto(href)
+  await page.waitForSelector('a.internal')
+  const imageHref = await page.$eval('a.internal', a => a.href)
 
   await page.close()
   return imageHref

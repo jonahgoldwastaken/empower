@@ -18,6 +18,9 @@
 <TextInput>
   How much munnie do you need?
   <slot slot="before">€</slot>
+</TextInput>
+<TextInput>
+  How much cubic meter do you take up?
   <slot slot="after">m3</slot>
 </TextInput>
 <Checkbox>I don't want to see my usage</Checkbox>

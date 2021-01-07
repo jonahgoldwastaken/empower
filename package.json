@@ -17,6 +17,7 @@
     "aws-sdk": "^2.822.0",
     "chrome-aws-lambda": "^5.5.0",
     "d3": "^6.3.0",
+    "mongodb": "^3.6.3",
     "puppeteer-core": "^5.5.0",
     "svelte": "^3.24.0",
     "svelte-routing": "^1.4.2",

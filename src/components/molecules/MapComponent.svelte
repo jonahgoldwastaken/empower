@@ -19,6 +19,7 @@
           [0, 0],
           [width, height],
         ])
+        .scaleExtent([1, 8])
         .on('zoom', ({ transform }) => (mapTransform = transform))
     )
   })

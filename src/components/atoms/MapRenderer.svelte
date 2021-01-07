@@ -27,6 +27,7 @@
   #map path {
     stroke: white;
     stroke-width: 1;
+    vector-effect: non-scaling-stroke;
     cursor: pointer;
   }
 

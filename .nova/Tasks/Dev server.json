@@ -2,7 +2,7 @@
   "actions" : {
     "run" : {
       "enabled" : true,
-      "script" : "yarn start"
+      "script" : "yarn dev"
     }
   },
   "identifier" : "51738D7F-BD50-4D29-8616-B99C08D4208D",

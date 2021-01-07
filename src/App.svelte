@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script>
   import { Router, Route } from 'svelte-routing'
   import Index from './pages/Index.svelte'
   import Playground from './pages/Playground.svelte'
@@ -16,11 +16,13 @@
     --step-3: clamp(1.4238rem, 1.3525rem + 0.3563vw, 1.78rem);
     --step-4: clamp(1.6019rem, 1.5218rem + 0.4006vw, 2.0025rem);
 
-    --dark-green: #548687;
+    --dark-green: #8fbc94;
     --green: #79c181;
-    --light-green: #beea8b;
+    --light-green: #c5e99b;
     --orange: #ed9040;
+    --muted-orange: #f1b989;
     --light-orange: #f8ac36;
+    --yellow: #ffe68c;
     --white: white;
     --black: black;
     --light-grey: #efeded;

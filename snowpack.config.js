@@ -4,11 +4,7 @@ module.exports = {
     public: '/',
     src: '/_dist_',
   },
-  plugins: [
-    '@snowpack/plugin-svelte',
-    '@snowpack/plugin-typescript',
-    '@snowpack/plugin-webpack',
-  ],
+  plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-webpack'],
   install: [
     /* ... */
   ],

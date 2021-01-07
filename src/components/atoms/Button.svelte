@@ -1,5 +1,5 @@
 <script>
-  export let gradient: boolean = false
+  export let gradient = false
 </script>
 
 <style>

@@ -3,4 +3,4 @@
 </script>
 
 <h1>This is a test</h1>
-<Link to="/">Go back</Link>
+<Link to="/playground">Go back</Link>

@@ -1,27 +1,27 @@
-<script>
-  import { Link } from 'svelte-routing'
-  import Button from '../components/atoms/Button.svelte'
-  import Toggle from '../components/atoms/Toggle.svelte'
-  import BarChart from '../components/atoms/BarChart.svelte'
-  import TextInput from '../components/atoms/TextInput.svelte'
-  import Checkbox from '../components/atoms/Checkbox.svelte'
-</script>
+<style>
+  img {
+    width: 25rem;
+  }
+  div {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-<h1>hoi</h1>
-<Link to="/test">To test</Link>
-<Button>Hoi</Button>
-<Button gradient>Hoi</Button>
-<Toggle>
-  <slot slot="labelOne">Per citizen</slot>
-  <slot slot="labelTwo">Total</slot>
-</Toggle>
-<TextInput>
-  How much munnie do you need?
-  <slot slot="before">€</slot>
-</TextInput>
-<TextInput>
-  How much cubic meter do you take up?
-  <slot slot="after">m3</slot>
-</TextInput>
-<Checkbox>I don't want to see my usage</Checkbox>
-<BarChart />
+  div * {
+    text-align: center;
+  }
+</style>
+
+<img src="/empower.jpg" alt="EMPOWER 2.0 logo" />
+
+<div>
+  <h1>Work in progress!</h1>
+  <p>Come back later!</p>
+</div>

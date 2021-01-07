@@ -2,7 +2,7 @@ const { MongoClient } = require('mongodb')
 
 const { MONGO_URI } = process.env
 
-exports.handler = async function (event) {
+exports.handler = async function () {
   try {
     const client = await MongoClient.connect(MONGO_URI, {
       useUnifiedTopology: true,

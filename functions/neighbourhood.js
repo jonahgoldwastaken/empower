@@ -17,8 +17,7 @@ exports.handler = async function (event) {
       useNewUrlParser: true,
     })
     const collection = client.db('empower').collection('neighbourhoods')
-    const result = await collection.findOne({ code })
-
+    const result = await collection.findOne({ code: +code })
     return {
       statusCode: 200,
       body: JSON.stringify(result),

@@ -5,6 +5,7 @@
     box-shadow: var(--light-box-shadow);
     background: var(--white);
     z-index: 99;
+    grid-column: span 2;
   }
 
   h1 {

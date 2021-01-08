@@ -1,5 +1,6 @@
 <script>
   import { Link } from 'svelte-routing'
+  import Header from '../components/molecules/Header.svelte'
   import Button from '../components/atoms/Button.svelte'
   import Toggle from '../components/atoms/Toggle.svelte'
   import BarChart from '../components/atoms/BarChart.svelte'
@@ -7,6 +8,7 @@
   import Checkbox from '../components/atoms/Checkbox.svelte'
 </script>
 
+<Header />
 <h1>hoi</h1>
 <Link to="/testroute">To test</Link>
 <Button>Hoi</Button>

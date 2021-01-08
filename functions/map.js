@@ -25,6 +25,9 @@ exports.handler = async function () {
         }
       )
       .toArray()
+
+    await client.close()
+
     return {
       statusCode: 200,
       body: JSON.stringify(result),

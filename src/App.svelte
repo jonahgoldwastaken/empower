@@ -24,7 +24,8 @@
     --orange: #ed9040;
     --muted-orange: #f1b989;
     --light-orange: #f8ac36;
-    --yellow: #ffe68c;
+    --yellow: #fce081;
+    --turqoise: #81cfd0;
     --white: white;
     --black: black;
     --light-grey: #efeded;

@@ -1,14 +1,6 @@
 <script>
   import { onMount, createEventDispatcher } from 'svelte'
-  import {
-    geoMercator,
-    select,
-    drag,
-    zoom,
-    geoPath,
-    json,
-    zoomIdentity,
-  } from 'd3'
+  import { geoMercator, select, zoom, geoPath, json, zoomIdentity } from 'd3'
 
   export let width
   export let height
@@ -19,10 +11,35 @@
   let svg
   let hoverPoint
   let townships
-  let center
+  export let center
   let transform
   $: projection = townships && geoMercator().fitSize([width, height], townships)
   $: path = projection && geoPath().projection(projection)
+  $: if (center) {
+    const bounds = path.bounds(center),
+      dx = bounds[1][0] - bounds[0][0],
+      dy = bounds[1][1] - bounds[0][1],
+      x = (bounds[0][0] + bounds[1][0]) / 2,
+      y = (bounds[0][1] + bounds[1][1]) / 2,
+      scale = Math.max(
+        1,
+        Math.min(3.5, 0.9 / Math.max(dx / width, dy / height))
+      ),
+      translate = [width / 2 - scale * x, height / 2 - scale * y]
+
+    select('#map')
+      .transition()
+      .duration(750)
+      .call(
+        zoomer.transform,
+        zoomIdentity.translate(translate[0], translate[1]).scale(scale)
+      )
+  } else
+    select('#map')
+      .transition()
+      .duration(750)
+      .delay(175)
+      .call(zoomer.transform, zoomIdentity)
 
   $: if (svg) select('#map').call(zoomer)
 
@@ -41,39 +58,11 @@
   }
 
   function pathClickHandler(d) {
-    return e => {
-      if (center === e.target) {
-        center = null
-        select('#map')
-          .transition()
-          .duration(750)
-          .call(zoomer.transform, zoomIdentity)
-      } else {
-        center = e.target
-        const bounds = path.bounds(d),
-          dx = bounds[1][0] - bounds[0][0],
-          dy = bounds[1][1] - bounds[0][1],
-          x = (bounds[0][0] + bounds[1][0]) / 2,
-          y = (bounds[0][1] + bounds[1][1]) / 2,
-          scale = Math.max(
-            1,
-            Math.min(4, 0.9 / Math.max(dx / width, dy / height))
-          ),
-          translate = [width / 2 - scale * x, height / 2 - scale * y]
-
-        select('#map')
-          .transition()
-          .duration(750)
-          .call(
-            zoomer.transform,
-            zoomIdentity.translate(translate[0], translate[1]).scale(scale)
-          )
-      }
+    return e =>
       dispatch('pathClick', {
         event: e,
         datum: d,
       })
-    }
   }
 
   function pathHoverHandler(d) {
@@ -113,7 +102,8 @@
     fill: var(--dark-green);
   }
 
-  #map path:hover {
+  #map path:hover,
+  #map path.active {
     opacity: 0.7;
   }
 
@@ -125,14 +115,14 @@
     vector-effet: non-scaling-size;
   }
 
-  #map text.hover {
+  #map text.hover,
+  #map text.active {
     opacity: 1;
   }
 </style>
 
 <svg bind:this={svg} {width} {height} preserveAspectRatio="xMinYMin meet">
   <g id="map" {transform}>
-    <rect fill="transparent" x="0" y="0" {width} {height} />
     {#if townships}
       <g id="map-paths">
         {#each townships.features as d (d.properties.Gemeentenaam)}
@@ -140,6 +130,7 @@
             on:click={pathClickHandler(d)}
             on:mouseover={pathHoverHandler(d)}
             on:mouseout={pathHoverHandler(d)}
+            class:active={center === d}
             d={path(d)}
             class:level-1={findTotalEnergyGeneration(d) < 200}
             class:level-2={400 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 200}
@@ -151,7 +142,7 @@
       <g id="map-texts">
         {#each townships.features as d (d.properties.Gemeentenaam)}
           <text
-            class:hover={hoverPoint === d}
+            class:hover={center !== d && hoverPoint === d}
             text-anchor="middle"
             alignment-baseline="middle"
             y={path.centroid(d)[1]}

@@ -3,11 +3,11 @@ const { MongoClient } = require('mongodb')
 const { MONGO_URI } = process.env
 
 exports.handler = async function (event) {
-  const { code } = event.queryStringParameters
-  if (!code) {
+  const { mainCity, compareCity } = event.queryStringParameters
+  if (!mainCity || !compareCity) {
     return {
       statusCode: 400,
-      body: 'Provide a neighbourhood code',
+      body: 'Provide both a mainCity and compareCity',
     }
   }
 
@@ -16,8 +16,15 @@ exports.handler = async function (event) {
       useUnifiedTopology: true,
       useNewUrlParser: true,
     })
-    const collection = client.db('empower').collection('neighbourhoods')
-    const result = await collection.findOne({ code: +code })
+    const collection = client.db('empower').collection('municipalities')
+    const result = {
+      mainCity: await collection.findOne({
+        municipality: new RegExp(`^${mainCity}$`, 'i'),
+      }),
+      compareCity: await collection.findOne({
+        municipality: new RegExp(`^${compareCity}$`, 'i'),
+      }),
+    }
 
     await client.close()
 

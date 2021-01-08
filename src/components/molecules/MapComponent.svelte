@@ -1,6 +1,7 @@
 <script>
   import MapRenderer from '../atoms/MapRenderer.svelte'
   import MapTooltip from '../atoms/MapTooltip.svelte'
+  import MapLegend from '../atoms/MapLegend.svelte'
 
   let height
   let width
@@ -24,6 +25,7 @@
   div {
     width: 100%;
     height: 100vh;
+    position: relative;
   }
 </style>
 
@@ -36,5 +38,6 @@
       bind:center={currentFocus}
       {data} />
     <MapTooltip on:close={closeHandler} bind:data={currentFocus} />
+    <MapLegend />
   {/await}
 </div>

@@ -1,6 +1,7 @@
 <script lang="typescript">
   import { Router, Route } from 'svelte-routing'
   import Index from './pages/Index.svelte'
+  import Playground from './pages/Playground.svelte'
   import TestRoute from './pages/TestRoute.svelte'
 </script>
 
@@ -81,7 +82,9 @@
   <Route path="/">
     <Index />
   </Route>
-  <Route path="/playground" />
+  <Route path="/playground">
+    <Playground />
+  </Route>
   <Route path="/testroute">
     <TestRoute />
   </Route>

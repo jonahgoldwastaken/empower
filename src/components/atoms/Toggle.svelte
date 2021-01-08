@@ -2,16 +2,13 @@
   export let name = 'toggle'
 
   let value = 1
-  let div: HTMLDivElement
-  let labelOne: HTMLLabelElement
-  let labelTwo: HTMLLabelElement
-
+  let div
+  let labelOne
+  let labelTwo
   $: checkedBgWidth =
     value === 1 ? labelOne?.offsetWidth : labelTwo?.offsetWidth
-  $: checkedBgLeft =
-    value === 1
-      ? labelOne?.offsetLeft - div?.offsetLeft
-      : labelTwo?.offsetLeft - div?.offsetLeft
+  $: checkedBgLeft = value === 1 ? labelOne?.offsetLeft : labelTwo?.offsetLeft
+  $: console.log(labelOne?.offsetLeft)
 </script>
 
 <style>

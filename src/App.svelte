@@ -10,6 +10,8 @@
 
   :root {
     /* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.125,1920,20,1.125,4,0, */
+    --step--2: clamp(0.79rem, 0.7505rem + 0.1975vw, 0.9875rem);
+    --step--1: clamp(0.8888rem, 0.8443rem + 0.2225vw, 1.1113rem);
     --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     --step-1: clamp(1.125rem, 1.0688rem + 0.2813vw, 1.4063rem);
     --step-2: clamp(1.2656rem, 1.2024rem + 0.3163vw, 1.5819rem);

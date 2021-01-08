@@ -1,14 +1,32 @@
 <script>
-  import { onMount } from 'svelte'
-  import { geoMercator, geoPath, json } from 'd3'
+  import { onMount, createEventDispatcher } from 'svelte'
+  import {
+    geoMercator,
+    select,
+    drag,
+    zoom,
+    geoPath,
+    json,
+    zoomIdentity,
+  } from 'd3'
 
-  export let data = []
   export let width
   export let height
-  export let transform
+  export let data = []
+
+  const zoomer = zoom().on('zoom', zoomed).scaleExtent([1, 4])
+
+  let svg
+  let hoverPoint
   let townships
+  let center
+  let transform
   $: projection = townships && geoMercator().fitSize([width, height], townships)
   $: path = projection && geoPath().projection(projection)
+
+  $: if (svg) select('#map').call(zoomer)
+
+  const dispatch = createEventDispatcher()
 
   function findTotalEnergyGeneration(d) {
     return data.find(
@@ -16,6 +34,50 @@
         item.municipality.toLowerCase() ===
         d.properties.Gemeentenaam.toLowerCase()
     )?.totalEnergyGeneration
+  }
+
+  function zoomed({ transform: newTransform }) {
+    transform = newTransform
+  }
+
+  function pathClickHandler(d) {
+    return e => {
+      if (center === e.target) {
+        center = null
+        select('#map')
+          .transition()
+          .duration(750)
+          .call(zoomer.transform, zoomIdentity)
+      } else {
+        center = e.target
+        const bounds = path.bounds(d),
+          dx = bounds[1][0] - bounds[0][0],
+          dy = bounds[1][1] - bounds[0][1],
+          x = (bounds[0][0] + bounds[1][0]) / 2,
+          y = (bounds[0][1] + bounds[1][1]) / 2,
+          scale = Math.max(
+            1,
+            Math.min(4, 0.9 / Math.max(dx / width, dy / height))
+          ),
+          translate = [width / 2 - scale * x, height / 2 - scale * y]
+
+        select('#map')
+          .transition()
+          .duration(750)
+          .call(
+            zoomer.transform,
+            zoomIdentity.translate(translate[0], translate[1]).scale(scale)
+          )
+      }
+      dispatch('pathClick', {
+        event: e,
+        datum: d,
+      })
+    }
+  }
+
+  function pathHoverHandler(d) {
+    return () => (hoverPoint ? (hoverPoint = null) : (hoverPoint = d))
   }
 
   onMount(async () => {
@@ -54,18 +116,50 @@
   #map path:hover {
     opacity: 0.7;
   }
+
+  #map text {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--step--2);
+    pointer-events: none;
+    opacity: 0;
+    vector-effet: non-scaling-size;
+  }
+
+  #map text.hover {
+    opacity: 1;
+  }
 </style>
 
-<g id="map" {transform} preserveAspectRatio="xMinYMin meet">
-  {#if townships}
-    {#each townships.features as d (d.properties.Gemeentenaam)}
-      <path
-        d={path(d)}
-        class:level-1={findTotalEnergyGeneration(d) < 200}
-        class:level-2={400 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 200}
-        class:level-3={600 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 400}
-        class:level-4={800 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 600}
-        class:level-5={findTotalEnergyGeneration(d) >= 800} />
-    {/each}
-  {/if}
-</g>
+<svg bind:this={svg} {width} {height} preserveAspectRatio="xMinYMin meet">
+  <g id="map" {transform}>
+    <rect fill="transparent" x="0" y="0" {width} {height} />
+    {#if townships}
+      <g id="map-paths">
+        {#each townships.features as d (d.properties.Gemeentenaam)}
+          <path
+            on:click={pathClickHandler(d)}
+            on:mouseover={pathHoverHandler(d)}
+            on:mouseout={pathHoverHandler(d)}
+            d={path(d)}
+            class:level-1={findTotalEnergyGeneration(d) < 200}
+            class:level-2={400 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 200}
+            class:level-3={600 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 400}
+            class:level-4={800 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 600}
+            class:level-5={findTotalEnergyGeneration(d) >= 800} />
+        {/each}
+      </g>
+      <g id="map-texts">
+        {#each townships.features as d (d.properties.Gemeentenaam)}
+          <text
+            class:hover={hoverPoint === d}
+            text-anchor="middle"
+            alignment-baseline="middle"
+            y={path.centroid(d)[1]}
+            x={path.centroid(d)[0]}>
+            {d.properties.Gemeentenaam}
+          </text>
+        {/each}
+      </g>
+    {/if}
+  </g>
+</svg>

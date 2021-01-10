@@ -56,7 +56,7 @@
 </style>
 
 <li>
-  <!-- <MunicipalityArms municipality={municipality.municipality} /> -->
+  <MunicipalityArms municipality={municipality.municipality} />
   <h3>{municipality.municipality}</h3>
   <CompareButton />
   <div>

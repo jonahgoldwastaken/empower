@@ -1,5 +1,10 @@
 const chromium = require('chrome-aws-lambda')
+const AWS = require('aws-sdk')
 const got = require('got')
+const stream = require('stream')
+const { promisify } = require('util')
+
+const pipeline = promisify(stream.pipeline)
 
 exports.handler = async function (event) {
   const { municipality } = event.queryStringParameters
@@ -17,18 +22,27 @@ exports.handler = async function (event) {
 
   const parsedMunicipality = municipality.replace(/\s/g, '_')
 
-  let image = await findWeaponInBucket(parsedMunicipality)
+  let image = await findArmsInBucket(parsedMunicipality)
   if (!image) {
-    image = await scrapeWeapon(parsedMunicipality)
-    await sendUnknownImageToUploader(event, image, parsedMunicipality)
+    const { imageHref, image: wikiImage } = await scrapeArms(parsedMunicipality)
+    image = wikiImage
+    await sendUnknownImageToUploader(event, imageHref, parsedMunicipality)
+  }
+
+  if (!image) {
+    return {
+      statusCode: 404,
+    }
   }
 
   return {
     statusCode: 200,
     headers: {
-      'Content-Type': 'text/plain',
+      'Content-Type': 'image/svg+xml',
+      'Content-Disposition': `inline; filename="${municipality}.svg"`,
     },
-    body: image,
+    isBase64Encoded: true,
+    body: image.Body.toString('base64'),
   }
 }
 
@@ -50,19 +64,29 @@ async function sendUnknownImageToUploader(event, image, parsedMunicipality) {
   }
 }
 
-async function findWeaponInBucket(municipality) {
-  const hasImage = await got(
-    `https://empower.s3.eu-central-003.backblazeb2.com/${municipality}.svg`
-  )
-    .then(res => res.statusCode === 200)
-    .catch(() => false)
-
-  return hasImage
-    ? `https://empower.s3.eu-central-003.backblazeb2.com/${municipality}.svg`
-    : false
+async function findArmsInBucket(municipality) {
+  const { BB_KEYID, BB_APPKEY } = process.env
+  AWS.config.credentials = {
+    accessKeyId: BB_KEYID,
+    secretAccessKey: BB_APPKEY,
+  }
+  const s3 = new AWS.S3({
+    endpoint: 's3.eu-central-003.backblazeb2.com',
+  })
+  try {
+    const file = await s3
+      .getObject({
+        Bucket: 'empower',
+        Key: municipality[0].toUpperCase() + municipality.slice(1) + '.svg',
+      })
+      .promise()
+    return file
+  } catch {
+    return false
+  }
 }
 
-async function scrapeWeapon(municipality) {
+async function scrapeArms(municipality) {
   const browser = await chromium.puppeteer.launch({
     executablePath: await chromium.executablePath,
     args: chromium.args,
@@ -93,5 +117,13 @@ async function scrapeWeapon(municipality) {
   const imageHref = await page.$eval('a.internal', a => a.href)
 
   await page.close()
-  return imageHref
+  const pass = new stream.PassThrough()
+  await pipeline(got.stream(imageHref), pass)
+
+  return {
+    imageHref,
+    image: {
+      Body: pass,
+    },
+  }
 }

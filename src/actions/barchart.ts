@@ -1,6 +1,6 @@
 import { select, scaleLinear, scaleBand, axisLeft, axisBottom, max } from 'd3'
 
-export default function (node: SVGElement, data: any[]) {
+export default function (node, data) {
   const margin = 50
   const size = 540
 

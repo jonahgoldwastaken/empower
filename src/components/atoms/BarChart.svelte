@@ -1,5 +1,5 @@
 <script>
-  import barchart from '../../actions/barchart.ts'
+  import barchart from '../../actions/barchart.js'
 </script>
 
 <svg

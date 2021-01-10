@@ -1,47 +1,59 @@
 <script>
+  import { tweened } from 'svelte/motion'
+  import { cubicInOut } from 'svelte/easing'
   import { onMount, createEventDispatcher } from 'svelte'
-  import { geoMercator, select, zoom, geoPath, json, zoomIdentity } from 'd3'
+  import { geoMercator, select, geoPath, json } from 'd3'
 
   export let width
   export let height
   export let data = []
-
-  const zoomer = zoom().on('zoom', zoomed).scaleExtent([1, 4])
+  export let center
 
   let svg
+  let map
   let hoverPoint
   let townships
-  export let center
-  let transform
+
+  let translate = tweened(
+    {
+      x: 0,
+      y: 0,
+    },
+    {
+      duration: 750,
+      easing: cubicInOut,
+    }
+  )
+
+  let zoom = tweened(1, {
+    duration: 750,
+    easing: cubicInOut,
+  })
+
   $: projection = townships && geoMercator().fitSize([width, height], townships)
   $: path = projection && geoPath().projection(projection)
+
   $: if (center) {
     const bounds = path.bounds(center),
       dx = bounds[1][0] - bounds[0][0],
       dy = bounds[1][1] - bounds[0][1],
       x = (bounds[0][0] + bounds[1][0]) / 2,
       y = (bounds[0][1] + bounds[1][1]) / 2,
-      scale = Math.max(
-        1,
-        Math.min(3.5, 0.9 / Math.max(dx / width, dy / height))
-      ),
-      translate = [width / 2 - scale * x, height / 2 - scale * y]
+      scale = Math.max(1, Math.min(3, 0.9 / Math.max(dx / width, dy / height))),
+      newTranslate = [width / 2 - scale * x, height / 2 - scale * y]
 
-    select('#map')
-      .transition()
-      .duration(750)
-      .call(
-        zoomer.transform,
-        zoomIdentity.translate(translate[0], translate[1]).scale(scale)
-      )
-  } else
-    select('#map')
-      .transition()
-      .duration(750)
-      .delay(175)
-      .call(zoomer.transform, zoomIdentity)
-
-  $: if (svg) select('#map').call(zoomer)
+    zoom.set(scale)
+    translate.set({
+      x: newTranslate[0],
+      y: newTranslate[1],
+    })
+  } else {
+    translate.set({
+      x: 0,
+      y: 0,
+    })
+    zoom.set(1)
+  }
 
   const dispatch = createEventDispatcher()
 
@@ -51,10 +63,6 @@
         item.municipality.toLowerCase() ===
         d.properties.Gemeentenaam.toLowerCase()
     )?.totalEnergyGeneration
-  }
-
-  function zoomed({ transform: newTransform }) {
-    transform = newTransform
   }
 
   function pathClickHandler(d) {
@@ -74,7 +82,7 @@
   })
 </script>
 
-<style global>
+<style>
   #map path {
     stroke: white;
     stroke-width: 1;
@@ -104,25 +112,27 @@
 
   #map path:hover,
   #map path.active {
-    opacity: 0.7;
+    fill-opacity: 0.7;
   }
 
   #map text {
     font-family: 'Roboto', sans-serif;
     font-size: var(--step--2);
     pointer-events: none;
-    opacity: 0;
+    fill-opacity: 0;
     vector-effet: non-scaling-size;
   }
 
-  #map text.hover,
-  #map text.active {
-    opacity: 1;
+  #map text.hover {
+    fill-opacity: 1;
   }
 </style>
 
 <svg bind:this={svg} {width} {height} preserveAspectRatio="xMinYMin meet">
-  <g id="map" {transform}>
+  <g
+    transform="translate({$translate.x}, {$translate.y}) scale({$zoom})"
+    bind:this={map}
+    id="map">
     {#if townships}
       <g id="map-paths">
         {#each townships.features as d (d.properties.Gemeentenaam)}

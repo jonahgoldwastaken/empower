@@ -126,8 +126,8 @@
 {#if data}
   <div
     id="map-tooltip"
-    in:fade={{ duration: 350, delay: 750, ease: cubicInOut }}
-    out:fade={{ duration: 350, ease: cubicInOut }}>
+    in:fade={{ delay: 375, duration: 375, ease: cubicInOut }}
+    out:fade={{ duration: 375, ease: cubicInOut }}>
     {#await request}
       <h2>{data.properties.Gemeentenaam}</h2>
       <div>

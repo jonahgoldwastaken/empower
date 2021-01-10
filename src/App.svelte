@@ -3,6 +3,7 @@
   import Index from './pages/Index.svelte'
   import Playground from './pages/Playground.svelte'
   import TestRoute from './pages/TestRoute.svelte'
+  import CompareTest from './pages/CompareTest.svelte'
 </script>
 
 <style global>
@@ -86,6 +87,9 @@
 <Router>
   <Route path="/">
     <Index />
+  </Route>
+  <Route path="/comparetest">
+    <CompareTest />
   </Route>
   <Route path="/playground">
     <Playground />

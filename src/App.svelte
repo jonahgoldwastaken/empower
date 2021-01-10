@@ -1,8 +1,9 @@
-<script lang="typescript">
+<script>
   import { Router, Route } from 'svelte-routing'
   import Index from './pages/Index.svelte'
   import Playground from './pages/Playground.svelte'
   import TestRoute from './pages/TestRoute.svelte'
+  import CompareTest from './pages/CompareTest.svelte'
 </script>
 
 <style global>
@@ -10,17 +11,22 @@
 
   :root {
     /* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.125,1920,20,1.125,4,0, */
+    --step--2: clamp(0.79rem, 0.7505rem + 0.1975vw, 0.9875rem);
+    --step--1: clamp(0.8888rem, 0.8443rem + 0.2225vw, 1.1113rem);
     --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
     --step-1: clamp(1.125rem, 1.0688rem + 0.2813vw, 1.4063rem);
     --step-2: clamp(1.2656rem, 1.2024rem + 0.3163vw, 1.5819rem);
     --step-3: clamp(1.4238rem, 1.3525rem + 0.3563vw, 1.78rem);
     --step-4: clamp(1.6019rem, 1.5218rem + 0.4006vw, 2.0025rem);
 
-    --dark-green: #548687;
+    --dark-green: #8fbc94;
     --green: #79c181;
-    --light-green: #beea8b;
+    --light-green: #c5e99b;
     --orange: #ed9040;
+    --muted-orange: #f1b989;
     --light-orange: #f8ac36;
+    --yellow: #fce081;
+    --turqoise: #81cfd0;
     --white: white;
     --black: black;
     --light-grey: #efeded;
@@ -81,6 +87,9 @@
 <Router>
   <Route path="/">
     <Index />
+  </Route>
+  <Route path="/comparetest">
+    <CompareTest />
   </Route>
   <Route path="/playground">
     <Playground />

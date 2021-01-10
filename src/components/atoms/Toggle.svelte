@@ -5,6 +5,7 @@
   let div
   let labelOne
   let labelTwo
+
   $: checkedBgWidth =
     value === 1 ? labelOne?.offsetWidth : labelTwo?.offsetWidth
   $: checkedBgLeft = value === 1 ? labelOne?.offsetLeft : labelTwo?.offsetLeft

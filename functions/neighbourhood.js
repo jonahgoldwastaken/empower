@@ -18,6 +18,9 @@ exports.handler = async function (event) {
     })
     const collection = client.db('empower').collection('neighbourhoods')
     const result = await collection.findOne({ code: +code })
+
+    await client.close()
+
     return {
       statusCode: 200,
       body: JSON.stringify(result),

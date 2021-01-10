@@ -1,6 +1,6 @@
 <script>
   import { Link } from 'svelte-routing'
-  import Layout from '../components/organisms/Layout.svelte'
+  import Layout from '../components/template/Layout.svelte'
   import Button from '../components/atoms/Button.svelte'
   import Toggle from '../components/atoms/Toggle.svelte'
   import MapComponent from '../components/molecules/MapComponent.svelte'

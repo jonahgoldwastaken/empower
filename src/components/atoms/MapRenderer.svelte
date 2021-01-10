@@ -120,7 +120,6 @@
     font-size: var(--step--2);
     pointer-events: none;
     fill-opacity: 0;
-    vector-effet: non-scaling-size;
   }
 
   #map text.hover {
@@ -155,6 +154,7 @@
             class:hover={center !== d && hoverPoint === d}
             text-anchor="middle"
             alignment-baseline="middle"
+            transform="scale({(1 / $zoom) * 100}% {(1 / $zoom) * 100}%)"
             y={path.centroid(d)[1]}
             x={path.centroid(d)[0]}>
             {d.properties.Gemeentenaam}

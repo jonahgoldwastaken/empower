@@ -1,4 +1,5 @@
 <script>
+  import CompareButton from '../atoms/CompareButton.svelte'
   import { cubicInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
   import { createEventDispatcher } from 'svelte'
@@ -8,12 +9,6 @@
   function closeClickHandler() {
     dispatch('close')
   }
-
-  $: request =
-    data &&
-    fetch(
-      `${window.location.origin}/api/municipality?code=${+data.properties.Code}`
-    ).then(res => res.json())
 </script>
 
 <style>
@@ -128,53 +123,39 @@
     id="map-tooltip"
     in:fade={{ delay: 375, duration: 375, ease: cubicInOut }}
     out:fade={{ duration: 375, ease: cubicInOut }}>
-    {#await request}
-      <h2>{data.properties.Gemeentenaam}</h2>
-      <div>
-        <label>Compare <input type="checkbox" name="compare" /></label>
-        <button on:click={closeClickHandler}>Close</button>
-      </div>
-      <div>
-        <p>Production: <strong>...</strong></p>
-      </div>
-    {:then municipality}
-      <h2>{municipality.municipality}</h2>
-      <div>
-        <label>Compare <input type="checkbox" name="compare" /></label>
-        <button on:click={closeClickHandler}>Close</button>
-      </div>
-      <div>
-        <p>
-          Production:
-          <strong>{municipality.totalEnergyGeneration} TJ</strong>
-        </p>
-        <ol>
-          <li
-            in:fade={{ duration: 200 }}
-            key="wind"
-            id="wind"
-            class="productionTile"
-            class:active={municipality.windEnergyGeneration}>
-            <img src="/wind.svg" alt="Wind icon" />
-          </li>
-          <li
-            in:fade={{ duration: 200 }}
-            key="wind"
-            id="solar"
-            class="productionTile"
-            class:active={municipality.solarEnergyGeneration}>
-            <img src="/solar-filled.svg" alt="Solar icon" />
-          </li>
-          <li
-            in:fade={{ duration: 200 }}
-            key="wind"
-            id="biogas"
-            class="productionTile"
-            class:active={municipality.biogasEnergyGeneration}>
-            <img src="/biogas.svg" alt="Biogas icon" />
-          </li>
-        </ol>
-      </div>
-    {/await}
+    <h2>{data.municipality}</h2>
+    <div>
+      <CompareButton />
+      <button on:click={closeClickHandler}>Close</button>
+    </div>
+    <div>
+      <p>Production: <strong>{data.totalEnergyGeneration} TJ</strong></p>
+      <ol>
+        <li
+          in:fade={{ duration: 200 }}
+          key="wind"
+          id="wind"
+          class="productionTile"
+          class:active={data.windEnergyGeneration}>
+          <img src="/wind.svg" alt="Wind icon" />
+        </li>
+        <li
+          in:fade={{ duration: 200 }}
+          key="wind"
+          id="solar"
+          class="productionTile"
+          class:active={data.solarEnergyGeneration}>
+          <img src="/solar-filled.svg" alt="Solar icon" />
+        </li>
+        <li
+          in:fade={{ duration: 200 }}
+          key="wind"
+          id="biogas"
+          class="productionTile"
+          class:active={data.biogasEnergyGeneration}>
+          <img src="/biogas.svg" alt="Biogas icon" />
+        </li>
+      </ol>
+    </div>
   </div>
 {/if}

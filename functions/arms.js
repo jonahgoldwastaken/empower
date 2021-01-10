@@ -2,7 +2,6 @@ const chromium = require('chrome-aws-lambda')
 const got = require('got')
 
 exports.handler = async function (event) {
-  console.log(event.headers.host)
   const { municipality } = event.queryStringParameters
   if (!municipality)
     return {
@@ -26,6 +25,9 @@ exports.handler = async function (event) {
 
   return {
     statusCode: 200,
+    headers: {
+      'Content-Type': 'text/plain',
+    },
     body: image,
   }
 }

@@ -25,13 +25,14 @@
     --orange: #ed9040;
     --muted-orange: #f1b989;
     --light-orange: #f8ac36;
-    --yellow: #fce081;
+    --yellow: #f4dc86;
     --turqoise: #81cfd0;
     --white: white;
     --black: black;
     --light-grey: #efeded;
     --dark-grey: #bfbfbf;
 
+    --very-light-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     --light-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     --medium-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 

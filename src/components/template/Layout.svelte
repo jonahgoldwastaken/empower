@@ -12,7 +12,7 @@
     height: 100%;
     display: grid;
     overflow: hidden;
-    grid-template-columns: max(20rem, min(40rem, 20%)) 1fr;
+    grid-template-columns: max(20rem, min(40rem, 25%)) 1fr;
     grid-template-rows: min-content 1fr;
   }
 

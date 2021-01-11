@@ -24,6 +24,7 @@ exports.handler = async function () {
           },
         }
       )
+      .sort({ municipality: 1 })
       .toArray()
 
     await client.close()

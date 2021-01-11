@@ -7,6 +7,7 @@
     padding: var(--step-4) var(--step-2);
     background: var(--light-grey);
     border-right: 1px solid var(--dark-grey);
+    overflow-y: scroll;
   }
 </style>
 

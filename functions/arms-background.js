@@ -6,7 +6,6 @@ const { promisify } = require('util')
 const pipeline = promisify(stream.pipeline)
 
 exports.handler = async function (event) {
-  console.log(event.queryStringParameters)
   const { originalURL, newKey } = event.queryStringParameters
   const { BB_KEYID, BB_APPKEY } = process.env
   AWS.config.credentials = {
@@ -18,5 +17,12 @@ exports.handler = async function (event) {
   })
   const pass = new stream.PassThrough()
   pipeline(got.stream(originalURL), pass)
-  await s3.upload({ Bucket: 'empower', Key: newKey, Body: pass }).promise()
+  await s3
+    .upload({
+      Bucket: 'empower',
+      Key: newKey,
+      Body: pass,
+      ContentType: 'image/svg+xml',
+    })
+    .promise()
 }

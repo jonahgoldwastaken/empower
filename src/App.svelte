@@ -3,7 +3,7 @@
   import Index from './pages/Index.svelte'
   import Playground from './pages/Playground.svelte'
   import TestRoute from './pages/TestRoute.svelte'
-  import CompareTest from './pages/CompareTest.svelte'
+  import MunicipalityMap from './pages/MunicipalityMap.svelte'
 </script>
 
 <style global>
@@ -90,7 +90,7 @@
     <Index />
   </Route>
   <Route path="/comparetest">
-    <CompareTest />
+    <MunicipalityMap />
   </Route>
   <Route path="/playground">
     <Playground />

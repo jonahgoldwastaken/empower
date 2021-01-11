@@ -1,6 +1,7 @@
 <script>
   export let name = 'input'
-  export let value = 'value'
+  export let value
+  export let placeholder = 'type something here'
 </script>
 
 <style>
@@ -13,9 +14,10 @@
     font-size: inherit;
     padding: 0.5em 1.125em;
     position: relative;
-    border: none;
-    border-bottom: 2px solid transparent;
+    border: 1px solid var(--dark-grey);
+    border-radius: 0.5rem;
     background: white;
+    transition: border 0.1s ease-in-out;
   }
 
   input:focus {
@@ -27,8 +29,8 @@
     display: flex;
     height: min-content;
     width: min-content;
-    border-radius: 0.5rem;
     overflow: hidden;
+    border-radius: 0.5rem;
     box-shadow: var(--medium-box-shadow);
   }
 
@@ -64,6 +66,7 @@
     class:before={$$slots.before}
     class:after={$$slots.after}
     type="text"
+    {placeholder}
     {name}
     bind:value />
   {#if $$slots.after}

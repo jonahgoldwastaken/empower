@@ -2,11 +2,11 @@
   import MapRenderer from '../atoms/MapRenderer.svelte'
   import MapTooltip from '../atoms/MapTooltip.svelte'
   import MapLegend from '../atoms/MapLegend.svelte'
+  import { data } from '../../store/municipality'
 
   let height
   let width
   let currentFocus
-  export let data
 
   function pathClickHandler({ detail: { event, datum } }) {
     if (currentFocus === datum) currentFocus = null
@@ -27,16 +27,16 @@
 </style>
 
 <div bind:offsetHeight={height} bind:offsetWidth={width}>
-  {#if data}
+  {#if $data.length}
     <MapRenderer
       on:pathClick={pathClickHandler}
       bind:width
       bind:height
       bind:center={currentFocus}
-      {data} />
+      data={$data} />
     <MapTooltip
       on:close={closeHandler}
-      data={data.find(d => d.municipality === currentFocus?.properties.Gemeentenaam)} />
+      data={$data.find(d => d.municipality === currentFocus?.properties.Gemeentenaam)} />
     <MapLegend />
   {/if}
 </div>

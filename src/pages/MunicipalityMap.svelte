@@ -3,23 +3,18 @@
   import Layout from '../components/template/Layout.svelte'
   import MapComponent from '../components/molecules/MapComponent.svelte'
   import MunicipalityList from '../components/organisms/MunicipalityList.svelte'
-
-  let data
-
-  onMount(() => {
-    fetch(`${window.location.origin}/api/municipalities`)
-      .then(res => res.json())
-      .then(body => (data = body))
-  })
+  import SearchBar from '../components/atoms/SearchBar.svelte'
+  import { filteredData } from '../store/municipality'
 </script>
 
-{#if data}
+{#if $filteredData}
   <Layout>
     <slot slot="sidebar">
-      <MunicipalityList municipalities={data} />
+      <SearchBar />
+      <MunicipalityList municipalities={$filteredData} />
     </slot>
     <slot slot="main">
-      <MapComponent {data} />
+      <MapComponent />
     </slot>
   </Layout>
 {/if}

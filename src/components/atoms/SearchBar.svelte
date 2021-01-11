@@ -22,7 +22,6 @@
   }
 
   div {
-    box-shadow: var(--medium-box-shadow);
     box-sizing: border-box;
     font-size: var(--step-0);
     height: calc(var(--step-0) * 2);
@@ -33,7 +32,6 @@
   }
 
   img {
-    /* box-shadow: var(--medium-box-shadow); */
     box-sizing: border-box;
     display: block;
     object-fit: contain;
@@ -49,7 +47,7 @@
   <img src="/search-icon.png" alt="Magnifying glass" />
   <input
     type="text"
-    placeholder="maastricht"
+    placeholder="Maastricht"
     name="search"
     bind:value={$searchQuery} />
 </div>

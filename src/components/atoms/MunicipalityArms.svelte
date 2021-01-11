@@ -15,6 +15,6 @@
   }
 </style>
 
-<img
+<!-- <img
   src="{window.location.origin}/api/arms?municipality={municipality}"
-  {alt} />
+  {alt} /> -->

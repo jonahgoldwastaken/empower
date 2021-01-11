@@ -1,4 +1,5 @@
 <script>
+  import Label from './Label.svelte'
   import { searchQuery } from '../../store/municipality'
 </script>
 
@@ -43,6 +44,7 @@
   }
 </style>
 
+<Label for="search">Search municipalities</Label>
 <div>
   <img src="/search-icon.png" alt="Magnifying glass" />
   <input

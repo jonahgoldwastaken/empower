@@ -66,8 +66,7 @@
 
   h2,
   h3 {
-    font-family: 'Roboto';
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
   }
 
   h1 {
@@ -78,10 +77,12 @@
 
   h2 {
     font-size: var(--step-3);
+    font-weight: 700;
   }
 
   h3 {
     font-size: var(--step-2);
+    font-weight: 500;
   }
 
   a {

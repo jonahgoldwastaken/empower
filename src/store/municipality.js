@@ -6,6 +6,8 @@ import {
 import {
   filterMunicipalityOnEnergyProduction,
   filterMunicipalityOnSearchQuery,
+  filterOnChosenMunicipalities,
+  filterMunicipalityOnEnergyType,
 } from '../utils/filter'
 
 export const data = readable(new Promise(() => {}), set => {
@@ -20,9 +22,76 @@ export const filter = writable('show all')
 
 export const searchQuery = writable('')
 
+export const comparingMunicipalities = writable([])
+
+export const recommendedMunicipalities = derived(
+  [data, comparingMunicipalities],
+  ([$data, $comparingMunicipalities]) => {
+    if (
+      $comparingMunicipalities.length === 0 ||
+      $comparingMunicipalities.length >= 5
+    )
+      return []
+    const averageTotalGeneration =
+      $comparingMunicipalities.reduce(
+        (acc, curr) => acc + curr.totalEnergyGeneration,
+        0
+      ) / $comparingMunicipalities.length
+    const percentageProducingSolarEnergy =
+      $comparingMunicipalities.reduce(
+        (acc, curr) => (curr.solarEnergyGeneration > 0 ? acc + 1 : acc),
+        0
+      ) / $comparingMunicipalities.length
+    const percentageProducingWindEnergy =
+      $comparingMunicipalities.reduce(
+        (acc, curr) => (curr.windEnergyGeneration > 0 ? acc + 1 : acc),
+        0
+      ) / $comparingMunicipalities.length
+    const percentageProducingBiogasEnergy =
+      $comparingMunicipalities.reduce(
+        (acc, curr) => (curr.biogasEnergyGeneration > 0 ? acc + 1 : acc),
+        0
+      ) / $comparingMunicipalities.length
+
+    const recommendations = $data
+      .filter(
+        d =>
+          d.totalEnergyGeneration / averageTotalGeneration < 1.25 &&
+          d.totalEnergyGeneration / averageTotalGeneration > 0.75
+      )
+      .filter(
+        d =>
+          !$comparingMunicipalities.find(
+            item => item.municipality === d.municipality
+          )
+      )
+      .filter(
+        filterMunicipalityOnEnergyType(
+          'solarEnergyGeneration',
+          percentageProducingSolarEnergy
+        )
+      )
+      .filter(
+        filterMunicipalityOnEnergyType(
+          'windEnergyGeneration',
+          percentageProducingWindEnergy
+        )
+      )
+      .filter(
+        filterMunicipalityOnEnergyType(
+          'biogasEnergyGeneration',
+          percentageProducingBiogasEnergy
+        )
+      )
+    // .slice(0, 3)
+
+    return recommendations
+  }
+)
+
 export const filteredData = derived(
-  [data, sort, filter, searchQuery],
-  ([$data, $sort, $filter, $searchQuery]) => {
+  [data, sort, filter, searchQuery, comparingMunicipalities],
+  ([$data, $sort, $filter, $searchQuery, $comparingMunicipalities]) => {
     if (!$data.length) return []
     let newData = $data
     switch ($sort) {
@@ -70,17 +139,11 @@ export const filteredData = derived(
         filterMunicipalityOnSearchQuery($searchQuery)
       )
     }
+    newData = [...newData].filter(
+      filterOnChosenMunicipalities($comparingMunicipalities)
+    )
     return newData
   }
 )
 
 export const currentHighlighted = writable('')
-
-export const comparingMunicipalities = writable([])
-
-export const recommendedMunicipalities = derived(
-  comparingMunicipalities,
-  () => {
-    return null
-  }
-)

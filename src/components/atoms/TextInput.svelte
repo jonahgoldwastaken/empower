@@ -1,14 +1,12 @@
 <script>
+  import Label from './Label.svelte'
+
   export let name = 'input'
   export let value
   export let placeholder = 'type something here'
 </script>
 
 <style>
-  label {
-    font-size: var(--step-0);
-  }
-
   input {
     appearance: none;
     font-size: inherit;
@@ -52,9 +50,9 @@
   }
 </style>
 
-<label for={name}>
+<Label for={name}>
   <slot />
-</label>
+</Label>
 <div>
   {#if $$slots.before}
     <span>

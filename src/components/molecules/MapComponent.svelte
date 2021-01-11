@@ -2,7 +2,6 @@
   import MapRenderer from '../atoms/MapRenderer.svelte'
   import MapTooltip from '../atoms/MapTooltip.svelte'
   import MapLegend from '../atoms/MapLegend.svelte'
-  import { data } from '../../store/municipality'
 
   let height
   let width

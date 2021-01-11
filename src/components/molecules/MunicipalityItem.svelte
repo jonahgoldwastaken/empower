@@ -12,7 +12,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 20% 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: calc(2 * var(--step-2)) calc(2 * var(--step-1));
     border-radius: 0.75rem;
     background: var(--white);
     padding: var(--step--1);
@@ -29,7 +29,7 @@
     font-size: var(--step-2);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    width: 8em;
+    width: calc(100% - 5rem);
     hyphens: auto;
   }
 
@@ -52,6 +52,7 @@
 
   div {
     grid-column: 2;
+    align-self: end;
   }
 </style>
 

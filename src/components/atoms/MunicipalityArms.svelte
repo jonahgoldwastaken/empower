@@ -7,8 +7,10 @@
   img {
     display: block;
     width: 100%;
-    grid-row: span 2;
-    grid-column: 1;
+    max-height: 100%;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
+    object-fit: contain;
     align-self: center;
   }
 </style>

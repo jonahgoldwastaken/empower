@@ -11,5 +11,6 @@ function filterMunicipalityOnEnergyProduction(min, max) {
 }
 
 function filterMunicipalityOnSearchQuery(query) {
-  return municipality => municipality.municipality.includes(query)
+  return municipality =>
+    municipality.municipality.toLowerCase().includes(query.toLowerCase())
 }

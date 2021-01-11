@@ -61,9 +61,9 @@
   <h3>Legend</h3>
   <ol>
     <li>&lt; 200 TJ</li>
-    <li>200 &lt; 400 TJ</li>
-    <li>400 &lt; 600 TJ</li>
-    <li>600 &lt; 800 TJ</li>
+    <li>200 - 400 TJ</li>
+    <li>400 - 600 TJ</li>
+    <li>600 - 800 TJ</li>
     <li>&gt;= 800 TJ</li>
   </ol>
 </section>

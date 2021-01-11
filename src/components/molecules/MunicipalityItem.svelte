@@ -20,6 +20,10 @@
     box-shadow: var(--very-light-box-shadow);
   }
 
+  li:not(:last-child) {
+    margin-bottom: var(--step-1);
+  }
+
   h3 {
     display: inline-block;
     margin: 0;
@@ -59,7 +63,7 @@
 <li>
   <MunicipalityArms municipality={municipality.municipality} />
   <h3>{municipality.municipality}</h3>
-  <CompareButton />
+  <CompareButton {municipality} />
   <div>
     <p>Production: <strong>{municipality.totalEnergyGeneration} TJ</strong></p>
     <div>

@@ -9,17 +9,17 @@
     padding: 0.5rem 2.75rem;
     color: var(--white);
     background-color: var(--orange);
-    border-radius: calc((var(--step-0) + 0.5rem));
+    border-radius: 0.75rem;
     font-size: var(--step-0);
     cursor: pointer;
     border: 1px solid transparent;
     box-shadow: var(--light-box-shadow);
-    /* transition: all 0.2s ease-in-out; */
+    transition: all 0.2s ease-in-out;
   }
 
   button:hover {
     border-color: var(--orange);
-    background-color: transparent;
+    background-color: var(--white);
     color: var(--orange);
   }
 

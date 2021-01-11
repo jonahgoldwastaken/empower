@@ -1,19 +1,19 @@
 <script>
   import MunicipalityItem from '../molecules/MunicipalityItem.svelte'
-  export let municipalities = []
+  import { filteredData } from '../../store/municipality'
 </script>
 
 <style>
   ul {
+    display: block;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-gap: var(--step-2);
   }
 </style>
 
+<h3>{$filteredData.length} results</h3>
 <ul>
-  {#each municipalities as municipality (municipality.code)}
+  {#each $filteredData as municipality (municipality.code)}
     <MunicipalityItem {municipality} />
   {/each}
 </ul>

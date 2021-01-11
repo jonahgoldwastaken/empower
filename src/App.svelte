@@ -1,13 +1,18 @@
 <script>
   import { Router, Route } from 'svelte-routing'
+  import Loadable from 'svelte-loadable'
   import Index from './pages/Index.svelte'
   import Playground from './pages/Playground.svelte'
   import TestRoute from './pages/TestRoute.svelte'
-  import CompareTest from './pages/CompareTest.svelte'
 </script>
 
 <style global>
   @import 'normalize.css/opinionated.css';
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  @font-face {
+    font-family: 'DIN Alternate';
+    src: url(/din-alternate.ttf) format('ttf');
+  }
 
   :root {
     /* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.125,1920,20,1.125,4,0, */
@@ -61,8 +66,7 @@
 
   h2,
   h3 {
-    font-family: 'Roboto';
-    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
   }
 
   h1 {
@@ -73,10 +77,12 @@
 
   h2 {
     font-size: var(--step-3);
+    font-weight: 700;
   }
 
   h3 {
     font-size: var(--step-2);
+    font-weight: 500;
   }
 
   a {
@@ -90,7 +96,9 @@
     <Index />
   </Route>
   <Route path="/comparetest">
-    <CompareTest />
+    <Loadable loader={() => import('./pages/MunicipalityMap.svelte')}>
+      <div slot="loading">Loading...</div>
+    </Loadable>
   </Route>
   <Route path="/playground">
     <Playground />

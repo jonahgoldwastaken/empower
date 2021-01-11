@@ -1,0 +1,47 @@
+<script>
+  export let name
+  export let options
+  export let value
+</script>
+
+<style>
+  label {
+    display: block;
+    width: min-content;
+    font-size: var(--step--1);
+    position: relative;
+  }
+
+  label::after {
+    content: '';
+    background: url(/down-arrow.svg) no-repeat center/contain;
+    position: absolute;
+    right: calc(0.75 * var(--step-0));
+    bottom: calc(0.55 * var(--step-0));
+    width: var(--step--2);
+    height: var(--step-0);
+    pointer-events: none;
+  }
+
+  select {
+    display: block;
+    margin-top: 0.25em;
+    appearance: none;
+    font-size: var(--step-0);
+    padding: 0.5em;
+    padding-right: 2.5em;
+    border: 1px solid var(--dark-grey);
+    border-radius: 0.5rem;
+    background: white;
+    transition: border 0.1s ease-in-out;
+  }
+</style>
+
+<label>
+  <slot />
+  <select {name} bind:value>
+    {#each options as option (option.value)}
+      <option value={option.value}>{option.name}</option>
+    {/each}
+  </select>
+</label>

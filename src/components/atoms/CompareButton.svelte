@@ -1,5 +1,32 @@
 <script>
-  export let checked
+  import { get } from 'svelte/store'
+  import { comparingMunicipalities } from '../../store/municipality'
+  export let municipality
+
+  $: checked = $comparingMunicipalities.find(
+    d => d.municipality === municipality.municipality
+  )
+
+  function changeHandler() {
+    const currentComparingMunicipalities = get(comparingMunicipalities)
+    const index = currentComparingMunicipalities.findIndex(
+      d => municipality.municipality === d.municipality
+    )
+    if (index < 0 && currentComparingMunicipalities.length < 5)
+      comparingMunicipalities.set([
+        ...currentComparingMunicipalities,
+        municipality,
+      ])
+    else
+      comparingMunicipalities.set(
+        index === 0
+          ? [...currentComparingMunicipalities.slice(index + 1)]
+          : [
+              ...currentComparingMunicipalities.slice(0, index),
+              ...currentComparingMunicipalities.slice(index + 1),
+            ]
+      )
+  }
 </script>
 
 <style>
@@ -10,6 +37,7 @@
     border: 1.5px solid var(--dark-grey);
     color: var(--dark-grey);
     box-shadow: var(--very-light-box-shadow);
+    font-size: var(--step--2);
     line-height: 1;
     padding: 0.2em;
     text-align: center;
@@ -24,12 +52,19 @@
 
   label:hover {
     border-color: var(--black);
+    color: var(--black);
   }
 
   .checked {
     background: var(--orange);
     border-color: var(--orange);
     color: var(--white);
+  }
+
+  .checked:hover {
+    background: var(--white);
+    border-color: var(--orange);
+    color: var(--orange);
   }
 
   input {
@@ -39,4 +74,5 @@
   }
 </style>
 
-<label class:checked>Compare <input type="checkbox" bind:checked /></label>
+<label class:checked>Compare
+  <input on:change={changeHandler} type="checkbox" {checked} /></label>

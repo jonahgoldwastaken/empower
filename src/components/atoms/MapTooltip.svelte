@@ -2,12 +2,10 @@
   import CompareButton from '../atoms/CompareButton.svelte'
   import { cubicInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
-  import { createEventDispatcher } from 'svelte'
-  export let data
+  import { currentHighlighted } from '../../store/municipality'
 
-  const dispatch = createEventDispatcher()
   function closeClickHandler() {
-    dispatch('close')
+    currentHighlighted.set(null)
   }
 </script>
 
@@ -49,6 +47,9 @@
   #map-tooltip div:nth-child(2) {
     grid-column: 2;
     grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   #map-tooltip div:nth-child(3) {
@@ -110,6 +111,26 @@
     border: none;
     background: var(--green);
   }
+
+  .close-button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0 0 0 calc(var(--step--1) / 2);
+    cursor: pointer;
+  }
+
+  .close-button img {
+    width: var(--step--1);
+    height: var(--step--1);
+    opacity: 0.25;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .close-button:hover img {
+    opacity: 1;
+  }
 </style>
 
 <svelte:head>
@@ -118,25 +139,30 @@
   <meta rel="preload" href="/biogas.svg" />
 </svelte:head>
 
-{#if data}
+{#if $currentHighlighted}
   <div
     id="map-tooltip"
     in:fade={{ delay: 375, duration: 375, ease: cubicInOut }}
     out:fade={{ duration: 375, ease: cubicInOut }}>
-    <h2>{data.municipality}</h2>
+    <h2>{$currentHighlighted.municipality}</h2>
     <div>
-      <CompareButton />
-      <button on:click={closeClickHandler}>Close</button>
+      <CompareButton municipality={$currentHighlighted} />
+      <button class="close-button" on:click={closeClickHandler}>
+        <img src="/cross.svg" alt="Close tooltip" />
+      </button>
     </div>
     <div>
-      <p>Production: <strong>{data.totalEnergyGeneration} TJ</strong></p>
+      <p>
+        Production:
+        <strong>{$currentHighlighted.totalEnergyGeneration} TJ</strong>
+      </p>
       <ol>
         <li
           in:fade={{ duration: 200 }}
           key="wind"
           id="wind"
           class="productionTile"
-          class:active={data.windEnergyGeneration}>
+          class:active={$currentHighlighted.windEnergyGeneration}>
           <img src="/wind.svg" alt="Wind icon" />
         </li>
         <li
@@ -144,7 +170,7 @@
           key="wind"
           id="solar"
           class="productionTile"
-          class:active={data.solarEnergyGeneration}>
+          class:active={$currentHighlighted.solarEnergyGeneration}>
           <img src="/solar-filled.svg" alt="Solar icon" />
         </li>
         <li
@@ -152,7 +178,7 @@
           key="wind"
           id="biogas"
           class="productionTile"
-          class:active={data.biogasEnergyGeneration}>
+          class:active={$currentHighlighted.biogasEnergyGeneration}>
           <img src="/biogas.svg" alt="Biogas icon" />
         </li>
       </ol>

@@ -2,12 +2,14 @@
   import CompareButton from '../atoms/CompareButton.svelte'
   import { cubicInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
-  import { createEventDispatcher } from 'svelte'
-  export let data
+  import { currentHighlighted, data } from '../../store/municipality'
 
-  const dispatch = createEventDispatcher()
+  $: currentItem = $currentHighlighted
+    ? $data.find(d => d.municipality === $currentHighlighted)
+    : null
+
   function closeClickHandler() {
-    dispatch('close')
+    currentHighlighted.set(null)
   }
 </script>
 
@@ -118,25 +120,25 @@
   <meta rel="preload" href="/biogas.svg" />
 </svelte:head>
 
-{#if data}
+{#if currentItem}
   <div
     id="map-tooltip"
     in:fade={{ delay: 375, duration: 375, ease: cubicInOut }}
     out:fade={{ duration: 375, ease: cubicInOut }}>
-    <h2>{data.municipality}</h2>
+    <h2>{currentItem.municipality}</h2>
     <div>
       <CompareButton />
       <button on:click={closeClickHandler}>Close</button>
     </div>
     <div>
-      <p>Production: <strong>{data.totalEnergyGeneration} TJ</strong></p>
+      <p>Production: <strong>{currentItem.totalEnergyGeneration} TJ</strong></p>
       <ol>
         <li
           in:fade={{ duration: 200 }}
           key="wind"
           id="wind"
           class="productionTile"
-          class:active={data.windEnergyGeneration}>
+          class:active={currentItem.windEnergyGeneration}>
           <img src="/wind.svg" alt="Wind icon" />
         </li>
         <li
@@ -144,7 +146,7 @@
           key="wind"
           id="solar"
           class="productionTile"
-          class:active={data.solarEnergyGeneration}>
+          class:active={currentItem.solarEnergyGeneration}>
           <img src="/solar-filled.svg" alt="Solar icon" />
         </li>
         <li
@@ -152,7 +154,7 @@
           key="wind"
           id="biogas"
           class="productionTile"
-          class:active={data.biogasEnergyGeneration}>
+          class:active={currentItem.biogasEnergyGeneration}>
           <img src="/biogas.svg" alt="Biogas icon" />
         </li>
       </ol>

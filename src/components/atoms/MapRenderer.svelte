@@ -1,13 +1,13 @@
 <script>
   import { tweened } from 'svelte/motion'
   import { cubicInOut } from 'svelte/easing'
-  import { onMount, createEventDispatcher } from 'svelte'
+  import { get } from 'svelte/store'
+  import { onMount } from 'svelte'
   import { geoMercator, select, geoPath, json } from 'd3'
+  import { data, currentHighlighted } from '../../store/municipality.js'
 
   export let width
   export let height
-  export let data = []
-  export let center
 
   let svg
   let map
@@ -33,7 +33,10 @@
   $: projection = townships && geoMercator().fitSize([width, height], townships)
   $: path = projection && geoPath().projection(projection)
 
-  $: if (center) {
+  $: if ($currentHighlighted) {
+    const center = townships.features.find(
+      d => d.properties.Gemeentenaam === $currentHighlighted
+    )
     const bounds = path.bounds(center),
       dx = bounds[1][0] - bounds[0][0],
       dy = bounds[1][1] - bounds[0][1],
@@ -55,10 +58,8 @@
     zoom.set(1)
   }
 
-  const dispatch = createEventDispatcher()
-
   function findTotalEnergyGeneration(d) {
-    return data.find(
+    return get(data).find(
       item =>
         item.municipality.toLowerCase() ===
         d.properties.Gemeentenaam.toLowerCase()
@@ -66,11 +67,7 @@
   }
 
   function pathClickHandler(d) {
-    return e =>
-      dispatch('pathClick', {
-        event: e,
-        datum: d,
-      })
+    return e => currentHighlighted.set(d.properties.Gemeentenaam)
   }
 
   function pathHoverHandler(d) {
@@ -88,6 +85,7 @@
     stroke-width: 1;
     vector-effect: non-scaling-stroke;
     cursor: pointer;
+    fill: var(--dark-grey);
   }
 
   #map .level-1 {
@@ -139,19 +137,19 @@
             on:click={pathClickHandler(d)}
             on:mouseover={pathHoverHandler(d)}
             on:mouseout={pathHoverHandler(d)}
-            class:active={center === d}
+            class:active={$currentHighlighted === d.properties.Gemeentenaam}
             d={path(d)}
-            class:level-1={findTotalEnergyGeneration(d) < 200}
-            class:level-2={400 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 200}
-            class:level-3={600 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 400}
-            class:level-4={800 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 600}
-            class:level-5={findTotalEnergyGeneration(d) >= 800} />
+            class:level-1={$data && findTotalEnergyGeneration(d) < 200}
+            class:level-2={$data && 400 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 200}
+            class:level-3={$data && 600 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 400}
+            class:level-4={$data && 800 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 600}
+            class:level-5={$data && findTotalEnergyGeneration(d) >= 800} />
         {/each}
       </g>
       <g id="map-texts">
         {#each townships.features as d (d.properties.Gemeentenaam)}
           <text
-            class:hover={center !== d && hoverPoint === d}
+            class:hover={$currentHighlighted !== d.properties.Gemeentenaam && hoverPoint === d}
             text-anchor="middle"
             alignment-baseline="middle"
             transform="scale({(1 / $zoom) * 100}% {(1 / $zoom) * 100}%)"

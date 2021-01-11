@@ -1,5 +1,8 @@
 import { readable, derived, writable } from 'svelte/store'
-import { sortMunicipalitiesAlphabetically } from '../utils/sort'
+import {
+  sortMunicipalitiesAlphabetically,
+  sortMunicipalitiesOnProduction,
+} from '../utils/sort'
 import {
   filterMunicipalityOnEnergyProduction,
   filterMunicipalityOnSearchQuery,
@@ -13,7 +16,7 @@ export const data = readable(new Promise(() => {}), set => {
 
 export const sort = writable('alphabetical')
 
-export const filter = writable('600-800')
+export const filter = writable('show all')
 
 export const searchQuery = writable('')
 
@@ -25,6 +28,12 @@ export const filteredData = derived(
     switch ($sort) {
       case 'alphabetical':
         newData = [...newData].sort(sortMunicipalitiesAlphabetically)
+        break
+      case 'production-high':
+        newData = [...newData].sort(sortMunicipalitiesOnProduction(true))
+        break
+      case 'production-low':
+        newData = [...newData].sort(sortMunicipalitiesOnProduction(false))
         break
       default:
         break

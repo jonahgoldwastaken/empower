@@ -18,6 +18,7 @@
     padding: var(--step--1);
     grid-gap: var(--step--2);
     box-shadow: var(--very-light-box-shadow);
+    margin-bottom: var(--step-1);
   }
 
   h3 {

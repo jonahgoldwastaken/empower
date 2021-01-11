@@ -23,7 +23,7 @@
       <div class="select-container">
         <SelectInput
           bind:value={$sort}
-          options={[{ name: 'Alphabetically', value: 'alphabetical' }]}>
+          options={[{ name: 'Alphabetically', value: 'alphabetical' }, { name: 'High production', value: 'production-high' }, { name: 'Low production', value: 'production-low' }]}>
           Sort:
         </SelectInput>
         <SelectInput

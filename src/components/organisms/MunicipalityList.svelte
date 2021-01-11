@@ -5,10 +5,9 @@
 
 <style>
   ul {
+    display: block;
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-gap: var(--step-2);
   }
 </style>
 

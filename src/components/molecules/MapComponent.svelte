@@ -6,16 +6,6 @@
 
   let height
   let width
-  let currentFocus
-
-  function pathClickHandler({ detail: { event, datum } }) {
-    if (currentFocus === datum) currentFocus = null
-    else currentFocus = datum
-  }
-
-  function closeHandler() {
-    currentFocus = null
-  }
 </script>
 
 <style>
@@ -27,16 +17,7 @@
 </style>
 
 <div bind:offsetHeight={height} bind:offsetWidth={width}>
-  {#if $data.length}
-    <MapRenderer
-      on:pathClick={pathClickHandler}
-      bind:width
-      bind:height
-      bind:center={currentFocus}
-      data={$data} />
-    <MapTooltip
-      on:close={closeHandler}
-      data={$data.find(d => d.municipality === currentFocus?.properties.Gemeentenaam)} />
-    <MapLegend />
-  {/if}
+  <MapRenderer bind:width bind:height />
+  <MapTooltip />
+  <MapLegend />
 </div>

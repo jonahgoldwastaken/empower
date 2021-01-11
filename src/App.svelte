@@ -8,6 +8,11 @@
 
 <style global>
   @import 'normalize.css/opinionated.css';
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  @font-face {
+    font-family: 'DIN Alternate';
+    src: url(/din-alternate.ttf) format('ttf');
+  }
 
   :root {
     /* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.125,1920,20,1.125,4,0, */

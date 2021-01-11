@@ -83,7 +83,7 @@ export const recommendedMunicipalities = derived(
           percentageProducingBiogasEnergy
         )
       )
-    // .slice(0, 3)
+      .slice(0, 3)
 
     return recommendations
   }

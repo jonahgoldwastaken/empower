@@ -24,12 +24,16 @@ export const searchQuery = writable('')
 
 export const comparingMunicipalities = writable([])
 
+comparingMunicipalities.subscribe(() => {
+  searchQuery.set('')
+})
+
 export const recommendedMunicipalities = derived(
   [data, comparingMunicipalities],
   ([$data, $comparingMunicipalities]) => {
     if (
       $comparingMunicipalities.length === 0 ||
-      $comparingMunicipalities.length >= 5
+      $comparingMunicipalities.length >= 3
     )
       return []
     const averageTotalGeneration =

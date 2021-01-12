@@ -1,8 +1,17 @@
 <script>
   import CompareButton from '../atoms/CompareButton.svelte'
+  import { tweened } from 'svelte/motion'
   import { cubicInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
   import { currentHighlighted } from '../../store/municipality'
+
+  const productionAmount = tweened(0, {
+    duration: 400,
+    easing: cubicInOut,
+  })
+
+  $: $currentHighlighted &&
+    productionAmount.set($currentHighlighted.totalEnergyGeneration)
 
   function closeClickHandler() {
     currentHighlighted.set(null)
@@ -15,6 +24,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: min-content;
     transform: translate(-50%, calc(-100% - (var(--step-0) / 2)));
     border-radius: 0.75rem;
     padding: var(--step--1);
@@ -23,6 +33,7 @@
     grid-template-rows: repeat(3, min-content);
     grid-column-gap: 4rem;
     grid-row-gap: 0.75rem;
+    transition: all 0.4s ease-in-out;
   }
 
   #map-tooltip::before {
@@ -81,10 +92,11 @@
     border-radius: 0.5rem;
     border: 1px dashed var(--dark-grey);
     padding: 0.5rem;
-    background: var(--light-grey);
+    background: var(--off-white);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.4s ease-in-out;
   }
 
   #map-tooltip .productionTile img {
@@ -98,7 +110,7 @@
 
   #map-tooltip .productionTile#wind.active {
     border: none;
-    background: var(--turqoise);
+    background: var(--blue);
   }
 
   #map-tooltip .productionTile#solar.active {
@@ -152,13 +164,9 @@
       </button>
     </div>
     <div>
-      <p>
-        Production:
-        <strong>{$currentHighlighted.totalEnergyGeneration} TJ</strong>
-      </p>
+      <p>Production: <strong>{$productionAmount.toFixed(0)} TJ</strong></p>
       <ol>
         <li
-          in:fade={{ duration: 200 }}
           key="wind"
           id="wind"
           class="productionTile"
@@ -166,7 +174,6 @@
           <img src="/wind.svg" alt="Wind icon" />
         </li>
         <li
-          in:fade={{ duration: 200 }}
           key="wind"
           id="solar"
           class="productionTile"
@@ -174,7 +181,6 @@
           <img src="/solar-filled.svg" alt="Solar icon" />
         </li>
         <li
-          in:fade={{ duration: 200 }}
           key="wind"
           id="biogas"
           class="productionTile"

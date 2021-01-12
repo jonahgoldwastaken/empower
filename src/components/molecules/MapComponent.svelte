@@ -3,8 +3,8 @@
   import MapTooltip from '../atoms/MapTooltip.svelte'
   import MapLegend from '../atoms/MapLegend.svelte'
 
-  let height
-  let width
+  let height = 0
+  let width = 0
 </script>
 
 <style>

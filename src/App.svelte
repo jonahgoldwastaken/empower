@@ -100,7 +100,7 @@
   <Route path="/">
     <Index />
   </Route>
-  <Route path="/comparetest">
+  <Route path="/preview">
     <Loadable loader={() => import('./pages/MunicipalityMap.svelte')}>
       <div slot="loading">Loading...</div>
     </Loadable>

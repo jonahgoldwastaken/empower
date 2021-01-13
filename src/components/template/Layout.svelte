@@ -18,16 +18,21 @@
 
   main {
     grid-row: span 2;
-    grid-column: 2;
     overflow: hidden;
+  }
+
+  main:first-child {
+    grid-column: span 2;
   }
 </style>
 
 <div>
-  <Header />
-  <Sidebar>
-    <slot name="sidebar" />
-  </Sidebar>
+  {#if $$slots.sidebar}
+    <Header />
+    <Sidebar>
+      <slot name="sidebar" />
+    </Sidebar>
+  {/if}
   <main>
     <slot name="main" />
   </main>

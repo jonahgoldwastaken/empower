@@ -8,6 +8,7 @@
     data,
     currentHighlighted,
     recommendedMunicipalities,
+    filter,
   } from '../../store/municipality.js'
 
   export let width
@@ -78,7 +79,74 @@
   }
 
   function pathHoverHandler(d) {
-    return () => (hoverPoint ? (hoverPoint = null) : (hoverPoint = d))
+    return e => {
+      if (e.type === 'mouseover' && !hoverPoint) hoverPoint = d
+      else if (e.type === 'mouseout' && hoverPoint) hoverPoint = null
+    }
+  }
+
+  function generateClasses(
+    d,
+    filter,
+    currentHighlighted,
+    hoverPoint,
+    recommendedMunicipalities
+  ) {
+    let classes = ''
+    const totalGeneration = findTotalEnergyGeneration(d)
+    if ($data.length) {
+      if (filter === 'show all') {
+        console.log('hoi')
+        if (totalGeneration < 200) classes += 'level-1 '
+        if (totalGeneration < 400 && totalGeneration >= 200)
+          classes += 'level-2 '
+        if (totalGeneration < 600 && totalGeneration >= 400)
+          classes += 'level-3 '
+        if (totalGeneration < 800 && totalGeneration >= 600)
+          classes += 'level-4 '
+        if (totalGeneration >= 800) classes += 'level-5 '
+      } else if (filter === '0-200' && totalGeneration < 200)
+        classes += 'level-1 '
+      else if (
+        filter === '200-400' &&
+        totalGeneration < 400 &&
+        totalGeneration >= 200
+      )
+        classes += 'level-2 '
+      else if (
+        filter === '400-600' &&
+        totalGeneration < 600 &&
+        totalGeneration >= 400
+      )
+        classes += 'level-3 '
+      else if (
+        filter === '600-800' &&
+        totalGeneration < 800 &&
+        totalGeneration >= 600
+      )
+        classes += 'level-4 '
+      else if (filter === '800' && totalGeneration >= 800) classes += 'level-5 '
+      else if (
+        currentHighlighted?.municipality === d.properties.Gemeentenaam ||
+        hoverPoint === d
+      ) {
+        if (totalGeneration < 200) classes += 'level-1 '
+        else if (totalGeneration < 400) classes += 'level-2 '
+        else if (totalGeneration < 600) classes += 'level-3 '
+        else if (totalGeneration < 800) classes += 'level-4 '
+        else if (totalGeneration >= 800) classes += 'level-5 '
+      }
+    }
+    if (
+      recommendedMunicipalities.find(
+        item => item.municipality === d.properties.Gemeentenaam
+      )
+    )
+      classes += 'recommended '
+    if (currentHighlighted?.municipality === d.properties.Gemeentenaam)
+      classes += 'active '
+
+    return classes
   }
 
   onMount(async () => {
@@ -87,6 +155,10 @@
 </script>
 
 <style>
+  svg {
+    background: var(--grey-blue);
+  }
+
   #map path {
     stroke: var(--white);
     stroke-width: 1;
@@ -95,28 +167,28 @@
     fill: var(--dark-grey);
   }
 
-  #map .level-1 {
-    fill: var(--orange);
+  :global(#map .level-1) {
+    fill: var(--orange) !important;
   }
 
-  #map .level-2 {
-    fill: var(--muted-orange);
+  :global(#map .level-2) {
+    fill: var(--muted-orange) !important;
   }
 
-  #map .level-3 {
-    fill: var(--yellow);
+  :global(#map .level-3) {
+    fill: var(--yellow) !important;
   }
 
-  #map .level-4 {
-    fill: var(--light-green);
+  :global(#map .level-4) {
+    fill: var(--light-green) !important;
   }
 
-  #map .level-5 {
-    fill: var(--dark-green);
+  :global(#map .level-5) {
+    fill: var(--green) !important;
   }
 
   #map path.recommended {
-    fill: var(--turqoise);
+    fill: var(--blue) !important;
     stroke-width: 2;
   }
 
@@ -126,8 +198,9 @@
   }
 
   #map text {
+    --zoom: 1;
     font-family: 'Roboto', sans-serif;
-    font-size: var(--step--2);
+    font-size: calc(var(--step--1) / var(--zoom));
     pointer-events: none;
     fill-opacity: 0;
   }
@@ -154,19 +227,14 @@
             on:click={pathClickHandler(d)}
             on:mouseover={pathHoverHandler(d)}
             on:mouseout={pathHoverHandler(d)}
-            class:active={$currentHighlighted === d.properties.Gemeentenaam}
             d={path(d)}
-            class:level-1={$data.length && findTotalEnergyGeneration(d) < 200}
-            class:level-2={$data.length && 400 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 200}
-            class:level-3={$data.length && 600 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 400}
-            class:level-4={$data.length && 800 > findTotalEnergyGeneration(d) && findTotalEnergyGeneration(d) >= 600}
-            class:level-5={$data.length && findTotalEnergyGeneration(d) >= 800}
-            class:recommended={$recommendedMunicipalities.find(item => item.municipality === d.properties.Gemeentenaam)} />
+            class={generateClasses(d, $filter, $currentHighlighted, hoverPoint, $recommendedMunicipalities)} />
         {/each}
       </g>
       <g id="map-texts">
         {#each townships.features as d (d.properties.Gemeentenaam)}
           <text
+            style="--zoom: {$zoom}"
             class:recommended={$recommendedMunicipalities.find(item => item.municipality === d.properties.Gemeentenaam)}
             class:hover={$currentHighlighted !== d.properties.Gemeentenaam && hoverPoint === d}
             text-anchor="middle"

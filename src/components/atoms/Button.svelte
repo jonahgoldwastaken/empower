@@ -1,7 +1,3 @@
-<script>
-  export let gradient = false
-</script>
-
 <style>
   button {
     appearance: none;
@@ -22,21 +18,8 @@
     background-color: var(--white);
     color: var(--orange);
   }
-
-  .gradient {
-    background-color: transparent;
-    background-image: linear-gradient(
-      to bottom right,
-      var(--orange),
-      var(--light-orange)
-    );
-  }
-
-  .gradient:hover {
-    background-image: linear-gradient(transparent, transparent);
-  }
 </style>
 
-<button class:gradient on:click>
+<button on:click>
   <slot />
 </button>

@@ -1,11 +1,12 @@
 <style>
   header {
+    box-sizing: border-box;
     width: 100%;
     padding: var(--step-3);
     box-shadow: var(--light-box-shadow);
     background: var(--white);
     z-index: 99;
-    grid-column: span 2;
+    grid-column: 1;
   }
 
   h1 {

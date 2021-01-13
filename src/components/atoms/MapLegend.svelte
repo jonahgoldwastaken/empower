@@ -7,6 +7,7 @@
     background: var(--white);
     padding: var(--step-0);
     box-shadow: var(--light-box-shadow);
+    max-width: 10rem;
   }
 
   h3 {
@@ -53,17 +54,24 @@
   }
 
   li:nth-of-type(5):before {
-    background: var(--dark-green);
+    background: var(--green);
+  }
+
+  small {
+    display: block;
+    margin-top: calc(var(--step-1) / 2);
+    font-size: var(--step--2);
   }
 </style>
 
 <section>
   <h3>Legend</h3>
   <ol>
-    <li>&lt; 200 TJ</li>
+    <li>&lt; 200 TJ<sup>*</sup></li>
     <li>200 - 400 TJ</li>
     <li>400 - 600 TJ</li>
     <li>600 - 800 TJ</li>
     <li>&gt;= 800 TJ</li>
   </ol>
+  <small><sup>*</sup>Total green energy production in terajoule</small>
 </section>

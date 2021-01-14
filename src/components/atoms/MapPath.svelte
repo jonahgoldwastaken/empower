@@ -2,10 +2,10 @@
   import { path as geoPath, interact } from '../../store/map'
 
   export let datum
-  export let level
-  export let showColour
-  export let focused
-  export let recommended
+  export let level = 0
+  export let showColour = false
+  export let focused = false
+  export let recommended = false
 </script>
 
 <style>

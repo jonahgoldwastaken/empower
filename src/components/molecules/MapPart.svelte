@@ -25,7 +25,7 @@
   $: datum =
     $data.length &&
     $data.find(d => geoTownship?.properties.Gemeentenaam === d.municipality)
-  $: active = $currentFocus?.code === datum?.code
+  $: focused = $currentFocus?.code === datum?.code
   $: level =
     datum &&
     (datum.totalEnergyGeneration < 200
@@ -91,7 +91,7 @@
     on:mouseover={hoverHandler}
     on:mouseout={hoverHandler}
     datum={geoTownship}
-    bind:active
+    bind:focused
     bind:level
     bind:showColour
     bind:recommended />

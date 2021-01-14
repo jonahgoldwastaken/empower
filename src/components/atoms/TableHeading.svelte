@@ -14,6 +14,6 @@
   }
 </style>
 
-<th>
+<th {...$$restProps}>
   <slot />
 </th>

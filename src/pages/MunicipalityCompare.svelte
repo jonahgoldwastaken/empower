@@ -3,7 +3,13 @@
   import CompareDashboard from '../components/organisms/CompareDashboard.svelte'
   import FactList from '../components/molecules/FactList.svelte'
   import CompareGridItem from '../components/atoms/CompareGridItem.svelte'
+  import NotificationList from '../components/molecules/NotificationList.svelte'
+  import Notification from '../components/atoms/Notification.svelte'
   import MapComponent from '../components/organisms/MapComponent.svelte'
+  import Table from '../components/organs/Table.svelte'
+  import TableRow from '../components/molecules/TableRow.svelte'
+  import TableHeading from '../components/atoms/TableHeading.svelte'
+  import TableDetail from '../components/atoms/TableDetail.svelte'
 </script>
 
 <Layout>
@@ -13,44 +19,20 @@
         <MapComponent interaction={false} />
       </CompareGridItem>
       <CompareGridItem area="notifications">
-        <h2>Hoi</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et porro
-          repellendus excepturi atque in eum magnam similique blanditiis enim
-          harum, distinctio exercitationem vero facere! Consequatur voluptates
-          blanditiis tenetur cum veniam! Quos recusandae expedita dicta laborum.
-          Id debitis perferendis optio quia similique sint recusandae laborum
-          fugiat, doloribus quo nihil deleniti magnam, omnis saepe amet esse aut
-          eos tenetur modi ipsam corrupti! Itaque tempora magnam blanditiis
-          fugit provident veniam eos facilis, quam, ipsa vero dolorum voluptas
-          harum assumenda cupiditate ea minus debitis rerum beatae officia
-          sapiente corporis maiores. Magni laborum voluptate libero. Repellendus
-          accusantium voluptatem deleniti neque quo laudantium velit eos qui
-          numquam sint. Vero labore aperiam ab tenetur pariatur quo et ipsam
-          alias placeat voluptates nemo perspiciatis commodi, dolor, impedit
-          eius. Dolorem nostrum optio rerum natus, amet blanditiis sint
-          provident debitis doloribus eaque sit nulla molestiae reiciendis ullam
-          sunt vel. Veniam, aliquid quia sequi iusto nemo expedita voluptatum
-          cum. Debitis, cupiditate. Commodi saepe ut voluptate architecto!
-          Libero, fuga. Repudiandae placeat iusto, consequuntur molestiae
-          tenetur magni voluptate vitae molestias provident similique, dolores
-          est labore soluta repellendus tempore ut eligendi natus quod laborum.
-          Ut aut harum doloribus? Quo reiciendis sequi placeat omnis laborum
-          repellat est fugiat nemo esse dolore ipsum cum, consequuntur officiis,
-          dicta numquam sit. Accusantium cumque reiciendis quibusdam commodi ab
-          maiores. Optio aperiam culpa voluptatem. Aliquam molestiae sed maiores
-          quibusdam tempora aut. Dolorum, obcaecati impedit! Eaque, doloremque
-          fugiat? Nobis, consequuntur totam! Omnis assumenda consequuntur
-          veritatis quidem ratione perspiciatis reprehenderit, adipisci libero?
-          Labore distinctio velit quidem, soluta suscipit molestias aperiam
-          aliquam, ipsa quas porro perspiciatis esse quae veniam totam! Libero
-          fugit, atque iste illum molestiae exercitationem, magni explicabo
-          eligendi, dolore quidem possimus. Nostrum numquam esse consequuntur
-          laboriosam inventore culpa dignissimos maiores. Animi, accusantium
-          odio! Nobis, delectus temporibus harum ullam tenetur porro quo
-          deserunt velit debitis totam vero nesciunt! Ducimus ipsum itaque
-          repellendus.
-        </p>
+        <NotificationList>
+          <Notification>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error
+            inventore dignissimos quia et dolorum impedit ipsa earum, dolore
+            eius, soluta provident laboriosam incidunt numquam eos! Voluptatum
+            suscipit dolore corrupti?
+          </Notification>
+          <Notification>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error
+            inventore dignissimos quia et dolorum impedit ipsa earum, dolore
+            eius, soluta provident laboriosam incidunt numquam eos! Voluptatum
+            suscipit dolore corrupti?
+          </Notification>
+        </NotificationList>
       </CompareGridItem>
       <CompareGridItem area="graph-1">
         <h2>Hoi</h2>
@@ -133,28 +115,36 @@
         </p>
       </CompareGridItem>
       <CompareGridItem area="table">
-        <h2>Hoi</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et porro
-          repellendus excepturi atque in eum magnam similique blanditiis enim
-          harum, distinctio exercitationem vero facere! Consequatur voluptates
-          blanditiis tenetur cum veniam! Quos recusandae expedita dicta laborum.
-          Id debitis perferendis optio quia similique sint recusandae laborum
-          fugiat, doloribus quo nihil deleniti magnam, omnis saepe amet esse aut
-          eos tenetur modi ipsam corrupti! Itaque tempora magnam blanditiis
-          fugit provident veniam eos facilis, quam, ipsa vero dolorum voluptas
-          harum assumenda cupiditate ea minus debitis rerum beatae officia
-          sapiente corporis maiores. Magni laborum voluptate libero. Repellendus
-          accusantium voluptatem deleniti neque quo laudantium velit eos qui
-          numquam sint. Vero labore aperiam ab tenetur pariatur quo et ipsam
-          alias placeat voluptates nemo perspiciatis commodi, dolor, impedit
-          eius. Dolorem nostrum optio rerum natus, amet blanditiis sint
-          provident debitis doloribus eaque sit nulla molestiae reiciendis ullam
-          sunt vel. Veniam, aliquid quia sequi iusto nemo expedita voluptatum
-          cum. Debitis, cupiditate. Commodi saepe ut voluptate architecto!
-          deserunt velit debitis totam vero nesciunt! Ducimus ipsum itaque
-          repellendus.
-        </p>
+        <Table>
+          <thead>
+            <TableRow>
+              <TableDetail scope="col" />
+              <TableHeading scope="col">Amsterdam</TableHeading>
+              <TableHeading scope="col">Dronten</TableHeading>
+              <TableHeading scope="col">Castricum</TableHeading>
+            </TableRow>
+          </thead>
+          <tbody>
+            <TableRow>
+              <TableDetail scope="row">Population</TableDetail>
+              <TableDetail>1237898</TableDetail>
+              <TableDetail>3</TableDetail>
+              <TableDetail>327792</TableDetail>
+            </TableRow>
+            <TableRow>
+              <TableDetail scope="row">Location</TableDetail>
+              <TableDetail>Ergens</TableDetail>
+              <TableDetail>Daar</TableDetail>
+              <TableDetail>Hier</TableDetail>
+            </TableRow>
+            <TableRow>
+              <TableDetail scope="row">Total area</TableDetail>
+              <TableDetail>Heel groot</TableDetail>
+              <TableDetail>Heel klein</TableDetail>
+              <TableDetail>Ertussenin</TableDetail>
+            </TableRow>
+          </tbody>
+        </Table>
       </CompareGridItem>
       <CompareGridItem area="facts">
         <FactList />

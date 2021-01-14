@@ -11,6 +11,7 @@
     font-size: calc(var(--step--1) / var(--zoom));
     pointer-events: none;
     fill-opacity: 0;
+    user-select: none;
   }
 
   text.hover {

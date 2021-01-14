@@ -41,7 +41,7 @@
     display: block;
     padding: 0.625rem 0.75rem;
     font-size: var(--step-0);
-    color: var(--dark-grey);
+    color: var(--text-primary);
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -66,7 +66,7 @@
   }
 
   input:checked + label {
-    color: var(--white);
+    color: var(--text-secondary);
   }
 </style>
 

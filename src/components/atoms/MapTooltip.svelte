@@ -73,7 +73,7 @@
   }
 
   p {
-    color: var(--dark-grey);
+    color: var(--text-primary);
     margin: 0 0 0.5rem;
     font-size: var(--step-0);
   }

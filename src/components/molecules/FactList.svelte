@@ -8,8 +8,14 @@
     align-items: center;
   }
 
+  section:not(:last-child) {
+    margin-bottom: calc(var(--step-0));
+  }
+
   h3 {
     font-size: var(--step-0);
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 </style>
 

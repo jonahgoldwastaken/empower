@@ -14,14 +14,13 @@
     border-radius: 0.75rem;
     color: var(--white);
     padding: calc(0.75 * var(--step-0));
-    width: 100%;
     height: calc(9 * var(--step-0));
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    flex-grow: 2;
+    margin-right: var(--step-0);
   }
 
   article:nth-child(2) {
-    margin-left: 2rem;
+    margin-left: var(--step-0);
   }
 
   article:nth-child(4) {

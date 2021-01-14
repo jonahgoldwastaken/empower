@@ -14,6 +14,7 @@
     stroke-width: 1;
     fill: var(--light-grey);
     vector-effect: non-scaling-stroke;
+    transition: fill 0.4s ease-in-out, stroke-width 0.4s ease-in-out;
   }
 
   path.interact {
@@ -24,11 +25,6 @@
   path.interact:focus,
   path.interact.focused {
     fill-opacity: 0.7;
-  }
-
-  path.recommended {
-    fill: var(--blue);
-    stroke-width: 2;
   }
 
   path.show-colour.level-1 {
@@ -49,6 +45,11 @@
 
   path.show-colour.level-5 {
     fill: var(--green);
+  }
+
+  path.show-colour.recommended {
+    fill: var(--blue);
+    stroke-width: 2;
   }
 </style>
 

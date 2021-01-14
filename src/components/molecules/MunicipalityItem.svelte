@@ -42,7 +42,7 @@
 
   p {
     margin: 0;
-    color: var(--dark-grey);
+    color: var(--text-primary);
     font-size: var(--step--1);
   }
 

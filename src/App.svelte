@@ -34,6 +34,7 @@
     --blue: #6dc9dd;
     --grey-blue: #e2ebee;
     --black: black;
+    --off-black: #515151;
     --dark-grey: #787878;
     --light-grey: #cfcfcf;
     --off-white: #f3f3f3;
@@ -43,8 +44,8 @@
     --light-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     --medium-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    --text-primary: black;
-    --text-secondary: white;
+    --text-primary: var(--off-black);
+    --text-secondary: var(--white);
 
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;

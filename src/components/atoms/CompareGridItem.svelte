@@ -14,8 +14,16 @@
     padding: 0;
     overflow: hidden;
   }
+
+  .notifications {
+    padding: 0;
+    background: none;
+  }
 </style>
 
-<section class:map={area === 'map'} style="--area: {area}">
+<section
+  class:notifications={area === 'notifications'}
+  class:map={area === 'map'}
+  style="--area: {area}">
   <slot />
 </section>

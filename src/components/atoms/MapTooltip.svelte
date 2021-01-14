@@ -3,18 +3,22 @@
   import { tweened } from 'svelte/motion'
   import { cubicInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
-  import { currentHighlighted } from '../../store/municipality'
+  import { scale, translate, currentFocus } from '../../store/map'
 
   const productionAmount = tweened(0, {
     duration: 400,
     easing: cubicInOut,
   })
 
-  $: $currentHighlighted &&
-    productionAmount.set($currentHighlighted.totalEnergyGeneration)
+  $: $currentFocus && productionAmount.set($currentFocus.totalEnergyGeneration)
 
   function closeClickHandler() {
-    currentHighlighted.set(null)
+    currentFocus.set(null)
+    translate.set({
+      x: 0,
+      y: 0,
+    })
+    scale.set(1)
   }
 </script>
 
@@ -151,14 +155,14 @@
   <meta rel="preload" href="/biogas.svg" />
 </svelte:head>
 
-{#if $currentHighlighted}
+{#if $currentFocus}
   <div
     id="map-tooltip"
     in:fade={{ delay: 375, duration: 375, ease: cubicInOut }}
     out:fade={{ duration: 375, ease: cubicInOut }}>
-    <h2>{$currentHighlighted.municipality}</h2>
+    <h2>{$currentFocus.municipality}</h2>
     <div>
-      <CompareButton municipality={$currentHighlighted} />
+      <CompareButton municipality={$currentFocus} />
       <button class="close-button" on:click={closeClickHandler}>
         <img src="/cross.svg" alt="Close tooltip" />
       </button>
@@ -170,21 +174,21 @@
           key="wind"
           id="wind"
           class="productionTile"
-          class:active={$currentHighlighted.windEnergyGeneration}>
+          class:active={$currentFocus.windEnergyGeneration}>
           <img src="/wind.svg" alt="Wind icon" />
         </li>
         <li
           key="wind"
           id="solar"
           class="productionTile"
-          class:active={$currentHighlighted.solarEnergyGeneration}>
-          <img src="/solar-filled.svg" alt="Solar icon" />
+          class:active={$currentFocus.solarEnergyGeneration}>
+          <img src="/solar.svg" alt="Solar icon" />
         </li>
         <li
           key="wind"
           id="biogas"
           class="productionTile"
-          class:active={$currentHighlighted.biogasEnergyGeneration}>
+          class:active={$currentFocus.biogasEnergyGeneration}>
           <img src="/biogas.svg" alt="Biogas icon" />
         </li>
       </ol>

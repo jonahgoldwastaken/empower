@@ -1,6 +1,6 @@
 <script>
   import Layout from '../components/template/Layout.svelte'
-  import MapComponent from '../components/molecules/MapComponent.svelte'
+  import MapComponent from '../components/organisms/MapComponent.svelte'
   import CompareList from '../components/organisms/CompareList.svelte'
   import RecommendedList from '../components/organisms/RecommendedList.svelte'
   import MunicipalityList from '../components/organisms/MunicipalityList.svelte'

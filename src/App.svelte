@@ -2,7 +2,6 @@
   import { Router, Route } from 'svelte-routing'
   import Loadable from 'svelte-loadable'
   import Index from './pages/Index.svelte'
-  import Playground from './pages/Playground.svelte'
   import TestRoute from './pages/TestRoute.svelte'
 </script>
 
@@ -109,9 +108,6 @@
     <Loadable loader={() => import('./pages/MunicipalityMap.svelte')}>
       <div slot="loading">Loading...</div>
     </Loadable>
-  </Route>
-  <Route path="/playground">
-    <Playground />
   </Route>
   <Route path="/testroute">
     <TestRoute />

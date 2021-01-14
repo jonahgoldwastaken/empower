@@ -1,5 +1,4 @@
 <script>
-  import MunicipalityArms from '../atoms/MunicipalityArms.svelte'
   import Tag from '../atoms/Tag.svelte'
   import CompareButton from '../atoms/CompareButton.svelte'
 

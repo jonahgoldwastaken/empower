@@ -149,5 +149,3 @@ export const filteredData = derived(
     return newData
   }
 )
-
-export const currentHighlighted = writable('')

@@ -78,7 +78,6 @@
   }
 
   function hoverHandler() {
-    console.log($interact)
     if ($interact) {
       if (!hover) select(g).raise()
       hover = !hover

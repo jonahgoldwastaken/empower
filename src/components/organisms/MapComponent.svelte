@@ -2,13 +2,16 @@
   import MapRenderer from '../organs/MapRenderer.svelte'
   import MapTooltip from '../atoms/MapTooltip.svelte'
   import MapLegend from '../atoms/MapLegend.svelte'
-  import { width, height } from '../../store/map'
+  import { width, height, interact } from '../../store/map.js'
 
+  export let legend = false
+  export let interaction = true
   let divHeight = 0
   let divWidth = 0
 
   $: width.set(divWidth)
   $: height.set(divHeight)
+  $: interact.set(interaction)
 </script>
 
 <style>
@@ -22,5 +25,7 @@
 <div bind:offsetHeight={divHeight} bind:offsetWidth={divWidth}>
   <MapRenderer />
   <MapTooltip />
-  <MapLegend />
+  {#if legend}
+    <MapLegend />
+  {/if}
 </div>

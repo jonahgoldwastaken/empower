@@ -1,5 +1,5 @@
 <script>
-  import { path as geoPath } from '../../store/map'
+  import { path as geoPath, interact } from '../../store/map'
 
   export let datum
   export let level
@@ -13,18 +13,21 @@
     stroke: var(--white);
     stroke-width: 1;
     fill: var(--light-grey);
-    cursor: pointer;
     vector-effect: non-scaling-stroke;
   }
 
-  path:hover,
-  path:focus,
-  path.focused {
+  path.interact {
+    cursor: pointer;
+  }
+
+  path.interact:hover,
+  path.interact:focus,
+  path.interact.focused {
     fill-opacity: 0.7;
   }
 
   path.recommended {
-    fill: var(--blue) !important;
+    fill: var(--blue);
     stroke-width: 2;
   }
 
@@ -55,6 +58,7 @@
   on:mouseout
   class:focused
   class:recommended
+  class:interact={$interact}
   class:show-colour={showColour}
   class="level-{level}"
   d={$geoPath(datum)} />

@@ -33,18 +33,17 @@
     scaleBand().domain(keys).rangeRound([0, x1Scale.bandwidth()]).padding(0.25)
 </script>
 
-<GraphSVG bind:width>
-  <BarChartBottomAxis {margin} bind:height bind:x1Scale />
-  <BarChartLeftAxis {margin} bind:yScale />
+<GraphSVG bind:width bind:height>
   {#each data as datum (datum.name)}
     <BarChartBarGroup
       {datum}
       {margin}
       bind:groupKey
       bind:keys
-      bind:height
       bind:x1Scale
       bind:x2Scale
       bind:yScale />
   {/each}
+  <BarChartBottomAxis {margin} bind:height bind:x1Scale />
+  <BarChartLeftAxis {margin} bind:yScale />
 </GraphSVG>

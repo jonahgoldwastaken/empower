@@ -14,7 +14,7 @@
     border-radius: 0.75rem;
     color: var(--white);
     padding: calc(0.75 * var(--step-0));
-    height: calc(9 * var(--step-0));
+    height: calc(12 * var(--step-0));
     flex-grow: 2;
     margin-right: var(--step-0);
   }

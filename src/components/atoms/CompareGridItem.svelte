@@ -19,11 +19,17 @@
     padding: 0;
     background: none;
   }
+
+  .radial-graph {
+    display: flex;
+    align-items: center;
+  }
 </style>
 
 <section
   class:notifications={area === 'notifications'}
   class:map={area === 'map'}
+  class:radial-graph={area === 'graph-2'}
   style="--area: {area}">
   <slot />
 </section>

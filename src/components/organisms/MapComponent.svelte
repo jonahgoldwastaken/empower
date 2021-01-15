@@ -24,7 +24,9 @@
 
 <div bind:offsetHeight={divHeight} bind:offsetWidth={divWidth}>
   <MapRenderer />
-  <MapTooltip />
+  {#if $interact}
+    <MapTooltip />
+  {/if}
   {#if legend}
     <MapLegend />
   {/if}

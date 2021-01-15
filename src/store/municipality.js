@@ -1,4 +1,5 @@
 import { readable, derived, writable } from 'svelte/store'
+import { interact } from './map'
 import {
   sortMunicipalitiesAlphabetically,
   sortMunicipalitiesOnProduction,
@@ -29,11 +30,12 @@ comparingMunicipalities.subscribe(() => {
 })
 
 export const recommendedMunicipalities = derived(
-  [data, comparingMunicipalities],
-  ([$data, $comparingMunicipalities]) => {
+  [data, comparingMunicipalities, interact],
+  ([$data, $comparingMunicipalities, $interact]) => {
     if (
       $comparingMunicipalities.length === 0 ||
-      $comparingMunicipalities.length >= 3
+      $comparingMunicipalities.length >= 3 ||
+      !$interact
     )
       return []
     const averageTotalGeneration =

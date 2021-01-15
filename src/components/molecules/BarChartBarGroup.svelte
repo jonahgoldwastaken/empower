@@ -3,27 +3,28 @@
   import BarChartBar from '../atoms/BarChartBar.svelte'
 
   export let datum
-  export let height
-  export let xScale
+  export let keys
+  export let groupKey
+  export let x1Scale
+  export let x2Scale
   export let yScale
-  export let margin
-  $: x = xScale(datum.name)
-  $: y = yScale(datum.value) + margin.top
-  $: barWidth = xScale.bandwidth()
-  $: barHeight = height - yScale(datum.value) - margin.top - margin.bottom
+  $: data = keys.map(key => ({ key, value: datum[key] }))
+  $: groupX = x1Scale(datum[groupKey])
 </script>
 
-<g>
-  <BarChartClipPath
-    id={datum.name}
-    bind:x
-    bind:y
-    bind:width={barWidth}
-    bind:height={barHeight} />
-  <BarChartBar
-    id={datum.name}
-    bind:x
-    bind:y
-    bind:width={barWidth}
-    bind:height={barHeight} />
+<g transform="translate({groupX} 0)">
+  {#each data as d (d.key)}
+    <BarChartClipPath
+      id={datum.name + d.key}
+      x={x2Scale(d.key)}
+      y={yScale(d.value)}
+      width={x2Scale.bandwidth()}
+      height={yScale(0) - yScale(d.value)} />
+    <BarChartBar
+      id={datum.name + d.key}
+      x={x2Scale(d.key)}
+      y={yScale(d.value)}
+      height={yScale(0) - yScale(d.value)}
+      width={x2Scale.bandwidth()} />
+  {/each}
 </g>

@@ -9,7 +9,6 @@
   $: checkedBgWidth =
     value === 1 ? labelOne?.offsetWidth : labelTwo?.offsetWidth
   $: checkedBgLeft = value === 1 ? labelOne?.offsetLeft : labelTwo?.offsetLeft
-  $: console.log(labelOne?.offsetLeft)
 </script>
 
 <style>

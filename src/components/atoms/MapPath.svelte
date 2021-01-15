@@ -28,23 +28,23 @@
   }
 
   path.show-colour.level-1 {
-    fill: var(--orange);
+    fill: var(--test-green-1);
   }
 
   path.show-colour.level-2 {
-    fill: var(--muted-orange);
+    fill: var(--test-green-2);
   }
 
   path.show-colour.level-3 {
-    fill: var(--yellow);
+    fill: var(--test-green-3);
   }
 
   path.show-colour.level-4 {
-    fill: var(--light-green);
+    fill: var(--test-green-4);
   }
 
   path.show-colour.level-5 {
-    fill: var(--green);
+    fill: var(--test-green-5);
   }
 
   path.show-colour.recommended {

@@ -4,8 +4,13 @@
   export let margin
   export let yScale
   let g
-  $: axis = yScale && axisLeft(yScale).tickFormat(format('.0f'))
-  $: console.log(axis)
+  $: axis =
+    yScale &&
+    axisLeft(yScale)
+      .ticks(10)
+      .tickFormat((d, i) =>
+        i === 10 ? format('.0f')(d) + ' TJ' : format('.0f')(d)
+      )
   $: axis && select(g).call(axis)
 </script>
 
@@ -19,7 +24,4 @@
   }
 </style>
 
-<g
-  transform="translate({margin.left} {margin.top})"
-  bind:this={g}
-  id="y-axis" />
+<g transform="translate({margin.left}, 0)" bind:this={g} id="y-axis" />

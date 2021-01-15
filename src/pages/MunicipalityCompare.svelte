@@ -10,7 +10,7 @@
   import TableRow from '../components/molecules/TableRow.svelte'
   import TableHeading from '../components/atoms/TableHeading.svelte'
   import TableDetail from '../components/atoms/TableDetail.svelte'
-  import BarChart from '../components/organisms/BarChart.svelte'
+  import GroupedBarChart from '../components/organisms/GroupedBarChart.svelte'
 </script>
 
 <Layout>
@@ -36,7 +36,7 @@
         </NotificationList>
       </CompareGridItem>
       <CompareGridItem area="graph-1">
-        <BarChart />
+        <GroupedBarChart />
       </CompareGridItem>
       <CompareGridItem area="graph-2">
         <h2>Hoi</h2>

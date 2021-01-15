@@ -1,25 +1,37 @@
 <script>
   import MapPart from '../molecules/MapPart.svelte'
+  import { comparingMunicipalities } from '../../store/municipality'
   import {
     townships,
     scale,
     translate,
     width,
     height,
+    interact,
   } from '../../store/map.js'
-  let map
-</script>
+  import { getCenterOfMultipleBoxes } from '../../utils/zoom.js'
 
-<style>
-  svg {
-    background: var(--grey-blue);
+  $: if (
+    $townships &&
+    !$interact &&
+    $comparingMunicipalities &&
+    $translate.x === 0
+  ) {
+    const newTranslate = getCenterOfMultipleBoxes(
+      $comparingMunicipalities.map(d =>
+        document.querySelector(`#${d.municipality}`)
+      )
+    )
+    translate.set({
+      x: newTranslate[0],
+      y: newTranslate[1],
+    })
   }
-</style>
+</script>
 
 <svg width={$width} height={$height} preserveAspectRatio="xMinYMin meet">
   <g
     transform="translate({$translate.x}, {$translate.y}) scale({$scale})"
-    bind:this={map}
     id="map">
     {#await $townships then townships}
       {#each townships.features as d (d.properties.Gemeentenaam)}

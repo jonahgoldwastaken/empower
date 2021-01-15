@@ -1,4 +1,6 @@
 <script>
+  // Created with much help of: https://bl.ocks.org/AntonOrlov/6b42d8676943cc933f48a43a7c7e5b6c
+
   import { scaleLinear, max, arc as d3Calc } from 'd3'
   import RadialChartRadialAxis from '../atoms/RadialChartRadialAxis.svelte'
   import RadialChartAngleAxis from '../atoms/RadialChartAngleAxis.svelte'

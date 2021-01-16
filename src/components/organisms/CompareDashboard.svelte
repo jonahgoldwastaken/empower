@@ -9,8 +9,9 @@
       'map map map map'
       'notifications notifications notifications notifications'
       'graph-1 graph-1 table table'
+      'graph-1 graph-1 facts facts'
       'graph-2 graph-2 facts facts';
-    grid-template-rows: minmax(30rem, 20vh);
+    grid-template-rows: 30rem repeat(2, min-content) 4rem min-content;
     grid-auto-rows: min-content;
     grid-gap: calc(1.5 * var(--step-0));
     background: var(--off-white);

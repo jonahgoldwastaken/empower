@@ -8,6 +8,9 @@
     border-radius: 0.75rem;
     background: var(--white);
     padding: calc(1.5 * var(--step-0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .map {
@@ -21,8 +24,7 @@
   }
 
   .radial-graph {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
   }
 </style>
 

@@ -42,7 +42,6 @@
       <CompareGridItem area="graph-2">
         <RadialStackedBarChart />
         <RadialStackedBarChart />
-        <RadialStackedBarChart />
       </CompareGridItem>
       <CompareGridItem area="table">
         <Table>

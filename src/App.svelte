@@ -6,7 +6,7 @@
 </script>
 
 <style global>
-  @import 'normalize.css/opinionated.css';
+  @import url('https://unpkg.com/normalize.css@8.0.1/normalize.css');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   @font-face {
     font-family: 'DIN Alternate';

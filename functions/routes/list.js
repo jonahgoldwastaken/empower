@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb')
-const { addLocationToMunicipality } = require('../utils/municipality-locations')
+const { addLocationToMunicipality } = require('../utils/municipality')
 
 const { MONGO_URI } = process.env
 
@@ -14,16 +14,15 @@ exports.handler = async function () {
       .find(
         {},
         {
-          fields: {
+          projection: {
             _id: 0,
           },
         }
       )
       .sort({ municipality: 1 })
       .toArray()
-      
-    result = result
-      .map(addLocationToMunicipality)
+
+    result = result.map(addLocationToMunicipality)
 
     await client.close()
 

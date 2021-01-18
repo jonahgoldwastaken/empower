@@ -9,5 +9,5 @@
 </script>
 
 <clipPath {id}>
-  <rect {width} rx="16" height={actualHeight} {x} {y} />
+  <rect {width} rx={width / 3} height={actualHeight} {x} {y} />
 </clipPath>

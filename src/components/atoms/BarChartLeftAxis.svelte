@@ -9,7 +9,7 @@
     axisLeft(yScale)
       .ticks(10)
       .tickFormat((d, i) =>
-        i === 10 ? format('.0f')(d) + ' TJ' : format('.0f')(d)
+        i === 0 ? format('.0f')(d) + ' TJ' : format('.0f')(d)
       )
   $: axis && select(g).call(axis)
 </script>

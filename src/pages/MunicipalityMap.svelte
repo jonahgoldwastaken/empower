@@ -25,15 +25,25 @@
       <SelectInput
         name="sort"
         bind:value={$sort}
-        options={[{ name: 'Alphabetically', value: 'alphabetical' }, { name: 'High production', value: 'production-high' }, { name: 'Low production', value: 'production-low' }]}>
-        Sort:
-      </SelectInput>
+        options={[
+          { name: 'Alphabetically', value: 'alphabetical' },
+          { name: 'High production', value: 'production-high' },
+          { name: 'Low production', value: 'production-low' },
+        ]}
+      >Sort:</SelectInput
+      >
       <SelectInput
         name="sort"
         bind:value={$filter}
-        options={[{ name: 'Show All', value: 'show all' }, { name: '0-200 TJ', value: '0-200' }, { name: '200-400 TJ', value: '200-400' }, { name: '400-600 TJ', value: '400-600' }, { name: '600-800 TJ', value: '600-800' }, { name: '800+ TJ', value: '800' }]}>
-        Filter production:
-      </SelectInput>
+        options={[
+          { name: 'Show All', value: 'show all' },
+          { name: '0-200 TJ', value: '0-200' },
+          { name: '200-400 TJ', value: '200-400' },
+          { name: '400-600 TJ', value: '400-600' },
+          { name: '600-800 TJ', value: '600-800' },
+          { name: '800+ TJ', value: '800' },
+        ]}
+      >Filter production:</SelectInput>
     </div>
     <CompareList />
     <RecommendedList />

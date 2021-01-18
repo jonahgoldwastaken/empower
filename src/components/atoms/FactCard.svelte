@@ -42,7 +42,7 @@
     font-size: calc(1.5 * var(--step-5));
   }
 
-  p {
+  article :global(p) {
     font-size: var(--step-0);
     grid-column: span 2;
     align-self: end;
@@ -51,7 +51,9 @@
 </style>
 
 <article style="--bg: var(--{background})">
-  <img src="{energyType}.svg" alt="{energyType} icon" />
+  <img src="/{energyType}.svg" alt="{energyType} icon" />
   <strong>{amount}</strong>
-  <p>Average kWp proceeds per {energyType} project</p>
+  <slot>
+    <p>Average kWp proceeds per {energyType} project</p>
+  </slot>
 </article>

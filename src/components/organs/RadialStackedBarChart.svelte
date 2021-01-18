@@ -8,14 +8,34 @@
   import GraphSVG from '../atoms/GraphSVG.svelte'
   import { getInnerRadius, getOuterRadius } from '../../utils/radialChart'
   import { margin, arcMinRadius, arcPadding } from '../../store/radialChart'
+  import { comparingMunicipalities } from '../../store/municipality'
 
-  const data = [
-    { name: 'Amsterdam', wind: 20, solar: 20, biogas: 50 },
-    { name: 'Rotterdam', wind: 92, solar: 20, biogas: 50 },
-  ]
+  $: data = $comparingMunicipalities
+    .map(
+      ({
+        municipality,
+        windEnergyGeneration,
+        solarEnergyGeneration,
+        biogasEnergyGeneration,
+      }) => ({
+        municipality,
+        windEnergyGeneration,
+        solarEnergyGeneration,
+        biogasEnergyGeneration,
+      })
+    )
+    .sort(
+      (a, b) =>
+        a.windEnergyGeneration +
+          a.solarEnergyGeneration +
+          a.biogasEnergyGeneration <
+        b.windEnergyGeneration +
+          b.solarEnergyGeneration +
+          b.biogasEnergyGeneration
+    )
 
-  $: groupKey = Object.keys(data[0])[0]
-  $: keys = Object.keys(data[0]).slice(1)
+  $: groupKey = data.length && Object.keys(data[0])[0]
+  $: keys = data.length && Object.keys(data[0]).slice(1)
 
   let width = 0
   $: chartRadius = width / 2 - $margin
@@ -37,9 +57,5 @@
   {#each data as d, i (d[groupKey])}
     <RadialChartBarGroup {data} {d} bind:arc {i} bind:keys />
   {/each}
-  <RadialChartRadialAxis
-    {data}
-    {groupKey}
-    bind:arcWidth
-    {numArcs} />
+  <RadialChartRadialAxis {data} {groupKey} bind:arcWidth {numArcs} />
 </GraphSVG>

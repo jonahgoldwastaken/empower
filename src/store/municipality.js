@@ -12,7 +12,7 @@ import {
 } from '../utils/filter'
 
 export const data = readable(new Promise(() => {}), set => {
-  fetch(`${window.location.origin}/api/municipalities`)
+  fetch(`${window.location.origin}/api/list`)
     .then(res => res.json())
     .then(data => set(data))
 })

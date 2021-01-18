@@ -19,12 +19,15 @@
       x={x2Scale(d.key)}
       y={yScale(d.value)}
       width={x2Scale.bandwidth()}
-      height={yScale(0) - yScale(d.value)} />
+      height={yScale(0) - yScale(d.value)}
+    />
     <BarChartBar
+      keyIndex={keys.indexOf(d.key)}
       id={datum.name + d.key}
       x={x2Scale(d.key)}
       y={yScale(d.value)}
       height={yScale(0) - yScale(d.value)}
-      width={x2Scale.bandwidth()} />
+      width={x2Scale.bandwidth()}
+    />
   {/each}
 </g>

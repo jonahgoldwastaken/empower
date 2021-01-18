@@ -12,7 +12,7 @@
     margin-right: 0.3em;
     line-height: 1;
     background: var(--background);
-    color: white;
+    color: var(--text-secondary);
   }
 </style>
 

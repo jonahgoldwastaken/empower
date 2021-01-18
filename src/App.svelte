@@ -2,12 +2,11 @@
   import { Router, Route } from 'svelte-routing'
   import Loadable from 'svelte-loadable'
   import Index from './pages/Index.svelte'
-  import Playground from './pages/Playground.svelte'
   import TestRoute from './pages/TestRoute.svelte'
 </script>
 
 <style global>
-  @import 'normalize.css/opinionated.css';
+  @import url('https://unpkg.com/normalize.css@8.0.1/normalize.css');
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   @font-face {
     font-family: 'DIN Alternate';
@@ -35,6 +34,7 @@
     --blue: #6dc9dd;
     --grey-blue: #e2ebee;
     --black: black;
+    --off-black: #515151;
     --dark-grey: #787878;
     --light-grey: #cfcfcf;
     --off-white: #f3f3f3;
@@ -44,8 +44,14 @@
     --light-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     --medium-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-    --text-primary: black;
-    --text-secondary: white;
+    --text-primary: var(--off-black);
+    --text-secondary: var(--white);
+
+    --test-green-1: #a6c9a9;
+    --test-green-2: #73ab79;
+    --test-green-3: #4d8051;
+    --test-green-4: #365939;
+    --test-green-5: #273f29;
 
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -100,13 +106,18 @@
   <Route path="/">
     <Index />
   </Route>
+  <Route path="/preview-compare/:municipalities" let:params>
+    <Loadable
+      loader={() => import('./pages/MunicipalityCompare.svelte')}
+      {params}
+    >
+      <div slot="loading">Loading...</div>
+    </Loadable>
+  </Route>
   <Route path="/preview">
     <Loadable loader={() => import('./pages/MunicipalityMap.svelte')}>
       <div slot="loading">Loading...</div>
     </Loadable>
-  </Route>
-  <Route path="/playground">
-    <Playground />
   </Route>
   <Route path="/testroute">
     <TestRoute />

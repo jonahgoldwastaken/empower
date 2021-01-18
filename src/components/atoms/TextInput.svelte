@@ -46,7 +46,7 @@
     font-size: inherit;
     padding: 0.5em 1.125em;
     background: var(--green);
-    color: var(--white);
+    color: var(--text-secondary);
   }
 </style>
 

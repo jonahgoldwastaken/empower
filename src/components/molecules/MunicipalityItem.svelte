@@ -1,5 +1,4 @@
 <script>
-  import MunicipalityArms from '../atoms/MunicipalityArms.svelte'
   import Tag from '../atoms/Tag.svelte'
   import CompareButton from '../atoms/CompareButton.svelte'
 
@@ -43,7 +42,7 @@
 
   p {
     margin: 0;
-    color: var(--dark-grey);
+    color: var(--text-primary);
     font-size: var(--step--1);
   }
 

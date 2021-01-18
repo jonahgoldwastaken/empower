@@ -34,8 +34,8 @@
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    border: 1.5px solid var(--dark-grey);
-    color: var(--dark-grey);
+    border: 1.5px solid var(--text-primary);
+    color: var(--text-primary);
     box-shadow: var(--very-light-box-shadow);
     font-size: var(--step--2);
     line-height: 1;
@@ -58,7 +58,7 @@
   .checked {
     background: var(--orange);
     border-color: var(--orange);
-    color: var(--white);
+    color: var(--text-secondary);
   }
 
   .checked:hover {

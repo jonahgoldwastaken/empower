@@ -1,4 +1,5 @@
 import { readable, derived, writable } from 'svelte/store'
+import { interact } from './map'
 import {
   sortMunicipalitiesAlphabetically,
   sortMunicipalitiesOnProduction,
@@ -11,7 +12,7 @@ import {
 } from '../utils/filter'
 
 export const data = readable(new Promise(() => {}), set => {
-  fetch(`${window.location.origin}/api/municipalities`)
+  fetch(`${window.location.origin}/.netlify/functions/list`)
     .then(res => res.json())
     .then(data => set(data))
 })
@@ -29,11 +30,12 @@ comparingMunicipalities.subscribe(() => {
 })
 
 export const recommendedMunicipalities = derived(
-  [data, comparingMunicipalities],
-  ([$data, $comparingMunicipalities]) => {
+  [data, comparingMunicipalities, interact],
+  ([$data, $comparingMunicipalities, $interact]) => {
     if (
       $comparingMunicipalities.length === 0 ||
-      $comparingMunicipalities.length >= 3
+      $comparingMunicipalities.length >= 3 ||
+      !$interact
     )
       return []
     const averageTotalGeneration =
@@ -149,5 +151,3 @@ export const filteredData = derived(
     return newData
   }
 )
-
-export const currentHighlighted = writable('')

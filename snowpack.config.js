@@ -17,16 +17,10 @@ module.exports = {
         }),
       },
     ],
+    '@snowpack/plugin-webpack',
   ],
   devOptions: {
     open: 'false',
     port: 5000,
-  },
-  optimize: {
-    bundle: true,
-    minify: true,
-    splitting: true,
-    treeshake: true,
-    target: 'es2017',
   },
 }

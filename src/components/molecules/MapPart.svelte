@@ -44,11 +44,13 @@
       ($filter === '400-600' && level === 3) ||
       ($filter === '600-800' && level === 4) ||
       ($filter === '800' && level === 5)
-    : $comparingMunicipalities?.find(d => datum.municipality === d.municipality)
+    : $comparingMunicipalities?.find(
+        d => datum?.municipality === d.municipality
+      )
     ? true
     : false
   $: recommended = $recommendedMunicipalities?.find(
-    d => d?.municipality === datum?.municipality
+    d => d.municipality === datum?.municipality
   )
 
   function clickHandler() {

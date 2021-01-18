@@ -12,7 +12,7 @@ import {
 } from '../utils/filter'
 
 export const data = readable(new Promise(() => {}), set => {
-  fetch(`${window.location.origin}/api/list`)
+  fetch(`${window.location.origin}/.netlify/functions/list`)
     .then(res => res.json())
     .then(data => set(data))
 })

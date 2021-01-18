@@ -47,11 +47,11 @@
     --text-primary: var(--off-black);
     --text-secondary: var(--white);
 
-    --test-green-1: #8db991;
+    --test-green-1: #a6c9a9;
     --test-green-2: #73ab79;
-    --test-green-3: #548c5a;
-    --test-green-4: #457349;
-    --test-green-5: #2f4c32;
+    --test-green-3: #4d8051;
+    --test-green-4: #365939;
+    --test-green-5: #273f29;
 
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;

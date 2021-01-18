@@ -38,10 +38,8 @@
     <RadialChartBarGroup {data} {d} bind:arc {i} bind:keys />
   {/each}
   <RadialChartRadialAxis
-    bind:width
-    bind:height={width}
     {data}
     {groupKey}
-    {arcWidth}
+    bind:arcWidth
     {numArcs} />
 </GraphSVG>

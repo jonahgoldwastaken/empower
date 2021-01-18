@@ -12,12 +12,12 @@
     const index = currentComparingMunicipalities.findIndex(
       d => municipality.municipality === d.municipality
     )
-    if (index < 0 && currentComparingMunicipalities.length < 5)
+    if (index < 0 && currentComparingMunicipalities.length < 3)
       comparingMunicipalities.set([
         ...currentComparingMunicipalities,
         municipality,
       ])
-    else
+    else if (currentComparingMunicipalities.length < 3)
       comparingMunicipalities.set(
         index === 0
           ? [...currentComparingMunicipalities.slice(index + 1)]
@@ -74,5 +74,7 @@
   }
 </style>
 
-<label class:checked>Compare
-  <input on:change={changeHandler} type="checkbox" {checked} /></label>
+<label class:checked
+  >Compare
+  <input on:change={changeHandler} type="checkbox" {checked} /></label
+>

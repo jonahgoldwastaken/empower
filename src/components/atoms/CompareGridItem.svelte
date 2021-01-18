@@ -32,6 +32,7 @@
   class:notifications={area === 'notifications'}
   class:map={area === 'map'}
   class:radial-graph={area === 'graph-2'}
-  style="--area: {area}">
+  style="--area: {area}"
+>
   <slot />
 </section>

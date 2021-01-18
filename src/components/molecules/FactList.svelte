@@ -48,6 +48,7 @@
   section {
     display: flex;
     align-items: center;
+    height: calc(100% / 3);
   }
 
   section:not(:last-child) {

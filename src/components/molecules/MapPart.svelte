@@ -48,7 +48,7 @@
     ? true
     : false
   $: recommended = $recommendedMunicipalities?.find(
-    d => d.municipality === datum?.municipality
+    d => d?.municipality === datum?.municipality
   )
 
   function clickHandler() {
@@ -94,6 +94,7 @@
     bind:focused
     bind:level
     bind:showColour
-    bind:recommended />
+    bind:recommended
+  />
   <MapText datum={geoTownship} bind:hover>{datum?.municipality}</MapText>
 </g>

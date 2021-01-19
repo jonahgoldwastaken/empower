@@ -14,7 +14,6 @@
     stroke-width: 1;
     fill: var(--light-grey);
     vector-effect: non-scaling-stroke;
-    transition: fill 0.4s ease-in-out, stroke-width 0.4s ease-in-out;
   }
 
   path.interact {
@@ -62,4 +61,5 @@
   class:interact={$interact}
   class:show-colour={showColour}
   class="level-{level}"
-  d={$geoPath(datum)} />
+  d={$geoPath(datum)}
+/>

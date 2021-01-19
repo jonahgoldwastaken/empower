@@ -15,7 +15,7 @@
     color: var(--white);
     padding: calc(0.75 * var(--step-0));
     height: 100%;
-    flex-grow: 2;
+    flex: 0 1 calc(100% / 3);
     margin-right: var(--step-0);
   }
 

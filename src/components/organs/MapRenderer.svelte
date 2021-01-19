@@ -7,11 +7,13 @@
     translate,
     width,
     height,
-    interact,
     path,
+    currentFocus,
   } from '../../store/map.js'
 
-  $: if ($townships && !$interact && $comparingMunicipalities) {
+  export let page
+
+  $: if (page.includes('compare')) {
     const bounds = $comparingMunicipalities
       .map(d =>
         $path.bounds(
@@ -53,6 +55,10 @@
       x: newTranslate[0],
       y: newTranslate[1],
     })
+  } else if (page === '/preview' && !$currentFocus) {
+    console.log('hoi')
+    scale.set(1)
+    translate.set({ x: 0, y: 0 })
   }
 </script>
 

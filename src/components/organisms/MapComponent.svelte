@@ -1,6 +1,6 @@
 <script>
   import MapRenderer from '../organs/MapRenderer.svelte'
-  import MapTooltip from '../atoms/MapTooltip.svelte'
+  import MapTooltip from '../molecules/MapTooltip.svelte'
   import MapLegend from '../molecules/MapLegend.svelte'
   import { width, height, interact } from '../../store/map.js'
 
@@ -12,6 +12,7 @@
   $: width.set(divWidth)
   $: height.set(divHeight)
   $: interact.set(interaction)
+  $: page = window.location.pathname
 </script>
 
 <style>
@@ -19,11 +20,12 @@
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
   }
 </style>
 
 <div bind:offsetHeight={divHeight} bind:offsetWidth={divWidth}>
-  <MapRenderer />
+  <MapRenderer bind:page />
   {#if $interact}
     <MapTooltip />
   {/if}

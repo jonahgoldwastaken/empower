@@ -53,6 +53,12 @@
     d => d.municipality === datum?.municipality
   )
 
+  $: !$interact &&
+    $comparingMunicipalities.find(
+      d => d.municipality === geoTownship.properties.Gemeentenaam
+    ) &&
+    select(g).raise()
+
   function clickHandler() {
     if ($interact) {
       currentFocus.set(datum)
@@ -98,5 +104,15 @@
     bind:showColour
     bind:recommended
   />
-  <MapText datum={geoTownship} bind:hover>{datum?.municipality}</MapText>
+  {#if $interact || $comparingMunicipalities.find(d => d.municipality === geoTownship.properties.Gemeentenaam)}
+    <MapText
+      datum={geoTownship}
+      bind:hover
+      active={!$interact &&
+        $comparingMunicipalities.find(
+          d => d.municipality === geoTownship.properties.Gemeentenaam
+        )}
+    >{datum?.municipality}</MapText
+    >
+  {/if}
 </g>

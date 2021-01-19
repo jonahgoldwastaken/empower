@@ -19,7 +19,7 @@
   }
 
   p {
-    font-size: var(--step-2);
+    font-size: var(--step-0);
     font-weight: 500;
     width: 100%;
     text-align: center;

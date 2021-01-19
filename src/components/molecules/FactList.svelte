@@ -46,6 +46,7 @@
 
 <style>
   section {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     height: calc(100% / 3);
@@ -57,10 +58,8 @@
 
   h3 {
     font-size: var(--step-0);
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 10%;
-    white-space: wrap;
+    flex: 0 0 12%;
+    hyphens: auto;
   }
 </style>
 

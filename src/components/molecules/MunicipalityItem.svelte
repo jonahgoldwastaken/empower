@@ -1,5 +1,5 @@
 <script>
-  import Tag from '../atoms/Tag.svelte'
+  import ProductionTile from '../atoms/ProductionTile.svelte'
   import CompareButton from '../atoms/CompareButton.svelte'
 
   export let municipality
@@ -12,7 +12,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
-    border-radius: 0.75rem;
     background: var(--white);
     padding: var(--step--1);
     grid-gap: var(--step--2);
@@ -53,6 +52,13 @@
   div {
     align-self: end;
   }
+
+  ol {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 </style>
 
 <li>
@@ -61,15 +67,17 @@
   <div>
     <p>Production: <strong>{municipality.totalEnergyGeneration} TJ</strong></p>
     <div>
-      {#if municipality.windEnergyGeneration}
-        <Tag colour="#81cfd0">Wind energy</Tag>
-      {/if}
-      {#if municipality.solarEnergyGeneration}
-        <Tag colour="#f4dc86">Solar</Tag>
-      {/if}
-      {#if municipality.biogasEnergyGeneration}
-        <Tag colour="#79c181">Biogas</Tag>
-      {/if}
+      <ol>
+        {#if municipality.windEnergyGeneration}
+          <ProductionTile small type="wind" active />
+        {/if}
+        {#if municipality.solarEnergyGeneration}
+          <ProductionTile small type="solar" active />
+        {/if}
+        {#if municipality.biogasEnergyGeneration}
+          <ProductionTile small type="biogas" active />
+        {/if}
+      </ol>
     </div>
   </div>
 </li>

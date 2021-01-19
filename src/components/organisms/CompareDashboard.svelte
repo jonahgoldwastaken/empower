@@ -4,8 +4,12 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 30rem repeat(2, min-content) 4rem repeat(2, min-content);
+    grid-template-rows: min-content 30rem repeat(2, min-content) 4rem repeat(
+        2,
+        min-content
+      );
     grid-template-areas:
+      'heading heading heading heading'
       'map map map map'
       'notifications notifications notifications notifications'
       'graph-1 graph-1 table table'

@@ -12,24 +12,24 @@
     height: 100vh;
     display: grid;
     overflow: hidden;
-    grid-template-columns: max(25rem, min(30rem, 30%)) 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-columns: 3rem max(25rem, min(30rem, 30%)) 1fr;
+    grid-template-areas: 'header sidebar main';
+    grid-template-rows: 1fr;
   }
 
   main {
-    grid-row: span 2;
     overflow: hidden scroll;
-    position: relative;
+    grid-area: main;
   }
 
-  main:first-child {
-    grid-column: span 2;
+  main:nth-child(2) {
+    grid-column: 2 / span 2;
   }
 </style>
 
 <div>
+  <Header />
   {#if $$slots.sidebar}
-    <Header />
     <Sidebar>
       <slot name="sidebar" />
     </Sidebar>
@@ -37,4 +37,5 @@
   <main>
     <slot name="main" />
   </main>
+  <slot />
 </div>

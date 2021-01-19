@@ -12,12 +12,12 @@
     const index = currentComparingMunicipalities.findIndex(
       d => municipality.municipality === d.municipality
     )
-    if (index < 0 && currentComparingMunicipalities.length < 5)
+    if (index < 0 && currentComparingMunicipalities.length < 3)
       comparingMunicipalities.set([
         ...currentComparingMunicipalities,
         municipality,
       ])
-    else
+    else if (index > -1 && currentComparingMunicipalities.length <= 3)
       comparingMunicipalities.set(
         index === 0
           ? [...currentComparingMunicipalities.slice(index + 1)]
@@ -41,7 +41,7 @@
     line-height: 1;
     padding: 0.2em;
     text-align: center;
-    border-radius: 0.4em;
+    border-radius: 2px;
     cursor: pointer;
     user-select: none;
     transition: all 0.2s ease-in-out;
@@ -74,5 +74,7 @@
   }
 </style>
 
-<label class:checked>Compare
-  <input on:change={changeHandler} type="checkbox" {checked} /></label>
+<label class:checked>
+  {checked ? 'Remove' : 'Compare'}
+  <input on:change={changeHandler} type="checkbox" {checked} />
+</label>

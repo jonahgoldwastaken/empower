@@ -4,9 +4,10 @@ import { writable, readable, derived } from 'svelte/store'
 import { json, geoMercator, geoPath } from 'd3'
 
 export const interact = writable(true)
-export const townships = readable(new Promise(() => {}), async set => {
-  const data = await json('/townships.geojson')
-  set(data)
+export const townships = readable(new Promise(() => {}), set => {
+  json('/townships.geojson').then(data => {
+    set(data)
+  })
 })
 export const width = writable(0)
 export const height = writable(0)

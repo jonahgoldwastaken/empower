@@ -25,10 +25,6 @@ export const searchQuery = writable('')
 
 export const comparingMunicipalities = writable([])
 
-comparingMunicipalities.subscribe(() => {
-  searchQuery.set('')
-})
-
 export const recommendedMunicipalities = derived(
   [data, comparingMunicipalities, interact],
   ([$data, $comparingMunicipalities, $interact]) => {
@@ -43,6 +39,9 @@ export const recommendedMunicipalities = derived(
         (acc, curr) => acc + curr.totalEnergyGeneration,
         0
       ) / $comparingMunicipalities.length
+    const averageTotalArea =
+      $comparingMunicipalities.reduce((acc, curr) => acc + curr.totalArea, 0) /
+      $comparingMunicipalities.length
     const percentageProducingSolarEnergy =
       $comparingMunicipalities.reduce(
         (acc, curr) => (curr.solarEnergyGeneration > 0 ? acc + 1 : acc),
@@ -60,6 +59,11 @@ export const recommendedMunicipalities = derived(
       ) / $comparingMunicipalities.length
 
     const recommendations = $data
+      .filter(
+        d =>
+          d.totalArea / averageTotalArea < 1.25 &&
+          d.totalArea / averageTotalArea > 0.75
+      )
       .filter(
         d =>
           d.totalEnergyGeneration / averageTotalGeneration < 1.25 &&

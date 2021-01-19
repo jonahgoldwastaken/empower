@@ -29,7 +29,7 @@
 </style>
 
 <section>
-  <h3>Green energy production in TJ</h3>
+  <h3>Green energy production</h3>
   <ol>
     <LegendStep color="test-green-1">&lt; 200 TJ</LegendStep>
     <LegendStep color="test-green-2">200 - 400 TJ</LegendStep>

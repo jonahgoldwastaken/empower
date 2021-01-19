@@ -19,7 +19,6 @@
 
 <Layout>
   <slot slot="sidebar">
-    <h2>Compare municipalities</h2>
     <SearchBar />
     <div class="select-container">
       <SelectInput
@@ -43,13 +42,14 @@
           { name: '600-800 TJ', value: '600-800' },
           { name: '800+ TJ', value: '800' },
         ]}
-      >Filter production:</SelectInput>
+      >Filter production:</SelectInput
+      >
     </div>
-    <CompareList />
     <RecommendedList />
     <MunicipalityList />
   </slot>
   <slot slot="main">
     <MapComponent legend />
   </slot>
+  <CompareList />
 </Layout>

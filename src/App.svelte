@@ -64,6 +64,10 @@
     }
   } */
 
+  body {
+    background: var(--grey-blue);
+  }
+
   h1,
   h2,
   h3,
@@ -106,7 +110,7 @@
   <Route path="/">
     <Index />
   </Route>
-  <Route path="/preview-compare/:munOne/:munTwo" let:params>
+  <Route path="/compare/:munOne/:munTwo" let:params>
     <Loadable
       loader={() => import('./pages/MunicipalityCompare.svelte')}
       {params}
@@ -114,7 +118,7 @@
       <div slot="loading">Loading...</div>
     </Loadable>
   </Route>
-  <Route path="/preview-compare/:munOne/:munTwo/:munThree" let:params>
+  <Route path="/compare/:munOne/:munTwo/:munThree" let:params>
     <Loadable
       loader={() => import('./pages/MunicipalityCompare.svelte')}
       {params}
@@ -126,8 +130,5 @@
     <Loadable loader={() => import('./pages/MunicipalityMap.svelte')}>
       <div slot="loading">Loading...</div>
     </Loadable>
-  </Route>
-  <Route path="/testroute">
-    <TestRoute />
   </Route>
 </Router>

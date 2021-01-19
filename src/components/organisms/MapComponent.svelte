@@ -1,7 +1,7 @@
 <script>
   import MapRenderer from '../organs/MapRenderer.svelte'
   import MapTooltip from '../atoms/MapTooltip.svelte'
-  import MapLegend from '../atoms/MapLegend.svelte'
+  import MapLegend from '../molecules/MapLegend.svelte'
   import { width, height, interact } from '../../store/map.js'
 
   export let legend = false

@@ -1,4 +1,5 @@
 <script>
+  import CompareGridItemHeading from '../atoms/CompareGridItemHeading.svelte'
   export let area = ''
 </script>
 
@@ -9,7 +10,7 @@
     background: var(--white);
     padding: calc(1.5 * var(--step-0));
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
     justify-content: center;
   }
 
@@ -24,7 +25,18 @@
   }
 
   .radial-graph {
-    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  .facts {
+    justify-content: flex-start;
+    align-self: start;
+  }
+
+  .button {
+    background: none;
+    justify-content: center;
+    align-items: center;
   }
 </style>
 
@@ -32,7 +44,10 @@
   class:notifications={area === 'notifications'}
   class:map={area === 'map'}
   class:radial-graph={area === 'graph-2'}
+  class:facts={area === 'facts'}
+  class:button={area === 'button'}
   style="--area: {area}"
 >
+  <CompareGridItemHeading><slot name="heading" /></CompareGridItemHeading>
   <slot />
 </section>

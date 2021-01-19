@@ -106,7 +106,15 @@
   <Route path="/">
     <Index />
   </Route>
-  <Route path="/preview-compare/:municipalities" let:params>
+  <Route path="/preview-compare/:munOne/:munTwo" let:params>
+    <Loadable
+      loader={() => import('./pages/MunicipalityCompare.svelte')}
+      {params}
+    >
+      <div slot="loading">Loading...</div>
+    </Loadable>
+  </Route>
+  <Route path="/preview-compare/:munOne/:munTwo/:munThree" let:params>
     <Loadable
       loader={() => import('./pages/MunicipalityCompare.svelte')}
       {params}

@@ -9,7 +9,7 @@
   table {
     border-collapse: collapse;
     width: 100%;
-    height: 100%;
+    height: calc(100% - (var(--step-3) * 2));
   }
 </style>
 

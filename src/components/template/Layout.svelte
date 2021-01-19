@@ -18,7 +18,8 @@
 
   main {
     grid-row: span 2;
-    overflow: hidden;
+    overflow: hidden scroll;
+    position: relative;
   }
 
   main:first-child {

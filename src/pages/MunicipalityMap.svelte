@@ -50,6 +50,6 @@
     <MunicipalityList />
   </slot>
   <slot slot="main">
-    <MapComponent />
+    <MapComponent legend />
   </slot>
 </Layout>

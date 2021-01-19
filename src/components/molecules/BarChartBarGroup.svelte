@@ -8,6 +8,7 @@
   export let x1Scale
   export let x2Scale
   export let yScale
+  const currentYear = new Date().getFullYear()
   $: data = keys.map(key => ({ key, value: datum[key] }))
   $: groupX = x1Scale(datum[groupKey])
 </script>
@@ -15,6 +16,7 @@
 <g transform="translate({groupX} 0)">
   {#each data as d (d.key)}
     <BarChartClipPath
+      future={currentYear < datum[groupKey]}
       id={datum.name + d.key}
       x={x2Scale(d.key)}
       y={yScale(d.value)}

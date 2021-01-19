@@ -29,6 +29,10 @@
 </script>
 
 <style>
+  path {
+    fill: var(--light-grey);
+  }
+
   .biogas {
     fill: var(--green);
   }
@@ -46,4 +50,5 @@
   class:biogas={energyType === 'biogas'}
   class:solar={energyType === 'solar'}
   class:wind={energyType === 'wind'}
-  d={arc($path, i)} />
+  d={arc($path, i)}
+/>

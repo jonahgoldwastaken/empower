@@ -43,7 +43,7 @@
 
     const newScale = Math.max(
       1,
-      Math.min(3, 0.9 / Math.max(dx / $width, dy / $height))
+      Math.min(5, 0.9 / Math.max(dx / $width, dy / $height))
     )
     const newTranslate = [$width / 2 - newScale * x, $height / 2 - newScale * y]
 

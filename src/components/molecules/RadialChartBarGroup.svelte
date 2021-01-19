@@ -15,9 +15,12 @@
     start={calculateStart(data[i], keys, key)}
     bind:arc
     {i}
-    energyType={key
-      .toLowerCase()
-      .includes(
-        'wind'
-      ) ? 'wind' : key.toLowerCase().includes('solar') ? 'solar' : 'biogas'} />
+    energyType={key.toLowerCase().includes('wind')
+      ? 'wind'
+      : key.toLowerCase().includes('solar')
+      ? 'solar'
+      : key.toLowerCase().includes('biogas')
+      ? 'biogas'
+      : 'unknown'}
+  />
 {/each}

@@ -4,20 +4,25 @@
   import Layout from '../components/template/Layout.svelte'
   import CompareDashboard from '../components/organisms/CompareDashboard.svelte'
   import FactListGroup from '../components/organs/FactListGroup.svelte'
-  import CompareGridItem from '../components/atoms/CompareGridItem.svelte'
+  import CompareGridItem from '../components/molecules/CompareGridItem.svelte'
   import NotificationList from '../components/molecules/NotificationList.svelte'
   import Notification from '../components/atoms/Notification.svelte'
   import MapComponent from '../components/organisms/MapComponent.svelte'
   import Table from '../components/organs/Table.svelte'
   import GroupedBarChart from '../components/organs/GroupedBarChart.svelte'
+  import BarChartLegend from '../components/molecules/BarChartLegend.svelte'
   import RadialStackedBarChart from '../components/organs/RadialStackedBarChart.svelte'
+  import RadialChartLegend from '../components/molecules/RadialChartLegend.svelte'
+  import Button from '../components/atoms/Button.svelte'
+  import ShareButtons from '../components/atoms/ShareButtons.svelte'
 
   export let params
 
   onMount(() => {
-    const queryParams = params.municipalities
-      ?.split(',')
-      .reduce((acc, curr) => acc.concat(`municipalities=${curr}&`), '')
+    const queryParams = Object.values(params).reduce(
+      (acc, curr) => acc.concat(`municipalities=${curr}&`),
+      ''
+    )
     fetch(`${window.location.origin}/.netlify/functions/compare?${queryParams}`)
       .then(res => res.json())
       .then(data => comparingMunicipalities.set(data))
@@ -47,18 +52,32 @@
         </NotificationList>
       </CompareGridItem>
       <CompareGridItem area="graph-1">
+        <slot slot="heading">
+          Green energy production gained over the years
+        </slot>
         <GroupedBarChart />
+        <BarChartLegend />
       </CompareGridItem>
       <CompareGridItem area="graph-2">
+        <slot slot="heading">Total renewable energy production compared</slot>
         <RadialStackedBarChart />
-        <RadialStackedBarChart />
+        <RadialStackedBarChart divideByPopulation />
+        <RadialChartLegend />
       </CompareGridItem>
       <CompareGridItem area="table">
+        <slot slot="heading">General information</slot>
         <Table />
       </CompareGridItem>
       <CompareGridItem area="facts">
+        <slot slot="heading">Energy facts</slot>
         <FactListGroup />
       </CompareGridItem>
+      <CompareGridItem area="button">
+        <Button href="https://northsearegion.eu/empower-20/">
+          Make your municipality greener
+        </Button>
+      </CompareGridItem>
+      <ShareButtons />
     </CompareDashboard>
   </slot>
 </Layout>

@@ -1,5 +1,7 @@
 <script>
   import CompareButton from '../atoms/CompareButton.svelte'
+  import ProductionTile from '../atoms/ProductionTile.svelte'
+  import CloseButton from '../atoms/CloseButton.svelte'
   import { tweened } from 'svelte/motion'
   import { cubicInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
@@ -82,70 +84,11 @@
     color: var(--orange);
   }
 
-  #map-tooltip ol {
+  ol {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-  }
-
-  #map-tooltip .productionTile {
-    box-sizing: border-box;
-    width: calc(var(--step-4) * 2);
-    height: calc(var(--step-4) * 2);
-    border-radius: 0.5rem;
-    border: 1px dashed var(--dark-grey);
-    padding: 0.5rem;
-    background: var(--off-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s ease-in-out;
-  }
-
-  #map-tooltip .productionTile img {
-    width: 100%;
-    height: 100%;
-  }
-
-  #map-tooltip .productionTile:not(:last-child) {
-    margin-right: 1rem;
-  }
-
-  #map-tooltip .productionTile#wind.active {
-    border: none;
-    background: var(--blue);
-  }
-
-  #map-tooltip .productionTile#solar.active {
-    border: none;
-    background: var(--yellow);
-    padding: 0.3rem;
-  }
-
-  #map-tooltip .productionTile#biogas.active {
-    border: none;
-    background: var(--green);
-  }
-
-  .close-button {
-    appearance: none;
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0 0 0 calc(var(--step--1) / 2);
-    cursor: pointer;
-  }
-
-  .close-button img {
-    width: var(--step--1);
-    height: var(--step--1);
-    opacity: 0.25;
-    transition: opacity 0.2s ease-in-out;
-  }
-
-  .close-button:hover img {
-    opacity: 1;
   }
 </style>
 
@@ -159,38 +102,28 @@
   <div
     id="map-tooltip"
     in:fade={{ delay: 375, duration: 375, ease: cubicInOut }}
-    out:fade={{ duration: 375, ease: cubicInOut }}>
+    out:fade={{ duration: 375, ease: cubicInOut }}
+  >
     <h2>{$currentFocus.municipality}</h2>
     <div>
       <CompareButton municipality={$currentFocus} />
-      <button class="close-button" on:click={closeClickHandler}>
-        <img src="/cross.svg" alt="Close tooltip" />
-      </button>
+      <CloseButton on:click={closeClickHandler} />
     </div>
     <div>
       <p>Production: <strong>{$productionAmount.toFixed(0)} TJ</strong></p>
       <ol>
-        <li
-          key="wind"
-          id="wind"
-          class="productionTile"
-          class:active={$currentFocus.windEnergyGeneration}>
-          <img src="/wind.svg" alt="Wind icon" />
-        </li>
-        <li
-          key="wind"
-          id="solar"
-          class="productionTile"
-          class:active={$currentFocus.solarEnergyGeneration}>
-          <img src="/solar.svg" alt="Solar icon" />
-        </li>
-        <li
-          key="wind"
-          id="biogas"
-          class="productionTile"
-          class:active={$currentFocus.biogasEnergyGeneration}>
-          <img src="/biogas.svg" alt="Biogas icon" />
-        </li>
+        <ProductionTile
+          type="wind"
+          active={$currentFocus.windEnergyGeneration}
+        />
+        <ProductionTile
+          type="solar"
+          active={$currentFocus.solarEnergyGeneration}
+        />
+        <ProductionTile
+          type="biogas"
+          active={$currentFocus.biogasEnergyGeneration}
+        />
       </ol>
     </div>
   </div>

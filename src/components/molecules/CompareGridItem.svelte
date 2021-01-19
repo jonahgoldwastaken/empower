@@ -38,6 +38,16 @@
     justify-content: center;
     align-items: center;
   }
+
+  .heading {
+    padding: 0;
+    justify-content: flex-start;
+    background: 0;
+  }
+
+  .heading :global(h1) {
+    margin: 0;
+  }
 </style>
 
 <section
@@ -46,8 +56,11 @@
   class:radial-graph={area === 'graph-2'}
   class:facts={area === 'facts'}
   class:button={area === 'button'}
+  class:heading={area === 'heading'}
   style="--area: {area}"
 >
-  <CompareGridItemHeading><slot name="heading" /></CompareGridItemHeading>
+  {#if $$slots.heading}
+    <CompareGridItemHeading><slot name="heading" /></CompareGridItemHeading>
+  {/if}
   <slot />
 </section>

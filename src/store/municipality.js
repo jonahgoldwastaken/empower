@@ -25,10 +25,6 @@ export const searchQuery = writable('')
 
 export const comparingMunicipalities = writable([])
 
-comparingMunicipalities.subscribe(() => {
-  searchQuery.set('')
-})
-
 export const recommendedMunicipalities = derived(
   [data, comparingMunicipalities, interact],
   ([$data, $comparingMunicipalities, $interact]) => {

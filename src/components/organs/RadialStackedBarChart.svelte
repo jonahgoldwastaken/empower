@@ -49,10 +49,12 @@
       (a, b) =>
         a.windEnergyGeneration +
           a.solarEnergyGeneration +
-          a.biogasEnergyGeneration <
+          a.biogasEnergyGeneration +
+          a.totalEnergyGeneration <
         b.windEnergyGeneration +
           b.solarEnergyGeneration +
-          b.biogasEnergyGeneration
+          b.biogasEnergyGeneration +
+          b.totalEnergyGeneration
     )
 
   $: groupKey = data.length && Object.keys(data[0])[0]

@@ -8,13 +8,11 @@
 
   let open = true
 
-  $: if ($searchQuery.length && open) open = false
+  $: open = !$searchQuery.length
 </script>
 
 <style>
   section {
-    background: var(--grey-blue);
-    padding: calc(var(--step-2) / 2);
     border-radius: 0.75rem;
     margin: 0 0 var(--step-4);
   }
@@ -45,9 +43,7 @@
   <section>
     <header class:open>
       <h3>Recommended</h3>
-      <CollapseButton bind:checked={open}>
-        Toggle Recommendations
-      </CollapseButton>
+      <CollapseButton bind:checked={open} />
     </header>
     {#if open}
       <ul>

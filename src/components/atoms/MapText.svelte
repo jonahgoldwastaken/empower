@@ -2,6 +2,7 @@
   import { scale, path } from '../../store/map'
   export let datum
   export let hover = false
+  export let active = false
 </script>
 
 <style>
@@ -14,7 +15,8 @@
     user-select: none;
   }
 
-  text.hover {
+  text.hover,
+  text.active {
     fill-opacity: 1;
   }
 </style>
@@ -22,6 +24,7 @@
 <text
   style="--zoom: {$scale}"
   class:hover
+  class:active
   text-anchor="middle"
   alignment-baseline="middle"
   y={$path?.centroid(datum)[1]}

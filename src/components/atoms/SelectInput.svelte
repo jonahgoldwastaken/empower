@@ -14,7 +14,7 @@
 
   label::after {
     content: '';
-    background: url(/down-arrow.svg) no-repeat center/contain;
+    background: url(/down-arrow-black.svg) no-repeat center/contain;
     position: absolute;
     right: calc(0.75 * var(--step-0));
     bottom: calc(0.55 * var(--step-0));
@@ -24,16 +24,15 @@
   }
 
   select {
+    appearance: none;
+    border: none;
     display: block;
     margin-top: 0.25em;
-    appearance: none;
     font-size: var(--step-0);
     padding: 0.5em;
     padding-right: 2.5em;
-    border: 1px solid var(--dark-grey);
     border-radius: 0.5rem;
     background: white;
-    transition: border 0.1s ease-in-out;
   }
 </style>
 

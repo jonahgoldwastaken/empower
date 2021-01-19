@@ -1,10 +1,15 @@
 <script>
   import { link } from 'svelte-routing'
   export let href = ''
+  export let anchor
+  export let center
 </script>
 
 <style>
   a {
+    display: block;
+    width: min-content;
+    white-space: nowrap;
     text-decoration: none;
   }
 
@@ -14,38 +19,50 @@
 
   button,
   a {
+    box-sizing: border-box;
     border: 1px solid transparent;
-    border-radius: 0.75rem;
     padding: 0.75em;
-    background-color: var(--orange);
+    border-radius: 2px;
     color: var(--text-secondary);
     font-size: var(--step-0);
     font-weight: bold;
     line-height: 1;
-    cursor: pointer;
     box-shadow: var(--light-box-shadow);
     transition: border 0.2s ease-in-out, background 0.2s ease-in-out,
       color 0.2s ease-in-out;
   }
 
-  button:hover,
-  a:hover {
+  button:disabled,
+  a.disabled {
+    background-color: var(--light-grey) !important;
+    cursor: not-allowed;
+  }
+
+  button,
+  a {
+    background-color: var(--orange);
+    cursor: pointer;
+  }
+
+  button:not(:disabled):hover,
+  a:not(.disabled):hover {
     border-color: var(--orange);
     background-color: var(--text-secondary);
     color: var(--orange);
   }
+
+  .center {
+    text-align: center;
+    margin: auto;
+  }
 </style>
 
-{#if href && href[0] === '/'}
-  <a {href} use:link>
-    <slot />
-  </a>
-{:else if href}
-  <a {href} target="_blank" rel="noopener noreferrer">
+{#if href || anchor}
+  <a class:center class:disabled={!href} {href} use:link>
     <slot />
   </a>
 {:else}
-  <button on:click>
+  <button class:center on:click>
     <slot />
   </button>
 {/if}

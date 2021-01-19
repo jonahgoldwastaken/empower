@@ -19,19 +19,30 @@
   export let params
 
   onMount(() => {
-    const queryParams = Object.values(params).reduce(
-      (acc, curr) => acc.concat(`municipalities=${curr}&`),
-      ''
-    )
-    fetch(`${window.location.origin}/.netlify/functions/compare?${queryParams}`)
-      .then(res => res.json())
-      .then(data => comparingMunicipalities.set(data))
+    if (!$comparingMunicipalities.length) {
+      const queryParams = Object.values(params).reduce(
+        (acc, curr) => acc.concat(`municipalities=${curr}&`),
+        ''
+      )
+      fetch(
+        `${window.location.origin}/.netlify/functions/compare?${queryParams}`
+      )
+        .then(res => res.json())
+        .then(data => comparingMunicipalities.set(data))
+    }
   })
 </script>
 
 <Layout>
   <slot slot="main">
     <CompareDashboard>
+      <CompareGridItem area="heading">
+        <h1>
+          Comparing {$comparingMunicipalities
+            .map(({ municipality }) => municipality)
+            .join(', ')}
+        </h1>
+      </CompareGridItem>
       <CompareGridItem area="map">
         <MapComponent interaction={false} />
       </CompareGridItem>

@@ -1,5 +1,5 @@
 <script>
-  import MapPage from '../components/template/MapPage.svelte'
+  import MapPage from '../components/templates/MapPage.svelte'
   import MapComponent from '../components/organisms/MapComponent.svelte'
   import CompareList from '../components/organisms/CompareList.svelte'
   import RecommendedList from '../components/organisms/RecommendedList.svelte'

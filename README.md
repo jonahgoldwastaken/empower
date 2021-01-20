@@ -2,7 +2,7 @@
 
 # EMPOWER 2.0
 
-[Prootype](https://empower.jonahgold.dev)
+[Prototype](https://empower.jonahgold.dev)
 
 A project for the EMPOWER 2.0 initiative, empowering policy makers all over the North Sea Region to become green energy prosumers. Created by [Jonah Meijers](https://jonahgold.dev), [Rosa Voogd](https://rosavoogd.nl) and [Fleur van Son](https://fleurvanson.com).
 
@@ -10,10 +10,14 @@ A project for the EMPOWER 2.0 initiative, empowering policy makers all over the 
 
 This project uses [Snowpack](https://snowpack.dev) for bundling, and [Netlify](https://netlify.com) for deployment and dev server.
 
+It also requires a valid MongoDB URI in a .env file when developing locally, without the database name attached to it. The MongoDB client will automatically look for a database called "empower" at the provided uri.
+
 ```shell
 $ git clone https://github.com/theonejonahgold/empower
 $ cd empower
 $ yarn || yarn install || npm install
+$ cp .env.example .env
+$ echo "MONGO_URI={your_mongodb_uri_here}" > .env
 ```
 
 ### Available commands
@@ -32,6 +36,7 @@ $ yarn process # Runs dataprocessing/index.js
 - [PostCSS](https://postcss.org)
 - [Snowpack](https://snowpack.dev)
 - [Prettier](https://prettier.io)
+- [Netlify Functions](https://www.netlify.com/products/functions/)
 
 ## Datasets used
 
@@ -41,6 +46,8 @@ $ yarn process # Runs dataprocessing/index.js
 - [Total renewable, solar, biogas and wind energy generated per municipality (from several sources, gathered by Klimaatmonitor)](https://klimaatmonitor.databank.nl/Jive?workspace_guid=3ca2ab1f-24a6-4b8f-9094-d6cb0a013dd2)
 
 ## Data Processing
+
+Data processing is done in the `dataprocessing` folder. Index.js spits out a JSON file that I upload to a dedicated MonoDB atlas database where I can quickly retrieve all the information I need using the serverless functions in the `functions` folder.
 
 ### Steps
 

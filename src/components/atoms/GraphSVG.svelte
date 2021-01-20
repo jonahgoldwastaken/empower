@@ -19,12 +19,16 @@
     font-weight: 500;
     width: 100%;
     text-align: center;
-    margin: 0;
+    margin: -1em 0 1em;
   }
 
   @media screen and (min-width: 100rem) {
     div.centered {
       width: 50%;
+    }
+
+    p {
+      margin-bottom: 0;
     }
   }
 </style>

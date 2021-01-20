@@ -1,29 +1,17 @@
 module.exports = { addLocationToMunicipality }
 
 function addLocationToMunicipality(municipality) {
-  const {
-    lakeArea,
-    seaArea,
-    agricultureArea,
-    livingArea,
-    totalArea,
-  } = municipality
+  const { lakeArea, seaArea, population } = municipality
 
   let location
 
   if (lakeArea && seaArea) {
-    if (lakeArea < seaArea) location = 'Meer'
-    else location = 'Kust'
-  } else if (lakeArea) location = 'Meer'
-  else if (seaArea) location = 'Kust'
-  else if (agricultureArea && livingArea) {
-    if (agricultureArea / livingArea > 0.5) location = 'Platteland'
-    else location = 'Stad'
-  } else if (agricultureArea) {
-    if (agricultureArea / totalArea > 0.5) location = 'Platteland'
-  } else if (livingArea) {
-    if (livingArea / totalArea > 0.5) location = 'Stad'
-  } else location = 'Land'
+    if (lakeArea < seaArea) location = 'Lake'
+    else location = 'Coast'
+  } else if (lakeArea) location = 'Lake'
+  else if (seaArea) location = 'Coast'
+  else if (population > 25000) location = 'Urban'
+  else location = 'Rural'
 
   return {
     ...municipality,

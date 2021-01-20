@@ -1,6 +1,23 @@
 <script>
+  import { onDestroy, onMount } from 'svelte'
   import { link } from 'svelte-routing'
+  import { globalHistory } from 'svelte-routing/src/history'
   import { comparingMunicipalities } from '../../store/municipality'
+
+  let pathname = window.location.pathname
+  let unsub
+
+  onMount(() => {
+    unsub = globalHistory.listen(({ location, action }) => {
+      pathname = location.pathname
+    })
+  })
+
+  onDestroy(() => {
+    unsub()
+  })
+
+  $: page = pathname === '/' ? 'map' : 'compare'
 </script>
 
 <style>
@@ -60,11 +77,11 @@
 <header>
   <img src="/empower-white.svg" alt="Empower Logo" />
   <nav>
-    <a class:active={window.location.pathname === '/'} use:link href="/">
+    <a class:active={page === 'map'} use:link href="/">
       <img src="/map.svg" alt="Go to the municipality map" />
     </a>
     <a
-      class:active={window.location.pathname.includes('compare')}
+      class:active={page === 'compare'}
       use:link
       class:disabled={$comparingMunicipalities.length <= 1}
       href={$comparingMunicipalities.length > 1

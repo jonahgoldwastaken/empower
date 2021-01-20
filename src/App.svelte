@@ -1,8 +1,7 @@
 <script>
   import Loadable from 'svelte-loadable'
   import { Router, Route } from 'svelte-routing'
-  import Compare from './pages/Compare.svelte'
-  import MapPage from './pages/MapPage.svelte'
+  import Layout from './components/template/Layout.svelte'
 </script>
 
 <style global>
@@ -47,11 +46,13 @@
     --text-primary: var(--off-black);
     --text-secondary: var(--white);
 
-    --test-green-1: #a6c9a9;
-    --test-green-2: #73ab79;
-    --test-green-3: #4d8051;
-    --test-green-4: #365939;
-    --test-green-5: #273f29;
+    --map-green-1: #a6c9a9;
+    --map-green-2: #73ab79;
+    --map-green-3: #4d8051;
+    --map-green-4: #365939;
+    --map-green-5: #273f29;
+
+    --sidebar-width: max(15rem, min(20rem, 30%));
 
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -96,8 +97,7 @@
   }
 
   h3 {
-    font-size: var(--step-1);
-    font-weight: 500;
+    font-weight: 400;
   }
 
   a {
@@ -106,14 +106,16 @@
   }
 </style>
 
-<Router>
-  <Route path="/compare/:munOne/:munTwo" let:params>
-    <Compare {params} />
-  </Route>
-  <Route path="/compare/:munOne/:munTwo/:munThree" let:params>
-    <Compare {params} />
-  </Route>
-  <Route path="/">
-    <MapPage />
-  </Route>
-</Router>
+<Layout>
+  <Router>
+    <Route path="/compare/:munOne/:munTwo" let:params>
+      <Loadable loader={() => import('./pages/Compare.svelte')} {params} />
+    </Route>
+    <Route path="/compare/:munOne/:munTwo/:munThree" let:params>
+      <Loadable loader={() => import('./pages/Compare.svelte')} {params} />
+    </Route>
+    <Route path="/">
+      <Loadable loader={() => import('./pages/MapPage.svelte')} />
+    </Route>
+  </Router>
+</Layout>

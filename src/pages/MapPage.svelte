@@ -1,5 +1,5 @@
 <script>
-  import Layout from '../components/template/Layout.svelte'
+  import MapPage from '../components/template/MapPage.svelte'
   import MapComponent from '../components/organisms/MapComponent.svelte'
   import CompareList from '../components/organisms/CompareList.svelte'
   import RecommendedList from '../components/organisms/RecommendedList.svelte'
@@ -18,7 +18,7 @@
   }
 </style>
 
-<Layout>
+<MapPage>
   <slot slot="sidebar">
     <SearchBar />
     <div class="select-container">
@@ -54,4 +54,4 @@
   </slot>
   <CompareList />
   <Logo />
-</Layout>
+</MapPage>

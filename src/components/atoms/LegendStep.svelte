@@ -8,7 +8,7 @@
     margin-top: 0.5em;
     width: 100%;
     --color: '';
-    font-size: var(--step-0);
+    font-size: var(--step--1);
   }
 
   li:before {

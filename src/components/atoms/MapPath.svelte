@@ -6,6 +6,7 @@
   export let showColour = false
   export let focused = false
   export let recommended = false
+  export let comparing = false
 </script>
 
 <style>
@@ -23,32 +24,37 @@
   path.interact:hover,
   path.interact:focus,
   path.interact.focused {
-    fill-opacity: 0.7;
+    fill-opacity: 0.5;
   }
 
   path.show-colour.level-1 {
-    fill: var(--test-green-1);
+    fill: var(--map-green-1);
   }
 
   path.show-colour.level-2 {
-    fill: var(--test-green-2);
+    fill: var(--map-green-2);
   }
 
   path.show-colour.level-3 {
-    fill: var(--test-green-3);
+    fill: var(--map-green-3);
   }
 
   path.show-colour.level-4 {
-    fill: var(--test-green-4);
+    fill: var(--map-green-4);
   }
 
   path.show-colour.level-5 {
-    fill: var(--test-green-5);
+    fill: var(--map-green-5);
   }
 
   path.show-colour.recommended {
     fill: var(--blue);
     stroke-width: 2;
+  }
+
+  path.comparing {
+    stroke-width: 2;
+    fill: var(--orange) !important;
   }
 </style>
 
@@ -58,6 +64,7 @@
   on:mouseout
   class:focused
   class:recommended
+  class:comparing
   class:interact={$interact}
   class:show-colour={showColour}
   class="level-{level}"

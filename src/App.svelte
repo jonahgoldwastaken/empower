@@ -1,7 +1,7 @@
 <script>
   import Loadable from 'svelte-loadable'
   import { Router, Route } from 'svelte-routing'
-  import Layout from './components/template/Layout.svelte'
+  import Layout from './components/templates/Layout.svelte'
   import Loader from './components/atoms/Loader.svelte'
 </script>
 

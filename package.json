@@ -12,7 +12,7 @@
     "start": "snowpack dev",
     "dev": "netlify dev",
     "build": "snowpack build",
-    "postinstall": "patch-package"
+    "process": "node dataprocessing/index.js"
   },
   "dependencies": {
     "d3": "^6.3.0",
@@ -22,14 +22,15 @@
     "svelte-routing": "^1.5.0"
   },
   "devDependencies": {
+    "convert-csv-to-json": "^1.2.0",
+    "ramda": "^0.27.1",
+    "ramda-adjunct": "^2.30.0",
     "@snowpack/plugin-svelte": "^3.3.1",
     "@snowpack/plugin-webpack": "^2.3.0",
     "autoprefixer": "^10.1.0",
     "browserslist": "^4.15.0",
-    "patch-package": "^6.2.2",
     "postcss": "^8.2.0",
     "postcss-load-config": "^3.0.0",
-    "postinstall-postinstall": "^2.1.0",
     "prettier": "^2.2.1",
     "prettier-plugin-svelte": "^2.1.0",
     "puppeteer": "^5.5.0",

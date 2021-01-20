@@ -32,6 +32,8 @@ $ yarn process # Runs dataprocessing/index.js
 ## Tech used
 
 - [Svelte](https://svelte.dev)
+- [svelte-routing](https://github.com/EmilTholin/svelte-routing)
+- [svelte-loadable](https://github.com/kaisermann/svelte-loadable)
 - [D3](https://d3js.org)
 - [PostCSS](https://postcss.org)
 - [Snowpack](https://snowpack.dev)

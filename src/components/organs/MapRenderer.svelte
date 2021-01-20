@@ -90,6 +90,12 @@
   }
 </script>
 
+<style>
+  svg {
+    background: var(--grey-blue);
+  }
+</style>
+
 <svg width={$width} height={$height} preserveAspectRatio="xMinYMin meet">
   <g
     transform="translate({$translate.x}, {$translate.y}) scale({$scale})"

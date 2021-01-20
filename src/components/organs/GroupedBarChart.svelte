@@ -82,7 +82,6 @@
   {#each data as datum (datum[groupKey])}
     <BarChartBarGroup
       {datum}
-      {margin}
       bind:groupKey
       bind:keys
       bind:x1Scale

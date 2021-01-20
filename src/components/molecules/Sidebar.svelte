@@ -3,7 +3,7 @@
     position: relative;
     grid-area: sidebar;
     background: #f3f3f3;
-    padding: var(--step-4) var(--step-2);
+    padding: 1rem;
     overflow-y: scroll;
     border-top-right-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;

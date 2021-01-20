@@ -1,12 +1,12 @@
 <style>
   li {
     box-sizing: border-box;
-    height: calc(4.5 * var(--step-2) + 4px);
+    height: calc(4 * var(--step-2));
     width: 100%;
     border: 2px dashed var(--dark-grey);
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     text-align: center;
-    line-height: calc(4.5 * var(--step-2));
+    line-height: calc(4 * var(--step-2));
     white-space: wrap;
   }
 

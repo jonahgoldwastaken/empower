@@ -53,7 +53,7 @@
     align-items: center;
     flex-direction: column;
     background: var(--grey-blue);
-    padding: calc(var(--step-2));
+    padding: 1rem;
     margin: 0;
     border-top-right-radius: 0.75rem;
     border-bottom-right-radius: 0.75rem;
@@ -69,7 +69,7 @@
   section.open {
     box-shadow: var(--medium-box-shadow);
     left: calc(var(--sidebar-width) / 4);
-    padding-left: calc(var(--step-2) + 3rem);
+    padding-left: 4rem;
     width: calc(3rem + var(--sidebar-width));
   }
 

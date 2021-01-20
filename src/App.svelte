@@ -2,6 +2,7 @@
   import Loadable from 'svelte-loadable'
   import { Router, Route } from 'svelte-routing'
   import Layout from './components/template/Layout.svelte'
+  import Loader from './components/atoms/Loader.svelte'
 </script>
 
 <style global>
@@ -65,10 +66,6 @@
     }
   } */
 
-  body {
-    background: var(--grey-blue);
-  }
-
   h1,
   h2,
   h3,
@@ -109,13 +106,27 @@
 <Layout>
   <Router>
     <Route path="/compare/:munOne/:munTwo" let:params>
-      <Loadable loader={() => import('./pages/Compare.svelte')} {params} />
+      <Loadable
+        delay={200}
+        loader={() => import('./pages/Compare.svelte')}
+        {params}
+      >
+        <slot slot="loading" />
+      </Loadable>
     </Route>
     <Route path="/compare/:munOne/:munTwo/:munThree" let:params>
-      <Loadable loader={() => import('./pages/Compare.svelte')} {params} />
+      <Loadable
+        delay={200}
+        loader={() => import('./pages/Compare.svelte')}
+        {params}
+      >
+        <slot slot="loading"><Loader /></slot>
+      </Loadable>
     </Route>
     <Route path="/">
-      <Loadable loader={() => import('./pages/MapPage.svelte')} />
+      <Loadable delay={200} loader={() => import('./pages/MapPage.svelte')}>
+        <slot slot="loading"><Loader /></slot>
+      </Loadable>
     </Route>
   </Router>
 </Layout>

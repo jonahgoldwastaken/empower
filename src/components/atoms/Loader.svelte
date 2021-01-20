@@ -21,8 +21,8 @@
   }
 
   video {
-    width: 48rem;
-    height: 48rem;
+    width: 25rem;
+    height: 25rem;
   }
 </style>
 

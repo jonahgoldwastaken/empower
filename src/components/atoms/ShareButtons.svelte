@@ -1,8 +1,5 @@
 <style>
   aside {
-    position: absolute;
-    bottom: 2em;
-    left: 2em;
     width: 15rem;
   }
 

@@ -1,12 +1,13 @@
 <style>
   th {
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     padding: 0.75em 1em;
     border: 1px solid var(--light-grey);
+    color: var(--orange);
     border-top: none;
     text-align: center;
     vertical-align: middle;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   th:last-child {

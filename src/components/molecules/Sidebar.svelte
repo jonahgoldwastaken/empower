@@ -9,6 +9,7 @@
     border-bottom-right-radius: 0.75rem;
     box-shadow: var(--medium-box-shadow);
     z-index: 100;
+    animation: sidebar-slide-in 0.4s ease-in-out;
   }
 </style>
 

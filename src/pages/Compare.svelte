@@ -13,8 +13,8 @@
   import BarChartLegend from '../components/molecules/BarChartLegend.svelte'
   import RadialStackedBarChart from '../components/organs/RadialStackedBarChart.svelte'
   import RadialChartLegend from '../components/molecules/RadialChartLegend.svelte'
-  import Button from '../components/atoms/Button.svelte'
   import ShareButtons from '../components/atoms/ShareButtons.svelte'
+  import CTA from '../components/atoms/CTA.svelte'
 
   export let params
 
@@ -66,14 +66,18 @@
         <slot slot="heading">
           Green energy production gained over the years
         </slot>
+        <slot slot="legend">
+          <BarChartLegend />
+        </slot>
         <GroupedBarChart />
-        <BarChartLegend />
       </CompareGridItem>
       <CompareGridItem area="graph-2">
         <slot slot="heading">Total renewable energy production compared</slot>
+        <slot slot="legend">
+          <RadialChartLegend />
+        </slot>
         <RadialStackedBarChart />
-        <RadialStackedBarChart divideByPopulation />
-        <RadialChartLegend />
+        <RadialStackedBarChart divideByHoudeholds />
       </CompareGridItem>
       <CompareGridItem area="table">
         <slot slot="heading">General information</slot>
@@ -83,12 +87,12 @@
         <slot slot="heading">Energy facts</slot>
         <FactListGroup />
       </CompareGridItem>
-      <CompareGridItem area="button">
-        <Button href="https://northsearegion.eu/empower-20/">
-          Make your municipality greener
-        </Button>
+      <CompareGridItem area="cta">
+        <CTA />
       </CompareGridItem>
-      <ShareButtons />
+      <CompareGridItem area="share">
+        <ShareButtons />
+      </CompareGridItem>
     </CompareDashboard>
   </slot>
 </Layout>

@@ -16,16 +16,16 @@
 <g transform="translate({groupX} 0)">
   {#each data as d (d.key)}
     <BarChartClipPath
-      future={currentYear < datum[groupKey]}
-      id={datum.name + d.key}
+      id={(datum.name + d.key).replace(/[^\w]/g, '')}
       x={x2Scale(d.key)}
       y={yScale(d.value)}
       width={x2Scale.bandwidth()}
       height={yScale(0) - yScale(d.value)}
     />
     <BarChartBar
+      id={(datum.name + d.key).replace(/[^\w]/g, '')}
+      future={currentYear < datum[groupKey]}
       keyIndex={keys.indexOf(d.key)}
-      id={datum.name + d.key}
       x={x2Scale(d.key)}
       y={yScale(d.value)}
       height={yScale(0) - yScale(d.value)}

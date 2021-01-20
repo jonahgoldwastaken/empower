@@ -12,8 +12,8 @@
 <style>
   #x-axis :global(text) {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: var(--step-0);
+    font-weight: 400;
+    font-size: var(--step--1);
     text-anchor: middle;
     alignment-baseline: top;
   }
@@ -22,4 +22,5 @@
 <g
   transform="translate(0, {height - margin.bottom})"
   bind:this={g}
-  id="x-axis" />
+  id="x-axis"
+/>

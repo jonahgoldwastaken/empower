@@ -55,7 +55,7 @@
       x: newTranslate[0],
       y: newTranslate[1],
     })
-  } else if (page === '/preview' && !$currentFocus) {
+  } else if (page === '/' && !$currentFocus) {
     console.log('hoi')
     scale.set(1)
     translate.set({ x: 0, y: 0 })

@@ -8,8 +8,10 @@
 <style>
   table {
     border-collapse: collapse;
+    grid-column: span 1;
+    grid-row: span 1;
     width: 100%;
-    height: calc(100% - (var(--step-3) * 2));
+    height: 100%;
   }
 </style>
 

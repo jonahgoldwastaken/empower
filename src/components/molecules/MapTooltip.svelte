@@ -3,13 +3,13 @@
   import ProductionTile from '../atoms/ProductionTile.svelte'
   import CloseButton from '../atoms/CloseButton.svelte'
   import { tweened } from 'svelte/motion'
-  import { cubicInOut } from 'svelte/easing'
+  import { quintInOut } from 'svelte/easing'
   import { fade } from 'svelte/transition'
   import { scale, translate, currentFocus } from '../../store/map'
 
   const productionAmount = tweened(0, {
     duration: 400,
-    easing: cubicInOut,
+    easing: quintInOut,
   })
 
   $: $currentFocus && productionAmount.set($currentFocus.totalEnergyGeneration)
@@ -101,8 +101,8 @@
 {#if $currentFocus}
   <div
     id="map-tooltip"
-    in:fade={{ delay: 375, duration: 375, ease: cubicInOut }}
-    out:fade={{ duration: 375, ease: cubicInOut }}
+    in:fade={{ delay: 375, duration: 375, ease: quintInOut }}
+    out:fade={{ duration: 375, ease: quintInOut }}
   >
     <h2>{$currentFocus.municipality}</h2>
     <div>

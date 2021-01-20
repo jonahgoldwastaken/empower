@@ -8,9 +8,9 @@
 
   const margin = {
     top: 30,
-    left: 80,
-    bottom: 50,
-    right: 30,
+    left: 50,
+    bottom: 20,
+    right: 10,
   }
   let width = 0
 

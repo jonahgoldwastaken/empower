@@ -7,11 +7,7 @@
 
 <style>
   div {
-    width: calc(100% - (7 * var(--step-0)));
-  }
-
-  div.centered {
-    width: calc(50% - (3.5 * var(--step-0)));
+    width: 100%;
   }
 
   g.centered {
@@ -24,6 +20,12 @@
     width: 100%;
     text-align: center;
     margin: 0;
+  }
+
+  @media screen and (min-width: 100rem) {
+    div.centered {
+      width: 50%;
+    }
   }
 </style>
 

@@ -22,7 +22,7 @@ exports.handler = async function (event) {
       municipalities.map(municipality =>
         collection.findOne(
           {
-            municipality: new RegExp(`^${municipality}$`, 'i'),
+            municipality,
           },
           {
             projection: {
@@ -34,13 +34,6 @@ exports.handler = async function (event) {
     )
 
     result = result.map(addLocationToMunicipality)
-    // .reduce(
-    //   (acc, curr) => ({
-    //     ...acc,
-    //     [curr.municipality]: curr,
-    //   }),
-    //   {}
-    // )
 
     await client.close()
 

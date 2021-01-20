@@ -7,6 +7,7 @@
   header {
     grid-area: header;
     background: var(--dark-green);
+    position: relative;
   }
 
   nav {
@@ -44,14 +45,22 @@
   .disabled img {
     opacity: 0.3;
   }
+
+  img[src='/empower-white.svg'] {
+    pointer-events: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 0.6rem;
+    padding-right: 0.3rem;
+  }
 </style>
 
 <header>
+  <img src="/empower-white.svg" alt="Empower Logo" />
   <nav>
-    <a
-      class:active={window.location.pathname === '/preview'}
-      use:link
-      href="/preview">
+    <a class:active={window.location.pathname === '/'} use:link href="/">
       <img src="/map.svg" alt="Go to the municipality map" />
     </a>
     <a

@@ -6,6 +6,7 @@
   import MunicipalityList from '../components/organisms/MunicipalityList.svelte'
   import SearchBar from '../components/atoms/SearchBar.svelte'
   import SelectInput from '../components/atoms/SelectInput.svelte'
+  import Logo from '../components/atoms/Logo.svelte'
   import { sort, filter } from '../store/municipality'
 </script>
 
@@ -52,4 +53,5 @@
     <MapComponent legend />
   </slot>
   <CompareList />
+  <Logo />
 </Layout>

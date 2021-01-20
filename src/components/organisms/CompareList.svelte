@@ -17,7 +17,6 @@
     top: 0;
     left: 3rem;
     width: max(25rem, min(30rem, 30%));
-    height: min-content;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -52,6 +51,7 @@
     text-align: center;
     color: var(--text-primary);
     font-weight: 400;
+    margin-right: auto;
   }
 
   header {
@@ -73,9 +73,7 @@
         ? '1 municipality'
         : `${$comparingMunicipalities.length} municipalities`}
     </h3>
-    {#if $comparingMunicipalities.length}
-      <CloseButton on:click={clearQueueHandler} />
-    {/if}
+    <CloseButton on:click={clearQueueHandler} />
   </header>
   <ul>
     {#each $comparingMunicipalities as municipality (municipality.municipality)}

@@ -1,7 +1,7 @@
 <script>
   import { interpolate } from 'd3'
   import { tweened } from 'svelte/motion'
-  import { cubicInOut } from 'svelte/easing'
+  import { quintInOut } from 'svelte/easing'
 
   export let end
   export let start
@@ -17,7 +17,7 @@
     {
       delay: 1000,
       duration: 750,
-      easing: cubicInOut,
+      easing: quintInOut,
       interpolate,
     }
   )

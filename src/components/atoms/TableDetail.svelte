@@ -4,8 +4,8 @@
     border: 1px solid var(--light-grey);
     text-align: center;
     vertical-align: middle;
-    color: var(--orange);
-    padding: 1.125em 2.5em;
+    color: var(--black);
+    font-weight: 400;
   }
 
   td:last-child {
@@ -20,7 +20,8 @@
     color: var(--text-primary);
     text-align: left;
     border-left: none;
-    padding: 1.125em 1em;
+    padding: 1em;
+    font-weight: 400;
   }
 </style>
 

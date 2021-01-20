@@ -1,8 +1,8 @@
 <script>
-  import { Router, Route } from 'svelte-routing'
   import Loadable from 'svelte-loadable'
-  import Index from './pages/Index.svelte'
-  import TestRoute from './pages/TestRoute.svelte'
+  import { Router, Route } from 'svelte-routing'
+  import Layout from './components/template/Layout.svelte'
+  import Loader from './components/atoms/Loader.svelte'
 </script>
 
 <style global>
@@ -14,15 +14,15 @@
   }
 
   :root {
-    /* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.067,2560,18,1.125,5,2,1920 */
-    --step--2: clamp(0.8781rem, 0.8766rem + 0.0076vw, 0.8888rem);
-    --step--1: clamp(0.9375rem, 0.9286rem + 0.0446vw, 1rem);
+    /* @link https://utopia.fyi/generator-mk-ii?c=320,16,1.067,2560,18,1.2,5,2,1920 */
+    --step--2: clamp(0.8781rem, 0.892rem + -0.0692vw, 0.7813rem);
+    --step--1: clamp(0.9375rem, 0.9375rem + 0vw, 0.9375rem);
     --step-0: clamp(1rem, 0.9821rem + 0.0893vw, 1.125rem);
-    --step-1: clamp(1.0669rem, 1.0385rem + 0.142vw, 1.2656rem);
-    --step-2: clamp(1.1388rem, 1.098rem + 0.2036vw, 1.4238rem);
-    --step-3: clamp(1.215rem, 1.1597rem + 0.2763vw, 1.6019rem);
-    --step-4: clamp(1.2963rem, 1.224rem + 0.3612vw, 1.8019rem);
-    --step-5: clamp(1.3831rem, 1.2911rem + 0.4603vw, 2.0275rem);
+    --step-1: clamp(1.0669rem, 1.0264rem + 0.2022vw, 1.35rem);
+    --step-2: clamp(1.1388rem, 1.07rem + 0.3438vw, 1.62rem);
+    --step-3: clamp(1.215rem, 1.1109rem + 0.5205vw, 1.9438rem);
+    --step-4: clamp(1.2963rem, 1.1482rem + 0.7402vw, 2.3325rem);
+    --step-5: clamp(1.3831rem, 1.1808rem + 1.0116vw, 2.7994rem);
 
     --dark-green: #548687;
     --green: #8fbc94;
@@ -47,11 +47,13 @@
     --text-primary: var(--off-black);
     --text-secondary: var(--white);
 
-    --test-green-1: #a6c9a9;
-    --test-green-2: #73ab79;
-    --test-green-3: #4d8051;
-    --test-green-4: #365939;
-    --test-green-5: #273f29;
+    --map-green-1: #a6c9a9;
+    --map-green-2: #73ab79;
+    --map-green-3: #4d8051;
+    --map-green-4: #365939;
+    --map-green-5: #273f29;
+
+    --sidebar-width: max(15rem, min(20rem, 30%));
 
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -63,10 +65,6 @@
       --text-secondary: black;
     }
   } */
-
-  body {
-    background: var(--grey-blue);
-  }
 
   h1,
   h2,
@@ -96,8 +94,7 @@
   }
 
   h3 {
-    font-size: var(--step-1);
-    font-weight: 500;
+    font-weight: 400;
   }
 
   a {
@@ -106,29 +103,30 @@
   }
 </style>
 
-<Router>
-  <Route path="/">
-    <Index />
-  </Route>
-  <Route path="/compare/:munOne/:munTwo" let:params>
-    <Loadable
-      loader={() => import('./pages/MunicipalityCompare.svelte')}
-      {params}
-    >
-      <div slot="loading">Loading...</div>
-    </Loadable>
-  </Route>
-  <Route path="/compare/:munOne/:munTwo/:munThree" let:params>
-    <Loadable
-      loader={() => import('./pages/MunicipalityCompare.svelte')}
-      {params}
-    >
-      <div slot="loading">Loading...</div>
-    </Loadable>
-  </Route>
-  <Route path="/preview">
-    <Loadable loader={() => import('./pages/MunicipalityMap.svelte')}>
-      <div slot="loading">Loading...</div>
-    </Loadable>
-  </Route>
-</Router>
+<Layout>
+  <Router>
+    <Route path="/compare/:munOne/:munTwo" let:params>
+      <Loadable
+        delay={200}
+        loader={() => import('./pages/Compare.svelte')}
+        {params}
+      >
+        <slot slot="loading" />
+      </Loadable>
+    </Route>
+    <Route path="/compare/:munOne/:munTwo/:munThree" let:params>
+      <Loadable
+        delay={200}
+        loader={() => import('./pages/Compare.svelte')}
+        {params}
+      >
+        <slot slot="loading"><Loader /></slot>
+      </Loadable>
+    </Route>
+    <Route path="/">
+      <Loadable delay={200} loader={() => import('./pages/MapPage.svelte')}>
+        <slot slot="loading"><Loader /></slot>
+      </Loadable>
+    </Route>
+  </Router>
+</Layout>

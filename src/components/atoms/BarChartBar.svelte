@@ -5,6 +5,7 @@
   export let x
   export let y
   export let id
+  export let future
 </script>
 
 <style>
@@ -20,9 +21,13 @@
   .three {
     fill: var(--blue);
   }
+  .future {
+    fill-opacity: 0.3;
+  }
 </style>
 
 <rect
+  class:future
   clip-path="url(#{id})"
   class:one={keyIndex === 0}
   class:two={keyIndex === 1}

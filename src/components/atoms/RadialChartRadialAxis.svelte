@@ -16,6 +16,7 @@
 
   text {
     text-anchor: end;
+    alignment-baseline: middle;
     font-family: 'Roboto', sans-serif;
     font-size: var(--step--2);
   }
@@ -26,10 +27,14 @@
     <circle r={getOuterRadius(i, { numArcs, arcWidth }) + $arcPadding / 2} />
     <text
       x={$labelPadding}
-      y={-((getOuterRadius(i, {
+      y={-(
+        (getOuterRadius(i, {
           numArcs,
           arcWidth,
-        }) + getInnerRadius(i, { numArcs, arcWidth })) / 2) + $arcPadding / 2}>
+        }) +
+          getInnerRadius(i, { numArcs, arcWidth })) /
+        2
+      )}>
       {d[groupKey]}
     </text>
   </g>

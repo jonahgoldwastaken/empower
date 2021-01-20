@@ -8,6 +8,13 @@
     border-radius: 0.75rem;
     font-size: var(--step-1);
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li:first-child {
+    border: 1px solid black;
   }
 
   li:before {
@@ -22,5 +29,7 @@
 </style>
 
 <li>
-  <slot />
+  <span>
+    <slot />
+  </span>
 </li>

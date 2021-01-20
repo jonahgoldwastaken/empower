@@ -1,11 +1,12 @@
 <script>
-  import Layout from '../components/template/Layout.svelte'
+  import MapPage from '../components/template/MapPage.svelte'
   import MapComponent from '../components/organisms/MapComponent.svelte'
   import CompareList from '../components/organisms/CompareList.svelte'
   import RecommendedList from '../components/organisms/RecommendedList.svelte'
   import MunicipalityList from '../components/organisms/MunicipalityList.svelte'
   import SearchBar from '../components/atoms/SearchBar.svelte'
   import SelectInput from '../components/atoms/SelectInput.svelte'
+  import Logo from '../components/atoms/Logo.svelte'
   import { sort, filter } from '../store/municipality'
 </script>
 
@@ -17,7 +18,7 @@
   }
 </style>
 
-<Layout>
+<MapPage>
   <slot slot="sidebar">
     <SearchBar />
     <div class="select-container">
@@ -52,4 +53,5 @@
     <MapComponent legend />
   </slot>
   <CompareList />
-</Layout>
+  <Logo />
+</MapPage>

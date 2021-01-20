@@ -1,8 +1,8 @@
 <script>
   import { link } from 'svelte-routing'
   export let href = ''
-  export let anchor
-  export let center
+  export let anchor = ''
+  export let center = false
 </script>
 
 <style>

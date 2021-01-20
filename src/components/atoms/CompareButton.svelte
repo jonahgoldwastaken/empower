@@ -1,5 +1,4 @@
 <script>
-  import { get } from 'svelte/store'
   import { comparingMunicipalities } from '../../store/municipality'
   export let municipality
 
@@ -8,24 +7,16 @@
   )
 
   function changeHandler() {
-    const currentComparingMunicipalities = get(comparingMunicipalities)
-    const index = currentComparingMunicipalities.findIndex(
-      d => municipality.municipality === d.municipality
-    )
-    if (index < 0 && currentComparingMunicipalities.length < 3)
-      comparingMunicipalities.set([
-        ...currentComparingMunicipalities,
-        municipality,
-      ])
-    else if (index > -1 && currentComparingMunicipalities.length <= 3)
-      comparingMunicipalities.set(
-        index === 0
-          ? [...currentComparingMunicipalities.slice(index + 1)]
-          : [
-              ...currentComparingMunicipalities.slice(0, index),
-              ...currentComparingMunicipalities.slice(index + 1),
-            ]
+    comparingMunicipalities.update(val => {
+      const index = val.findIndex(
+        d => municipality.municipality === d.municipality
       )
+      if (index < 0 && val.length < 3) return [...val, municipality]
+      else if (index > -1 && val.length <= 3)
+        return index === 0
+          ? [...val.slice(index + 1)]
+          : [...val.slice(0, index), ...val.slice(index + 1)]
+    })
   }
 </script>
 
@@ -74,7 +65,12 @@
   }
 </style>
 
-<label class:checked>
+<label on:click={e => e.stopPropagation()} class:checked>
   {checked ? 'Remove' : 'Compare'}
-  <input on:change={changeHandler} type="checkbox" {checked} />
+  <input
+    on:click={e => e.stopPropagation()}
+    on:change|stopPropagation={changeHandler}
+    type="checkbox"
+    {checked}
+  />
 </label>

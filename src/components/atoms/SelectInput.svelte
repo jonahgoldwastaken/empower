@@ -16,10 +16,10 @@
     content: '';
     background: url(/down-arrow-black.svg) no-repeat center/contain;
     position: absolute;
-    right: calc(0.75 * var(--step-0));
-    bottom: calc(0.55 * var(--step-0));
+    right: calc(0.75 * var(--step--1));
+    bottom: calc(0.55 * var(--step--1));
     width: var(--step--2);
-    height: var(--step-0);
+    height: var(--step--1);
     pointer-events: none;
   }
 
@@ -28,7 +28,7 @@
     border: none;
     display: block;
     margin-top: 0.25em;
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     padding: 0.5em;
     padding-right: 2.5em;
     border-radius: 0.5rem;

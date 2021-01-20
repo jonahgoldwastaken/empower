@@ -7,9 +7,9 @@
   $: axis =
     yScale &&
     axisLeft(yScale)
-      .ticks(10)
+      .ticks(5)
       .tickFormat((d, i) =>
-        i === 0 ? format('.0f')(d) + ' TJ' : format('.0f')(d)
+        i === 0 ? format('.0f')(d) + ' kWh' : format('.0f')(d)
       )
   $: axis && select(g).call(axis)
 </script>
@@ -17,8 +17,8 @@
 <style>
   #y-axis :global(text) {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: var(--step-0);
+    font-weight: 400;
+    font-size: var(--step--1);
     text-anchor: end;
     alignment-baseline: top;
   }

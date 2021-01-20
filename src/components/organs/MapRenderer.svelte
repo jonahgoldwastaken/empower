@@ -9,9 +9,38 @@
     height,
     path,
     currentFocus,
+    interact,
   } from '../../store/map.js'
 
   export let page
+
+  currentFocus.subscribe(val => {
+    if ($interact && val) {
+      const geoTownship = $townships.features.find(
+        d => val.municipality === d.properties.Gemeentenaam
+      )
+      const bounds = $path.bounds(geoTownship)
+      const dx = bounds[1][0] - bounds[0][0]
+      const dy = bounds[1][1] - bounds[0][1]
+      const x = (bounds[0][0] + bounds[1][0]) / 2
+      const y = (bounds[0][1] + bounds[1][1]) / 2
+      const newScale = Math.max(
+        1,
+        Math.min(3, 0.9 / Math.max(dx / $width, dy / $height))
+      )
+      const newTranslate = [
+        $width / 2 - newScale * x,
+        $height / 2 - newScale * y,
+      ]
+
+      scale.set(newScale)
+
+      translate.set({
+        x: newTranslate[0],
+        y: newTranslate[1],
+      })
+    }
+  })
 
   $: if (page.includes('compare')) {
     const bounds = $comparingMunicipalities
@@ -55,12 +84,17 @@
       x: newTranslate[0],
       y: newTranslate[1],
     })
-  } else if (page === '/preview' && !$currentFocus) {
-    console.log('hoi')
+  } else if (page === '/' && !$currentFocus) {
     scale.set(1)
     translate.set({ x: 0, y: 0 })
   }
 </script>
+
+<style>
+  svg {
+    background: var(--grey-blue);
+  }
+</style>
 
 <svg width={$width} height={$height} preserveAspectRatio="xMinYMin meet">
   <g

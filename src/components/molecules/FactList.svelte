@@ -1,24 +1,24 @@
 <script>
   import FactCard from '../atoms/FactCard.svelte'
   import { tweened } from 'svelte/motion'
-  import { cubicInOut } from 'svelte/easing'
+  import { quintInOut } from 'svelte/easing'
 
   export let municipality
   export let i
 
   const solarAmount = tweened(0, {
     duration: 1000,
-    easing: cubicInOut,
+    easing: quintInOut,
   })
 
   const windAmount = tweened(0, {
     duration: 1000,
-    easing: cubicInOut,
+    easing: quintInOut,
   })
 
   const biogasAmount = tweened(0, {
     duration: 1000,
-    easing: cubicInOut,
+    easing: quintInOut,
   })
 
   $: municipality?.solarProjects.length &&
@@ -48,18 +48,40 @@
   section {
     box-sizing: border-box;
     display: flex;
-    align-items: center;
-    height: calc(100% / 3);
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: calc(100% / 3);
   }
 
   section:not(:last-child) {
-    margin-bottom: calc(var(--step-0));
+    margin-right: var(--step-0);
   }
 
   h3 {
     font-size: var(--step-0);
-    flex: 0 0 12%;
+    flex: 0 0;
     hyphens: auto;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 100rem) {
+    section {
+      flex-direction: row;
+      justify-content: initial;
+      align-items: center;
+      width: 100%;
+      height: min-content;
+    }
+
+    section:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: var(--step-0);
+    }
+
+    h3 {
+      flex: 0 0 12%;
+    }
   }
 </style>
 
@@ -80,6 +102,6 @@
     energyType="biogas"
     amount={$biogasAmount.toFixed(0)}
   >
-    <p>Total amount of biogas energy generation</p>
+    <p>TJ of biogas energy generation in total</p>
   </FactCard>
 </section>

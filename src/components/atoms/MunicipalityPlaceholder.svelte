@@ -1,14 +1,13 @@
 <style>
   li {
     box-sizing: border-box;
-    height: calc(2 * var(--step-2) + 3.55 * var(--step-1) + 4px);
+    height: calc(4 * var(--step-2));
     width: 100%;
-    background: var(--white);
     border: 2px dashed var(--dark-grey);
-    font-size: var(--step-1);
+    font-size: var(--step-0);
     text-align: center;
-    line-height: calc(2 * var(--step-2) + 3 * var(--step-1));
-    box-shadow: var(--light-box-shadow);
+    line-height: calc(4 * var(--step-2));
+    white-space: wrap;
   }
 
   li:not(:last-child) {
@@ -16,6 +15,4 @@
   }
 </style>
 
-<li>
-  <slot />
-</li>
+<li>Add municipality here</li>

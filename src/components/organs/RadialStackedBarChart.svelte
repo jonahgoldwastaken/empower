@@ -10,7 +10,7 @@
   import { margin, arcMinRadius, arcPadding } from '../../store/radialChart'
   import { comparingMunicipalities } from '../../store/municipality'
 
-  export let divideByPopulation = false
+  export let divideByHoudeholds = false
 
   $: data = $comparingMunicipalities
     .map(
@@ -20,24 +20,24 @@
         solarEnergyGeneration,
         biogasEnergyGeneration,
         totalEnergyGeneration,
-        population,
+        households,
       }) => ({
         municipality,
-        windEnergyGeneration: divideByPopulation
-          ? (windEnergyGeneration / population) * 277777.777777778
+        windEnergyGeneration: divideByHoudeholds
+          ? (windEnergyGeneration / households) * 277777.777777778
           : windEnergyGeneration,
-        solarEnergyGeneration: divideByPopulation
-          ? (solarEnergyGeneration / population) * 277777.777777778
+        solarEnergyGeneration: divideByHoudeholds
+          ? (solarEnergyGeneration / households) * 277777.777777778
           : solarEnergyGeneration,
-        biogasEnergyGeneration: divideByPopulation
-          ? (biogasEnergyGeneration / population) * 277777.777777778
+        biogasEnergyGeneration: divideByHoudeholds
+          ? (biogasEnergyGeneration / households) * 277777.777777778
           : biogasEnergyGeneration,
-        totalEnergyGeneration: divideByPopulation
+        totalEnergyGeneration: divideByHoudeholds
           ? ((totalEnergyGeneration -
               windEnergyGeneration -
               solarEnergyGeneration -
               biogasEnergyGeneration) /
-              population) *
+              households) *
             277777.777777778
           : totalEnergyGeneration -
             windEnergyGeneration -
@@ -65,7 +65,10 @@
   $: numArcs = data.length
   $: arcWidth = (chartRadius - $arcMinRadius - numArcs * $arcPadding) / numArcs
   $: scale = scaleLinear()
-    .domain([0, max(data, d => keys.reduce((acc, curr) => acc + d[curr], 0))])
+    .domain([
+      0,
+      max(data, d => keys.reduce((acc, curr) => acc + d[curr], 0)) * 1.1,
+    ])
     .nice()
     .range([0, 2 * Math.PI])
   $: arc = d3Arc()
@@ -76,12 +79,12 @@
 </script>
 
 <GraphSVG centered bind:width bind:height={width}>
-  <RadialChartAngleAxis {divideByPopulation} bind:scale bind:chartRadius />
+  <RadialChartAngleAxis {divideByHoudeholds} bind:scale bind:chartRadius />
   {#each data as d, i (d[groupKey])}
     <RadialChartBarGroup {data} {d} bind:arc {i} bind:keys />
   {/each}
   <RadialChartRadialAxis {data} {groupKey} bind:arcWidth {numArcs} />
   <slot slot="description">
-    {#if divideByPopulation}Per citizen{:else}In total{/if}
+    {#if divideByHoudeholds}Per household{:else}In total{/if}
   </slot>
 </GraphSVG>

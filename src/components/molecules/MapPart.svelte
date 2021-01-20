@@ -7,15 +7,7 @@
     recommendedMunicipalities,
     comparingMunicipalities,
   } from '../../store/municipality.js'
-  import {
-    currentFocus,
-    scale,
-    translate,
-    path,
-    width,
-    height,
-    interact,
-  } from '../../store/map.js'
+  import { currentFocus, interact } from '../../store/map.js'
   import { select } from 'd3'
 
   export let geoTownship = null
@@ -53,36 +45,14 @@
     d => d.municipality === datum?.municipality
   )
 
-  $: !$interact &&
-    $comparingMunicipalities.find(
-      d => d.municipality === geoTownship.properties.Gemeentenaam
-    ) &&
-    select(g).raise()
+  $: comparing = !!$comparingMunicipalities.find(
+    d => d.municipality === geoTownship.properties.Gemeentenaam
+  )
+
+  $: !$interact && comparing && select(g).raise()
 
   function clickHandler() {
-    if ($interact) {
-      currentFocus.set(datum)
-      const bounds = $path.bounds(geoTownship)
-      const dx = bounds[1][0] - bounds[0][0]
-      const dy = bounds[1][1] - bounds[0][1]
-      const x = (bounds[0][0] + bounds[1][0]) / 2
-      const y = (bounds[0][1] + bounds[1][1]) / 2
-      const newScale = Math.max(
-        1,
-        Math.min(3, 0.9 / Math.max(dx / $width, dy / $height))
-      )
-      const newTranslate = [
-        $width / 2 - newScale * x,
-        $height / 2 - newScale * y,
-      ]
-
-      scale.set(newScale)
-
-      translate.set({
-        x: newTranslate[0],
-        y: newTranslate[1],
-      })
-    }
+    if ($interact) currentFocus.set(datum)
   }
 
   function hoverHandler() {
@@ -100,6 +70,7 @@
     on:mouseout={hoverHandler}
     datum={geoTownship}
     bind:focused
+    bind:comparing
     bind:level
     bind:showColour
     bind:recommended

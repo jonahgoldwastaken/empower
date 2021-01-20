@@ -6,6 +6,8 @@
     font-weight: 500;
     font-family: 'DIN Alternate', sans-serif;
     margin-top: 0;
+    grid-row: 1;
+    grid-column: 1;
   }
 </style>
 

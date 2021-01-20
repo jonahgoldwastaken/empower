@@ -1,8 +1,9 @@
 <script>
   import { radiusToDegrees } from '../../utils/radialChart.js'
+
   export let scale
   export let chartRadius
-  export let divideByPopulation
+  export let divideByHoudeholds
 
   $: ticks = scale.ticks(10).slice(0, -1)
 </script>
@@ -16,6 +17,12 @@
   text {
     font-family: 'Roboto', sans-serif;
     font-size: var(--step--1);
+  }
+
+  @media screen and (max-width: 80rem) {
+    text {
+      font-size: var(--step--2);
+    }
   }
 </style>
 
@@ -32,7 +39,7 @@
         ? 'start'
         : 'end'}
       alignment-baseline="middle">
-      {#if divideByPopulation}
+      {#if divideByHoudeholds}
         {#if tick === 0}
           {tick} kWh
         {:else}

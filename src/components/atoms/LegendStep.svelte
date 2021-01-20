@@ -4,19 +4,21 @@
 
 <style>
   li {
+    display: flex;
     margin-top: 0.5em;
+    width: 100%;
     --color: '';
-    font-size: var(--step-0);
+    font-size: var(--step--1);
   }
 
   li:before {
     content: '';
-    display: inline-block;
+    display: block;
     border-radius: 0.125em;
     height: 0.75em;
     width: 1.5em;
+    margin-top: calc(0.25em * 1.5);
     margin-right: 1.125em;
-    vertical-align: middle;
     background: var(--color);
   }
 </style>

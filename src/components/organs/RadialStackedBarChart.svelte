@@ -9,8 +9,12 @@
   import { getInnerRadius, getOuterRadius } from '../../utils/radialChart'
   import { margin, arcMinRadius, arcPadding } from '../../store/radialChart'
   import { comparingMunicipalities } from '../../store/municipality'
+  import IntersectionObserver from 'svelte-intersection-observer'
 
   export let divideByHoudeholds = false
+
+  let svg
+  let intersecting
 
   $: data = $comparingMunicipalities
     .map(
@@ -78,13 +82,22 @@
     .endAngle(d => scale(d.end))
 </script>
 
-<GraphSVG centered bind:width bind:height={width}>
-  <RadialChartAngleAxis {divideByHoudeholds} bind:scale bind:chartRadius />
-  {#each data as d, i (d[groupKey])}
-    <RadialChartBarGroup {data} {d} bind:arc {i} bind:keys />
-  {/each}
-  <RadialChartRadialAxis {data} {groupKey} bind:arcWidth {numArcs} />
-  <slot slot="description">
-    {#if divideByHoudeholds}Per household{:else}In total{/if}
-  </slot>
-</GraphSVG>
+<IntersectionObserver element={svg} bind:intersecting threshold={0.5}>
+  <GraphSVG bind:svg centered bind:width bind:height={width}>
+    <RadialChartAngleAxis {divideByHoudeholds} bind:scale bind:chartRadius />
+    {#each data as d, i (d[groupKey])}
+      <RadialChartBarGroup
+        bind:intersecting
+        {data}
+        {d}
+        bind:arc
+        {i}
+        bind:keys
+      />
+    {/each}
+    <RadialChartRadialAxis {data} {groupKey} bind:arcWidth {numArcs} />
+    <slot slot="description">
+      {#if divideByHoudeholds}Per household{:else}In total{/if}
+    </slot>
+  </GraphSVG>
+</IntersectionObserver>

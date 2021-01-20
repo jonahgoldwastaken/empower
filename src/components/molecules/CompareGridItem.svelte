@@ -12,6 +12,7 @@
     background: var(--white);
     padding: var(--step-1);
     display: grid;
+    grid-template-columns: auto min-content;
     grid-template-rows: min-content 1fr;
     grid-column-gap: var(--step-0);
   }
@@ -65,7 +66,7 @@
   }
 
   .map a span {
-    border: 3px solid var(--text-secondary);
+    border: 1px solid var(--text-secondary);
     padding: 0.5em 1em;
   }
 

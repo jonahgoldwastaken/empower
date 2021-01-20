@@ -5633,6 +5633,11 @@ svelte-hmr@^0.12.1:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.12.3.tgz#7835996808763e426669dd62d3ccd46827fc44df"
   integrity sha512-hyggTjuA6E/jWYltj8Q9B9sSumOqopBurwFcqwys4LUp7cCE0H0UC6uYyfvQlEdCCQokON/5E8bmHBOBDUUU9A==
 
+svelte-intersection-observer@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/svelte-intersection-observer/-/svelte-intersection-observer-0.4.0.tgz#c43d3a6967d2fe9892589e4d222b1a6617397c82"
+  integrity sha512-IelHBniABllWF6jQY2cOn2TsUENpErja520ZtkC7Cn/tvxUrP8TLQMarc9z4uMOl8MW406vSoqt1Z19iXbHo/w==
+
 svelte-loadable@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/svelte-loadable/-/svelte-loadable-1.5.1.tgz#0048e740a386f1826e5ab88cdfde943fbd3fcb7f"

@@ -49,11 +49,9 @@
 
   path.show-colour.recommended {
     fill: var(--blue);
-    stroke-width: 2;
   }
 
   path.comparing {
-    stroke-width: 2;
     fill: var(--orange) !important;
   }
 </style>

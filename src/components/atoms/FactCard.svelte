@@ -1,7 +1,23 @@
 <script>
+  import IntersectionObserver from 'svelte-intersection-observer'
+  import { quintInOut } from 'svelte/easing'
+  import { tweened } from 'svelte/motion'
+
   export let energyType = 'solar'
   export let amount = 0
   export let background = 'green'
+
+  const tweenAmount = tweened(0, {
+    duration: 750,
+    easing: quintInOut,
+  })
+
+  let element
+  let intersecting
+
+  $: console.log(intersecting, amount)
+
+  $: intersecting && tweenAmount.set(amount)
 </script>
 
 <style>
@@ -77,10 +93,12 @@
   }
 </style>
 
-<article style="--bg: var(--{background})">
-  <img src="/{energyType}.svg" alt="{energyType} icon" />
-  <strong>{amount}</strong>
-  <slot>
-    <p>Average kWp proceeds per {energyType} project</p>
-  </slot>
-</article>
+<IntersectionObserver {element} bind:intersecting threshold={0.5}>
+  <article bind:this={element} style="--bg: var(--{background})">
+    <img src="/{energyType}.svg" alt="{energyType} icon" />
+    <strong>{$tweenAmount.toFixed(0)}</strong>
+    <slot>
+      <p>Average kWp proceeds per {energyType} project</p>
+    </slot>
+  </article>
+</IntersectionObserver>

@@ -1,6 +1,5 @@
 [
   {
-    "regio": "Appingedam",
     "population": 11721,
     "code": 3,
     "codeExtended": "GM0003",
@@ -15,7 +14,7 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 13,
+    "totalEnergyGeneration": 48,
     "solarProjects": [
       {
         "nr": 26,
@@ -34,7 +33,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Delfzijl",
     "population": 24716,
     "code": 10,
     "codeExtended": "GM0010",
@@ -49,7 +47,7 @@
     "solarEnergyGeneration": 154,
     "windEnergyGeneration": 1046,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 2075,
+    "totalEnergyGeneration": 5050,
     "solarProjects": [
       {
         "nr": 48,
@@ -91,7 +89,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Groningen",
     "population": 231299,
     "code": 14,
     "codeExtended": "GM0014",
@@ -106,7 +103,7 @@
     "solarEnergyGeneration": 169,
     "windEnergyGeneration": 1,
     "biogasEnergyGeneration": 34,
-    "totalEnergyGeneration": 252,
+    "totalEnergyGeneration": 998,
     "solarProjects": [
       {
         "nr": 5,
@@ -284,7 +281,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -387,7 +384,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Loppersum",
     "population": 9614,
     "code": 24,
     "codeExtended": "GM0024",
@@ -402,7 +398,7 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 24,
+    "totalEnergyGeneration": 61,
     "solarProjects": [
       {
         "nr": 17,
@@ -448,7 +444,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -480,7 +476,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Almere",
     "population": 207904,
     "code": 34,
     "codeExtended": "GM0034",
@@ -495,7 +490,7 @@
     "solarEnergyGeneration": 113,
     "windEnergyGeneration": 236,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 351,
+    "totalEnergyGeneration": 719,
     "solarProjects": [
       {
         "nr": 1,
@@ -625,7 +620,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       }
@@ -646,7 +641,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Stadskanaal",
     "population": 31789,
     "code": 37,
     "codeExtended": "GM0037",
@@ -661,13 +655,12 @@
     "solarEnergyGeneration": 88,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 46,
-    "totalEnergyGeneration": 107,
+    "totalEnergyGeneration": 208,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Veendam",
     "population": 27491,
     "code": 47,
     "codeExtended": "GM0047",
@@ -682,13 +675,12 @@
     "solarEnergyGeneration": 79,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 87,
-    "totalEnergyGeneration": 118,
+    "totalEnergyGeneration": 208,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Zeewolde",
     "population": 22309,
     "code": 50,
     "codeExtended": "GM0050",
@@ -703,7 +695,7 @@
     "solarEnergyGeneration": 64,
     "windEnergyGeneration": 2347,
     "biogasEnergyGeneration": 99,
-    "totalEnergyGeneration": 2506,
+    "totalEnergyGeneration": 2720,
     "solarProjects": [],
     "windProjects": [
       {
@@ -754,7 +746,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Achtkarspelen",
     "population": 27852,
     "code": 59,
     "codeExtended": "GM0059",
@@ -769,7 +760,7 @@
     "solarEnergyGeneration": 47,
     "windEnergyGeneration": 4,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 55,
+    "totalEnergyGeneration": 132,
     "solarProjects": [
       {
         "nr": 56,
@@ -788,7 +779,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Ameland",
     "population": 3673,
     "code": 60,
     "codeExtended": "GM0060",
@@ -803,7 +793,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 35,
     "solarProjects": [
       {
         "nr": 1,
@@ -846,7 +836,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Harlingen",
     "population": 15758,
     "code": 72,
     "codeExtended": "GM0072",
@@ -861,7 +850,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 175,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 467,
+    "totalEnergyGeneration": 1535,
     "solarProjects": [
       {
         "nr": 35,
@@ -880,7 +869,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Heerenveen",
     "population": 50257,
     "code": 74,
     "codeExtended": "GM0074",
@@ -895,7 +883,7 @@
     "solarEnergyGeneration": 62,
     "windEnergyGeneration": 17,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 80,
+    "totalEnergyGeneration": 277,
     "solarProjects": [
       {
         "nr": 8,
@@ -917,7 +905,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -938,7 +926,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Leeuwarden",
     "population": 123107,
     "code": 80,
     "codeExtended": "GM0080",
@@ -953,7 +940,7 @@
     "solarEnergyGeneration": 132,
     "windEnergyGeneration": 50,
     "biogasEnergyGeneration": 45,
-    "totalEnergyGeneration": 212,
+    "totalEnergyGeneration": 538,
     "solarProjects": [
       {
         "nr": 9,
@@ -1020,7 +1007,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Ooststellingwerf",
     "population": 25497,
     "code": 85,
     "codeExtended": "GM0085",
@@ -1035,7 +1021,7 @@
     "solarEnergyGeneration": 74,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 13,
-    "totalEnergyGeneration": 82,
+    "totalEnergyGeneration": 189,
     "solarProjects": [
       {
         "nr": 40,
@@ -1054,7 +1040,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Opsterland",
     "population": 29723,
     "code": 86,
     "codeExtended": "GM0086",
@@ -1069,7 +1054,7 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 140,
     "solarProjects": [
       {
         "nr": 41,
@@ -1115,7 +1100,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -1124,7 +1109,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Schiermonnikoog",
     "population": 936,
     "code": 88,
     "codeExtended": "GM0088",
@@ -1139,7 +1123,7 @@
     "solarEnergyGeneration": 2,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 2,
+    "totalEnergyGeneration": 5,
     "solarProjects": [
       {
         "nr": 14,
@@ -1170,7 +1154,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Smallingerland",
     "population": 55938,
     "code": 90,
     "codeExtended": "GM0090",
@@ -1185,13 +1168,12 @@
     "solarEnergyGeneration": 43,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 5,
-    "totalEnergyGeneration": 48,
+    "totalEnergyGeneration": 237,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Terschelling",
     "population": 4890,
     "code": 93,
     "codeExtended": "GM0093",
@@ -1206,7 +1188,7 @@
     "solarEnergyGeneration": 9,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 9,
+    "totalEnergyGeneration": 21,
     "solarProjects": [
       {
         "nr": 18,
@@ -1225,7 +1207,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Vlieland",
     "population": 1138,
     "code": 96,
     "codeExtended": "GM0096",
@@ -1240,7 +1221,7 @@
     "solarEnergyGeneration": 3,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 3,
+    "totalEnergyGeneration": 5,
     "solarProjects": [
       {
         "nr": 20,
@@ -1259,7 +1240,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Weststellingwerf",
     "population": 25840,
     "code": 98,
     "codeExtended": "GM0098",
@@ -1274,7 +1254,7 @@
     "solarEnergyGeneration": 55,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 55,
+    "totalEnergyGeneration": 154,
     "solarProjects": [
       {
         "nr": 29,
@@ -1293,7 +1273,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Assen",
     "population": 67963,
     "code": 106,
     "codeExtended": "GM0106",
@@ -1308,7 +1287,7 @@
     "solarEnergyGeneration": 69,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 4,
-    "totalEnergyGeneration": 73,
+    "totalEnergyGeneration": 253,
     "solarProjects": [
       {
         "nr": 1,
@@ -1354,7 +1333,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -1366,7 +1345,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -1378,7 +1357,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       }
@@ -1387,7 +1366,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Coevorden",
     "population": 35483,
     "code": 109,
     "codeExtended": "GM0109",
@@ -1402,7 +1380,7 @@
     "solarEnergyGeneration": 58,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 39,
-    "totalEnergyGeneration": 111,
+    "totalEnergyGeneration": 351,
     "solarProjects": [
       {
         "nr": 4,
@@ -1424,7 +1402,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -1436,7 +1414,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -1445,7 +1423,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Emmen",
     "population": 107113,
     "code": 114,
     "codeExtended": "GM0114",
@@ -1460,7 +1437,7 @@
     "solarEnergyGeneration": 166,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 16,
-    "totalEnergyGeneration": 182,
+    "totalEnergyGeneration": 554,
     "solarProjects": [
       {
         "nr": 14,
@@ -1491,7 +1468,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hoogeveen",
     "population": 55662,
     "code": 118,
     "codeExtended": "GM0118",
@@ -1506,13 +1482,12 @@
     "solarEnergyGeneration": 66,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 12,
-    "totalEnergyGeneration": 78,
+    "totalEnergyGeneration": 300,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Meppel",
     "population": 33564,
     "code": 119,
     "codeExtended": "GM0119",
@@ -1527,7 +1502,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 28,
+    "totalEnergyGeneration": 149,
     "solarProjects": [
       {
         "nr": 10,
@@ -1546,7 +1521,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Almelo",
     "population": 72849,
     "code": 141,
     "codeExtended": "GM0141",
@@ -1561,13 +1535,12 @@
     "solarEnergyGeneration": 38,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 38,
+    "totalEnergyGeneration": 269,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Borne",
     "population": 23210,
     "code": 147,
     "codeExtended": "GM0147",
@@ -1582,7 +1555,7 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 20,
+    "totalEnergyGeneration": 87,
     "solarProjects": [
       {
         "nr": 1,
@@ -1601,7 +1574,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Dalfsen",
     "population": 28499,
     "code": 148,
     "codeExtended": "GM0148",
@@ -1616,7 +1588,7 @@
     "solarEnergyGeneration": 59,
     "windEnergyGeneration": 58,
     "biogasEnergyGeneration": 35,
-    "totalEnergyGeneration": 139,
+    "totalEnergyGeneration": 280,
     "solarProjects": [
       {
         "nr": 2,
@@ -1683,7 +1655,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Deventer",
     "population": 99957,
     "code": 150,
     "codeExtended": "GM0150",
@@ -1698,7 +1669,7 @@
     "solarEnergyGeneration": 68,
     "windEnergyGeneration": 31,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 109,
+    "totalEnergyGeneration": 411,
     "solarProjects": [
       {
         "nr": 3,
@@ -1765,7 +1736,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Enschede",
     "population": 158986,
     "code": 153,
     "codeExtended": "GM0153",
@@ -1780,7 +1750,7 @@
     "solarEnergyGeneration": 74,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 15,
-    "totalEnergyGeneration": 89,
+    "totalEnergyGeneration": 370,
     "solarProjects": [
       {
         "nr": 6,
@@ -1835,7 +1805,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Haaksbergen",
     "population": 24277,
     "code": 158,
     "codeExtended": "GM0158",
@@ -1850,13 +1819,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 25,
+    "totalEnergyGeneration": 191,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Hardenberg",
     "population": 60574,
     "code": 160,
     "codeExtended": "GM0160",
@@ -1871,7 +1839,7 @@
     "solarEnergyGeneration": 91,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 35,
-    "totalEnergyGeneration": 150,
+    "totalEnergyGeneration": 648,
     "solarProjects": [
       {
         "nr": 29,
@@ -1881,7 +1849,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       }
@@ -1890,7 +1858,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hellendoorn",
     "population": 35808,
     "code": 163,
     "codeExtended": "GM0163",
@@ -1905,7 +1872,7 @@
     "solarEnergyGeneration": 36,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 44,
+    "totalEnergyGeneration": 242,
     "solarProjects": [
       {
         "nr": 30,
@@ -1936,7 +1903,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hengelo",
     "population": 80683,
     "code": 164,
     "codeExtended": "GM0164",
@@ -1951,7 +1917,7 @@
     "solarEnergyGeneration": 52,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 23,
-    "totalEnergyGeneration": 1043,
+    "totalEnergyGeneration": 2963,
     "solarProjects": [
       {
         "nr": 10,
@@ -1970,7 +1936,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Kampen",
     "population": 53779,
     "code": 166,
     "codeExtended": "GM0166",
@@ -1985,13 +1950,12 @@
     "solarEnergyGeneration": 68,
     "windEnergyGeneration": 65,
     "biogasEnergyGeneration": 4,
-    "totalEnergyGeneration": 136,
+    "totalEnergyGeneration": 471,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Losser",
     "population": 22622,
     "code": 168,
     "codeExtended": "GM0168",
@@ -2006,13 +1970,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 25,
+    "totalEnergyGeneration": 94,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Noordoostpolder",
     "population": 46849,
     "code": 171,
     "codeExtended": "GM0171",
@@ -2027,7 +1990,7 @@
     "solarEnergyGeneration": 209,
     "windEnergyGeneration": 3516,
     "biogasEnergyGeneration": 52,
-    "totalEnergyGeneration": 3798,
+    "totalEnergyGeneration": 4308,
     "solarProjects": [
       {
         "nr": 11,
@@ -2073,7 +2036,7 @@
         "realisatiejaar": 2018,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -2094,7 +2057,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Oldenzaal",
     "population": 31840,
     "code": 173,
     "codeExtended": "GM0173",
@@ -2109,7 +2071,7 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 27,
+    "totalEnergyGeneration": 97,
     "solarProjects": [
       {
         "nr": 25,
@@ -2128,7 +2090,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Ommen",
     "population": 17813,
     "code": 175,
     "codeExtended": "GM0175",
@@ -2143,13 +2104,12 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 197,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Raalte",
     "population": 37511,
     "code": 177,
     "codeExtended": "GM0177",
@@ -2164,13 +2124,12 @@
     "solarEnergyGeneration": 69,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 39,
-    "totalEnergyGeneration": 110,
+    "totalEnergyGeneration": 302,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Staphorst",
     "population": 17003,
     "code": 180,
     "codeExtended": "GM0180",
@@ -2185,7 +2144,7 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 29,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 55,
+    "totalEnergyGeneration": 143,
     "solarProjects": [],
     "windProjects": [
       {
@@ -2203,7 +2162,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Tubbergen",
     "population": 21276,
     "code": 183,
     "codeExtended": "GM0183",
@@ -2218,13 +2176,12 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 21,
-    "totalEnergyGeneration": 37,
+    "totalEnergyGeneration": 162,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Urk",
     "population": 20776,
     "code": 184,
     "codeExtended": "GM0184",
@@ -2239,13 +2196,12 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 109,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 125,
+    "totalEnergyGeneration": 155,
     "solarProjects": [],
     "windProjects": [],
     "location": "Lake"
   },
   {
-    "regio": "Wierden",
     "population": 24351,
     "code": 189,
     "codeExtended": "GM0189",
@@ -2260,7 +2216,7 @@
     "solarEnergyGeneration": 42,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 42,
+    "totalEnergyGeneration": 153,
     "solarProjects": [
       {
         "nr": 15,
@@ -2291,7 +2247,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Zwolle",
     "population": 127497,
     "code": 193,
     "codeExtended": "GM0193",
@@ -2306,7 +2261,7 @@
     "solarEnergyGeneration": 143,
     "windEnergyGeneration": 58,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 210,
+    "totalEnergyGeneration": 559,
     "solarProjects": [
       {
         "nr": 17,
@@ -2328,7 +2283,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -2337,7 +2292,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Aalten",
     "population": 27011,
     "code": 197,
     "codeExtended": "GM0197",
@@ -2352,7 +2306,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 114,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 144,
+    "totalEnergyGeneration": 226,
     "solarProjects": [
       {
         "nr": 135,
@@ -2362,7 +2316,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -2371,7 +2325,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Apeldoorn",
     "population": 162445,
     "code": 200,
     "codeExtended": "GM0200",
@@ -2386,7 +2339,7 @@
     "solarEnergyGeneration": 110,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 27,
-    "totalEnergyGeneration": 167,
+    "totalEnergyGeneration": 890,
     "solarProjects": [
       {
         "nr": "",
@@ -2561,7 +2514,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Arnhem",
     "population": 159267,
     "code": 202,
     "codeExtended": "GM0202",
@@ -2576,7 +2528,7 @@
     "solarEnergyGeneration": 63,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 6,
-    "totalEnergyGeneration": 69,
+    "totalEnergyGeneration": 479,
     "solarProjects": [
       {
         "nr": 12,
@@ -2667,7 +2619,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Barneveld",
     "population": 57971,
     "code": 203,
     "codeExtended": "GM0203",
@@ -2682,7 +2633,7 @@
     "solarEnergyGeneration": 54,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 54,
+    "totalEnergyGeneration": 313,
     "solarProjects": [
       {
         "nr": 17,
@@ -2701,7 +2652,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Beuningen",
     "population": 25882,
     "code": 209,
     "codeExtended": "GM0209",
@@ -2716,13 +2666,12 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 30,
-    "totalEnergyGeneration": 363,
+    "totalEnergyGeneration": 1022,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Brummen",
     "population": 20698,
     "code": 213,
     "codeExtended": "GM0213",
@@ -2737,7 +2686,7 @@
     "solarEnergyGeneration": 17,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 17,
+    "totalEnergyGeneration": 89,
     "solarProjects": [
       {
         "nr": 140,
@@ -2768,7 +2717,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Buren",
     "population": 26576,
     "code": 214,
     "codeExtended": "GM0214",
@@ -2783,13 +2731,12 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 54,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 172,
+    "totalEnergyGeneration": 526,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Culemborg",
     "population": 28555,
     "code": 216,
     "codeExtended": "GM0216",
@@ -2804,7 +2751,7 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 36,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 60,
+    "totalEnergyGeneration": 119,
     "solarProjects": [
       {
         "nr": 29,
@@ -2905,7 +2852,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Doesburg",
     "population": 11148,
     "code": 221,
     "codeExtended": "GM0221",
@@ -2920,13 +2866,12 @@
     "solarEnergyGeneration": 5,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 5,
+    "totalEnergyGeneration": 30,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Doetinchem",
     "population": 57555,
     "code": 222,
     "codeExtended": "GM0222",
@@ -2941,7 +2886,7 @@
     "solarEnergyGeneration": 44,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 44,
+    "totalEnergyGeneration": 201,
     "solarProjects": [
       {
         "nr": 112,
@@ -2960,7 +2905,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Druten",
     "population": 18797,
     "code": 225,
     "codeExtended": "GM0225",
@@ -2975,7 +2919,7 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 13,
+    "totalEnergyGeneration": 57,
     "solarProjects": [
       {
         "nr": 32,
@@ -3006,7 +2950,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Duiven",
     "population": 25332,
     "code": 226,
     "codeExtended": "GM0226",
@@ -3021,7 +2964,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 52,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 380,
+    "totalEnergyGeneration": 1071,
     "solarProjects": [
       {
         "nr": 114,
@@ -3040,7 +2983,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Ede",
     "population": 115710,
     "code": 228,
     "codeExtended": "GM0228",
@@ -3055,7 +2997,7 @@
     "solarEnergyGeneration": 95,
     "windEnergyGeneration": 39,
     "biogasEnergyGeneration": 7,
-    "totalEnergyGeneration": 166,
+    "totalEnergyGeneration": 865,
     "solarProjects": [
       {
         "nr": 33,
@@ -3126,7 +3068,7 @@
         "status": "oriëntatie",
         "realisatiejaar": 2022,
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -3134,7 +3076,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Elburg",
     "population": 23086,
     "code": 230,
     "codeExtended": "GM0230",
@@ -3149,13 +3090,12 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 117,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Epe",
     "population": 33145,
     "code": 232,
     "codeExtended": "GM0232",
@@ -3170,13 +3110,12 @@
     "solarEnergyGeneration": 23,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 23,
+    "totalEnergyGeneration": 149,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Ermelo",
     "population": 26858,
     "code": 233,
     "codeExtended": "GM0233",
@@ -3191,13 +3130,12 @@
     "solarEnergyGeneration": 29,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 5,
-    "totalEnergyGeneration": 34,
+    "totalEnergyGeneration": 119,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Harderwijk",
     "population": 47581,
     "code": 243,
     "codeExtended": "GM0243",
@@ -3212,7 +3150,7 @@
     "solarEnergyGeneration": 32,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 13,
-    "totalEnergyGeneration": 45,
+    "totalEnergyGeneration": 233,
     "solarProjects": [
       {
         "nr": 39,
@@ -3258,7 +3196,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "anders",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       }
@@ -3267,7 +3205,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hattem",
     "population": 12173,
     "code": 244,
     "codeExtended": "GM0244",
@@ -3282,7 +3219,7 @@
     "solarEnergyGeneration": 7,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 7,
+    "totalEnergyGeneration": 88,
     "solarProjects": [
       {
         "nr": 40,
@@ -3361,7 +3298,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Heerde",
     "population": 18546,
     "code": 246,
     "codeExtended": "GM0246",
@@ -3376,13 +3312,12 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 13,
+    "totalEnergyGeneration": 119,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Heumen",
     "population": 16486,
     "code": 252,
     "codeExtended": "GM0252",
@@ -3397,13 +3332,12 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 13,
+    "totalEnergyGeneration": 69,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Lochem",
     "population": 33590,
     "code": 262,
     "codeExtended": "GM0262",
@@ -3418,7 +3352,7 @@
     "solarEnergyGeneration": 34,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 34,
+    "totalEnergyGeneration": 144,
     "solarProjects": [
       {
         "nr": 44,
@@ -3557,7 +3491,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Maasdriel",
     "population": 24693,
     "code": 263,
     "codeExtended": "GM0263",
@@ -3572,13 +3505,12 @@
     "solarEnergyGeneration": 31,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 32,
+    "totalEnergyGeneration": 160,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Nijkerk",
     "population": 42943,
     "code": 267,
     "codeExtended": "GM0267",
@@ -3593,7 +3525,7 @@
     "solarEnergyGeneration": 47,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 49,
+    "totalEnergyGeneration": 220,
     "solarProjects": [
       {
         "nr": 58,
@@ -3675,7 +3607,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -3684,7 +3616,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Nijmegen",
     "population": 176731,
     "code": 268,
     "codeExtended": "GM0268",
@@ -3699,7 +3630,7 @@
     "solarEnergyGeneration": 76,
     "windEnergyGeneration": 63,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 139,
+    "totalEnergyGeneration": 421,
     "solarProjects": [
       {
         "nr": 64,
@@ -3790,7 +3721,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Oldebroek",
     "population": 23598,
     "code": 269,
     "codeExtended": "GM0269",
@@ -3805,7 +3735,7 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 20,
+    "totalEnergyGeneration": 112,
     "solarProjects": [
       {
         "nr": 146,
@@ -3815,7 +3745,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       },
@@ -3827,7 +3757,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -3836,7 +3766,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Putten",
     "population": 24198,
     "code": 273,
     "codeExtended": "GM0273",
@@ -3851,13 +3780,12 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 27,
-    "totalEnergyGeneration": 58,
+    "totalEnergyGeneration": 195,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Renkum",
     "population": 31300,
     "code": 274,
     "codeExtended": "GM0274",
@@ -3872,7 +3800,7 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 3,
-    "totalEnergyGeneration": 67,
+    "totalEnergyGeneration": 640,
     "solarProjects": [],
     "windProjects": [
       {
@@ -3882,7 +3810,7 @@
         "status": "oriëntatie",
         "realisatiejaar": 2022,
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -3890,7 +3818,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Rheden",
     "population": 43640,
     "code": 275,
     "codeExtended": "GM0275",
@@ -3905,7 +3832,7 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 20,
+    "totalEnergyGeneration": 117,
     "solarProjects": [
       {
         "nr": 76,
@@ -3936,7 +3863,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Rozendaal",
     "population": 1654,
     "code": 277,
     "codeExtended": "GM0277",
@@ -3951,13 +3877,12 @@
     "solarEnergyGeneration": 1,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 1,
+    "totalEnergyGeneration": 7,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Scherpenzeel",
     "population": 9873,
     "code": 279,
     "codeExtended": "GM0279",
@@ -3972,13 +3897,12 @@
     "solarEnergyGeneration": 7,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 7,
+    "totalEnergyGeneration": 28,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Tiel",
     "population": 41978,
     "code": 281,
     "codeExtended": "GM0281",
@@ -3993,7 +3917,7 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 35,
+    "totalEnergyGeneration": 156,
     "solarProjects": [
       {
         "nr": 77,
@@ -4060,7 +3984,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Voorst",
     "population": 24417,
     "code": 285,
     "codeExtended": "GM0285",
@@ -4075,7 +3998,7 @@
     "solarEnergyGeneration": 21,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 3,
-    "totalEnergyGeneration": 56,
+    "totalEnergyGeneration": 204,
     "solarProjects": [
       {
         "nr": 81,
@@ -4142,7 +4065,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Wageningen",
     "population": 38774,
     "code": 289,
     "codeExtended": "GM0289",
@@ -4157,7 +4079,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 28,
+    "totalEnergyGeneration": 86,
     "solarProjects": [
       {
         "nr": 85,
@@ -4212,7 +4134,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Westervoort",
     "population": 14944,
     "code": 293,
     "codeExtended": "GM0293",
@@ -4227,13 +4148,12 @@
     "solarEnergyGeneration": 6,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 6,
+    "totalEnergyGeneration": 30,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Winterswijk",
     "population": 28903,
     "code": 294,
     "codeExtended": "GM0294",
@@ -4248,7 +4168,7 @@
     "solarEnergyGeneration": 34,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 34,
+    "totalEnergyGeneration": 107,
     "solarProjects": [
       {
         "nr": 133,
@@ -4267,7 +4187,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Wijchen",
     "population": 40951,
     "code": 296,
     "codeExtended": "GM0296",
@@ -4282,7 +4201,7 @@
     "solarEnergyGeneration": 37,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 9,
-    "totalEnergyGeneration": 46,
+    "totalEnergyGeneration": 172,
     "solarProjects": [
       {
         "nr": 90,
@@ -4337,7 +4256,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Zaltbommel",
     "population": 28451,
     "code": 297,
     "codeExtended": "GM0297",
@@ -4352,7 +4270,7 @@
     "solarEnergyGeneration": 36,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 36,
+    "totalEnergyGeneration": 118,
     "solarProjects": [
       {
         "nr": 93,
@@ -4395,7 +4313,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Zevenaar",
     "population": 43488,
     "code": 299,
     "codeExtended": "GM0299",
@@ -4410,7 +4327,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 246,
     "solarProjects": [
       {
         "nr": 95,
@@ -4429,7 +4346,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Zutphen",
     "population": 47609,
     "code": 301,
     "codeExtended": "GM0301",
@@ -4444,7 +4360,7 @@
     "solarEnergyGeneration": 32,
     "windEnergyGeneration": 40,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 72,
+    "totalEnergyGeneration": 156,
     "solarProjects": [
       {
         "nr": 96,
@@ -4535,7 +4451,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Nunspeet",
     "population": 27481,
     "code": 302,
     "codeExtended": "GM0302",
@@ -4550,7 +4465,7 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 14,
+    "totalEnergyGeneration": 109,
     "solarProjects": [
       {
         "nr": 66,
@@ -4569,7 +4484,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Dronten",
     "population": 40815,
     "code": 303,
     "codeExtended": "GM0303",
@@ -4584,13 +4498,12 @@
     "solarEnergyGeneration": 99,
     "windEnergyGeneration": 1089,
     "biogasEnergyGeneration": 34,
-    "totalEnergyGeneration": 1226,
+    "totalEnergyGeneration": 1438,
     "solarProjects": [],
     "windProjects": [],
     "location": "Lake"
   },
   {
-    "regio": "Amersfoort",
     "population": 156286,
     "code": 307,
     "codeExtended": "GM0307",
@@ -4605,7 +4518,7 @@
     "solarEnergyGeneration": 72,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 35,
-    "totalEnergyGeneration": 107,
+    "totalEnergyGeneration": 531,
     "solarProjects": [
       {
         "nr": 1,
@@ -4696,7 +4609,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Baarn",
     "population": 24767,
     "code": 308,
     "codeExtended": "GM0308",
@@ -4711,7 +4623,7 @@
     "solarEnergyGeneration": 12,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 12,
+    "totalEnergyGeneration": 77,
     "solarProjects": [
       {
         "nr": 36,
@@ -4730,7 +4642,6 @@
     "location": "Rural"
   },
   {
-    "regio": "De Bilt",
     "population": 42825,
     "code": 310,
     "codeExtended": "GM0310",
@@ -4745,7 +4656,7 @@
     "solarEnergyGeneration": 18,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 18,
+    "totalEnergyGeneration": 166,
     "solarProjects": [
       {
         "nr": 7,
@@ -4812,7 +4723,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Bunnik",
     "population": 15192,
     "code": 312,
     "codeExtended": "GM0312",
@@ -4827,7 +4737,7 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 14,
+    "totalEnergyGeneration": 87,
     "solarProjects": [
       {
         "nr": 6,
@@ -4873,7 +4783,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -4882,7 +4792,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Bunschoten",
     "population": 21576,
     "code": 313,
     "codeExtended": "GM0313",
@@ -4897,13 +4806,12 @@
     "solarEnergyGeneration": 21,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 24,
+    "totalEnergyGeneration": 62,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Eemnes",
     "population": 9113,
     "code": 317,
     "codeExtended": "GM0317",
@@ -4918,13 +4826,12 @@
     "solarEnergyGeneration": 21,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 21,
+    "totalEnergyGeneration": 86,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Houten",
     "population": 49911,
     "code": 321,
     "codeExtended": "GM0321",
@@ -4939,7 +4846,7 @@
     "solarEnergyGeneration": 40,
     "windEnergyGeneration": 48,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 87,
+    "totalEnergyGeneration": 166,
     "solarProjects": [
       {
         "nr": 12,
@@ -5018,7 +4925,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Leusden",
     "population": 30030,
     "code": 327,
     "codeExtended": "GM0327",
@@ -5033,7 +4939,7 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 26,
+    "totalEnergyGeneration": 84,
     "solarProjects": [
       {
         "nr": 14,
@@ -5064,7 +4970,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Lopik",
     "population": 14473,
     "code": 331,
     "codeExtended": "GM0331",
@@ -5079,7 +4984,7 @@
     "solarEnergyGeneration": 15,
     "windEnergyGeneration": 35,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 50,
+    "totalEnergyGeneration": 89,
     "solarProjects": [],
     "windProjects": [
       {
@@ -5089,7 +4994,7 @@
         "status": "oriëntatie",
         "realisatiejaar": 2022,
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -5097,7 +5002,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Montfoort",
     "population": 13996,
     "code": 335,
     "codeExtended": "GM0335",
@@ -5112,7 +5016,7 @@
     "solarEnergyGeneration": 15,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 15,
+    "totalEnergyGeneration": 50,
     "solarProjects": [
       {
         "nr": 56,
@@ -5122,7 +5026,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -5131,7 +5035,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Renswoude",
     "population": 5259,
     "code": 339,
     "codeExtended": "GM0339",
@@ -5146,13 +5049,12 @@
     "solarEnergyGeneration": 6,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 6,
+    "totalEnergyGeneration": 23,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Rhenen",
     "population": 20004,
     "code": 340,
     "codeExtended": "GM0340",
@@ -5167,7 +5069,7 @@
     "solarEnergyGeneration": 10,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 10,
+    "totalEnergyGeneration": 62,
     "solarProjects": [
       {
         "nr": 17,
@@ -5198,7 +5100,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Soest",
     "population": 46194,
     "code": 342,
     "codeExtended": "GM0342",
@@ -5213,13 +5114,12 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 26,
+    "totalEnergyGeneration": 120,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Utrecht",
     "population": 352866,
     "code": 344,
     "codeExtended": "GM0344",
@@ -5234,7 +5134,7 @@
     "solarEnergyGeneration": 139,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 139,
+    "totalEnergyGeneration": 863,
     "solarProjects": [
       {
         "nr": 20,
@@ -5364,7 +5264,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -5377,7 +5277,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2014,
         "type": "participatie/coop",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -5385,7 +5285,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Veenendaal",
     "population": 65589,
     "code": 345,
     "codeExtended": "GM0345",
@@ -5400,13 +5299,12 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 177,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Woudenberg",
     "population": 13166,
     "code": 351,
     "codeExtended": "GM0351",
@@ -5421,7 +5319,7 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 13,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 63,
     "solarProjects": [
       {
         "nr": 48,
@@ -5440,7 +5338,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Wijk bij Duurstede",
     "population": 23762,
     "code": 352,
     "codeExtended": "GM0352",
@@ -5455,7 +5352,7 @@
     "solarEnergyGeneration": 18,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 18,
+    "totalEnergyGeneration": 49,
     "solarProjects": [
       {
         "nr": 29,
@@ -5522,7 +5419,6 @@
     "location": "Rural"
   },
   {
-    "regio": "IJsselstein",
     "population": 34160,
     "code": 353,
     "codeExtended": "GM0353",
@@ -5537,13 +5433,12 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 13,
-    "totalEnergyGeneration": 32,
+    "totalEnergyGeneration": 98,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Zeist",
     "population": 63933,
     "code": 355,
     "codeExtended": "GM0355",
@@ -5558,7 +5453,7 @@
     "solarEnergyGeneration": 22,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 22,
+    "totalEnergyGeneration": 137,
     "solarProjects": [
       {
         "nr": 34,
@@ -5577,7 +5472,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Nieuwegein",
     "population": 63036,
     "code": 356,
     "codeExtended": "GM0356",
@@ -5592,13 +5486,12 @@
     "solarEnergyGeneration": 29,
     "windEnergyGeneration": 80,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 109,
+    "totalEnergyGeneration": 239,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Aalsmeer",
     "population": 31728,
     "code": 358,
     "codeExtended": "GM0358",
@@ -5613,13 +5506,12 @@
     "solarEnergyGeneration": 22,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 22,
+    "totalEnergyGeneration": 69,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Alkmaar",
     "population": 108558,
     "code": 361,
     "codeExtended": "GM0361",
@@ -5634,7 +5526,7 @@
     "solarEnergyGeneration": 63,
     "windEnergyGeneration": 59,
     "biogasEnergyGeneration": 4,
-    "totalEnergyGeneration": 1592,
+    "totalEnergyGeneration": 1975,
     "solarProjects": [
       {
         "nr": 1,
@@ -5713,7 +5605,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Amstelveen",
     "population": 90837,
     "code": 362,
     "codeExtended": "GM0362",
@@ -5728,7 +5619,7 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 7,
-    "totalEnergyGeneration": 31,
+    "totalEnergyGeneration": 243,
     "solarProjects": [
       {
         "nr": 5,
@@ -5771,7 +5662,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Amsterdam",
     "population": 862965,
     "code": 363,
     "codeExtended": "GM0363",
@@ -5786,7 +5676,7 @@
     "solarEnergyGeneration": 156,
     "windEnergyGeneration": 415,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 2429,
+    "totalEnergyGeneration": 4802,
     "solarProjects": [
       {
         "nr": 8,
@@ -6312,7 +6202,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -6420,7 +6310,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "water",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       },
@@ -6444,7 +6334,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -6456,7 +6346,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -6468,7 +6358,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -6524,7 +6414,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Beemster",
     "population": 9748,
     "code": 370,
     "codeExtended": "GM0370",
@@ -6539,13 +6428,12 @@
     "solarEnergyGeneration": 10,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 10,
+    "totalEnergyGeneration": 82,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Bergen (NH.)",
     "population": 29974,
     "code": 373,
     "codeExtended": "GM0373",
@@ -6560,13 +6448,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 25,
+    "totalEnergyGeneration": 104,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Beverwijk",
     "population": 41176,
     "code": 375,
     "codeExtended": "GM0375",
@@ -6581,7 +6468,7 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 19,
+    "totalEnergyGeneration": 101,
     "solarProjects": [
       {
         "nr": 51,
@@ -6615,7 +6502,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -6624,7 +6511,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Blaricum",
     "population": 11200,
     "code": 376,
     "codeExtended": "GM0376",
@@ -6639,13 +6525,12 @@
     "solarEnergyGeneration": 4,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 4,
+    "totalEnergyGeneration": 54,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Bloemendaal",
     "population": 23410,
     "code": 377,
     "codeExtended": "GM0377",
@@ -6660,13 +6545,12 @@
     "solarEnergyGeneration": 7,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 7,
+    "totalEnergyGeneration": 56,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Castricum",
     "population": 35772,
     "code": 383,
     "codeExtended": "GM0383",
@@ -6681,7 +6565,7 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 26,
+    "totalEnergyGeneration": 114,
     "solarProjects": [
       {
         "nr": 52,
@@ -6712,7 +6596,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Diemen",
     "population": 29196,
     "code": 384,
     "codeExtended": "GM0384",
@@ -6727,13 +6610,12 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 77,
     "solarProjects": [],
     "windProjects": [],
     "location": "Lake"
   },
   {
-    "regio": "Edam-Volendam",
     "population": 36099,
     "code": 385,
     "codeExtended": "GM0385",
@@ -6748,7 +6630,7 @@
     "solarEnergyGeneration": 18,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 18,
+    "totalEnergyGeneration": 85,
     "solarProjects": [
       {
         "nr": 55,
@@ -6767,7 +6649,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Enkhuizen",
     "population": 18507,
     "code": 388,
     "codeExtended": "GM0388",
@@ -6782,7 +6663,7 @@
     "solarEnergyGeneration": 12,
     "windEnergyGeneration": 22,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 70,
     "solarProjects": [
       {
         "nr": 56,
@@ -6801,7 +6682,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Haarlem",
     "population": 161263,
     "code": 392,
     "codeExtended": "GM0392",
@@ -6816,7 +6696,7 @@
     "solarEnergyGeneration": 43,
     "windEnergyGeneration": 5,
     "biogasEnergyGeneration": 12,
-    "totalEnergyGeneration": 60,
+    "totalEnergyGeneration": 247,
     "solarProjects": [
       {
         "nr": 59,
@@ -6934,7 +6814,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -6943,7 +6823,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Haarlemmermeer",
     "population": 154238,
     "code": 394,
     "codeExtended": "GM0394",
@@ -6958,13 +6837,12 @@
     "solarEnergyGeneration": 183,
     "windEnergyGeneration": 65,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 248,
+    "totalEnergyGeneration": 1123,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Heemskerk",
     "population": 39164,
     "code": 396,
     "codeExtended": "GM0396",
@@ -6979,13 +6857,12 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 15,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 35,
+    "totalEnergyGeneration": 333,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Heemstede",
     "population": 27286,
     "code": 397,
     "codeExtended": "GM0397",
@@ -7000,7 +6877,7 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 11,
+    "totalEnergyGeneration": 52,
     "solarProjects": [
       {
         "nr": 65,
@@ -7103,7 +6980,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Heerhugowaard",
     "population": 56742,
     "code": 398,
     "codeExtended": "GM0398",
@@ -7118,13 +6994,12 @@
     "solarEnergyGeneration": 52,
     "windEnergyGeneration": 47,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 98,
+    "totalEnergyGeneration": 226,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Heiloo",
     "population": 23464,
     "code": 399,
     "codeExtended": "GM0399",
@@ -7139,7 +7014,7 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 18,
+    "totalEnergyGeneration": 61,
     "solarProjects": [
       {
         "nr": 71,
@@ -7194,7 +7069,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Den Helder",
     "population": 55604,
     "code": 400,
     "codeExtended": "GM0400",
@@ -7209,7 +7083,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 12,
     "biogasEnergyGeneration": 4,
-    "totalEnergyGeneration": 43,
+    "totalEnergyGeneration": 142,
     "solarProjects": [],
     "windProjects": [
       {
@@ -7249,7 +7123,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Hilversum",
     "population": 90238,
     "code": 402,
     "codeExtended": "GM0402",
@@ -7264,7 +7137,7 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 24,
+    "totalEnergyGeneration": 246,
     "solarProjects": [
       {
         "nr": 74,
@@ -7439,7 +7312,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hoorn",
     "population": 73004,
     "code": 405,
     "codeExtended": "GM0405",
@@ -7454,7 +7326,7 @@
     "solarEnergyGeneration": 38,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 38,
+    "totalEnergyGeneration": 154,
     "solarProjects": [
       {
         "nr": 82,
@@ -7485,7 +7357,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Huizen",
     "population": 41273,
     "code": 406,
     "codeExtended": "GM0406",
@@ -7500,13 +7371,12 @@
     "solarEnergyGeneration": 21,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 21,
+    "totalEnergyGeneration": 64,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Landsmeer",
     "population": 11488,
     "code": 415,
     "codeExtended": "GM0415",
@@ -7521,13 +7391,12 @@
     "solarEnergyGeneration": 5,
     "windEnergyGeneration": 1,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 6,
+    "totalEnergyGeneration": 27,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Langedijk",
     "population": 27992,
     "code": 416,
     "codeExtended": "GM0416",
@@ -7542,7 +7411,7 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 16,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 41,
+    "totalEnergyGeneration": 112,
     "solarProjects": [
       {
         "nr": 136,
@@ -7552,7 +7421,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "participatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE",
         "": ""
       },
@@ -7573,7 +7442,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Laren",
     "population": 11197,
     "code": 417,
     "codeExtended": "GM0417",
@@ -7588,13 +7456,12 @@
     "solarEnergyGeneration": 3,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 3,
+    "totalEnergyGeneration": 56,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Medemblik",
     "population": 44809,
     "code": 420,
     "codeExtended": "GM0420",
@@ -7609,7 +7476,7 @@
     "solarEnergyGeneration": 63,
     "windEnergyGeneration": 65,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 128,
+    "totalEnergyGeneration": 265,
     "solarProjects": [
       {
         "nr": 83,
@@ -7673,7 +7540,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Oostzaan",
     "population": 9757,
     "code": 431,
     "codeExtended": "GM0431",
@@ -7688,13 +7554,12 @@
     "solarEnergyGeneration": 5,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 5,
+    "totalEnergyGeneration": 39,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Opmeer",
     "population": 11779,
     "code": 432,
     "codeExtended": "GM0432",
@@ -7709,13 +7574,12 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 20,
-    "totalEnergyGeneration": 31,
+    "totalEnergyGeneration": 64,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Ouder-Amstel",
     "population": 13916,
     "code": 437,
     "codeExtended": "GM0437",
@@ -7730,13 +7594,12 @@
     "solarEnergyGeneration": 7,
     "windEnergyGeneration": 12,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 19,
+    "totalEnergyGeneration": 124,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Purmerend",
     "population": 80117,
     "code": 439,
     "codeExtended": "GM0439",
@@ -7751,7 +7614,7 @@
     "solarEnergyGeneration": 45,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 45,
+    "totalEnergyGeneration": 1609,
     "solarProjects": [
       {
         "nr": 84,
@@ -7794,7 +7657,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Schagen",
     "population": 46553,
     "code": 441,
     "codeExtended": "GM0441",
@@ -7809,7 +7671,7 @@
     "solarEnergyGeneration": 60,
     "windEnergyGeneration": 159,
     "biogasEnergyGeneration": 11,
-    "totalEnergyGeneration": 228,
+    "totalEnergyGeneration": 365,
     "solarProjects": [
       {
         "nr": 86,
@@ -7942,7 +7804,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Texel",
     "population": 13547,
     "code": 448,
     "codeExtended": "GM0448",
@@ -7957,7 +7818,7 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 2,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 21,
+    "totalEnergyGeneration": 58,
     "solarProjects": [
       {
         "nr": 90,
@@ -8003,7 +7864,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -8012,7 +7873,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Uitgeest",
     "population": 13528,
     "code": 450,
     "codeExtended": "GM0450",
@@ -8027,7 +7887,7 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 54,
     "solarProjects": [
       {
         "nr": 158,
@@ -8046,7 +7906,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Uithoorn",
     "population": 29424,
     "code": 451,
     "codeExtended": "GM0451",
@@ -8061,13 +7920,12 @@
     "solarEnergyGeneration": 17,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 17,
+    "totalEnergyGeneration": 64,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Velsen",
     "population": 68348,
     "code": 453,
     "codeExtended": "GM0453",
@@ -8082,7 +7940,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 66,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 96,
+    "totalEnergyGeneration": 224,
     "solarProjects": [
       {
         "nr": 141,
@@ -8101,7 +7959,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Weesp",
     "population": 19334,
     "code": 457,
     "codeExtended": "GM0457",
@@ -8116,13 +7973,12 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 11,
+    "totalEnergyGeneration": 36,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Zandvoort",
     "population": 17011,
     "code": 473,
     "codeExtended": "GM0473",
@@ -8137,13 +7993,12 @@
     "solarEnergyGeneration": 4,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 4,
+    "totalEnergyGeneration": 24,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Zaanstad",
     "population": 155885,
     "code": 479,
     "codeExtended": "GM0479",
@@ -8158,7 +8013,7 @@
     "solarEnergyGeneration": 66,
     "windEnergyGeneration": 53,
     "biogasEnergyGeneration": 5,
-    "totalEnergyGeneration": 124,
+    "totalEnergyGeneration": 394,
     "solarProjects": [
       {
         "nr": 99,
@@ -8180,7 +8035,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -8189,7 +8044,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Alblasserdam",
     "population": 20069,
     "code": 482,
     "codeExtended": "GM0482",
@@ -8204,7 +8058,7 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 48,
     "solarProjects": [
       {
         "nr": 88,
@@ -8214,7 +8068,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -8223,7 +8077,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Alphen aan den Rijn",
     "population": 110986,
     "code": 484,
     "codeExtended": "GM0484",
@@ -8238,7 +8091,7 @@
     "solarEnergyGeneration": 67,
     "windEnergyGeneration": 74,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 146,
+    "totalEnergyGeneration": 350,
     "solarProjects": [
       {
         "nr": 1,
@@ -8296,7 +8149,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "participatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE",
         "": ""
       },
@@ -8329,7 +8182,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Barendrecht",
     "population": 48673,
     "code": 489,
     "codeExtended": "GM0489",
@@ -8344,7 +8196,7 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 26,
+    "totalEnergyGeneration": 147,
     "solarProjects": [
       {
         "nr": 53,
@@ -8378,7 +8230,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       }
@@ -8387,7 +8239,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Drechterland",
     "population": 19597,
     "code": 498,
     "codeExtended": "GM0498",
@@ -8402,7 +8253,7 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 6,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 94,
     "solarProjects": [
       {
         "nr": 54,
@@ -8421,7 +8272,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Brielle",
     "population": 17182,
     "code": 501,
     "codeExtended": "GM0501",
@@ -8436,13 +8286,12 @@
     "solarEnergyGeneration": 10,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 10,
+    "totalEnergyGeneration": 337,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Capelle aan den IJssel",
     "population": 66818,
     "code": 502,
     "codeExtended": "GM0502",
@@ -8457,13 +8306,12 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 19,
     "biogasEnergyGeneration": 25,
-    "totalEnergyGeneration": 55,
+    "totalEnergyGeneration": 170,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Delft",
     "population": 103163,
     "code": 503,
     "codeExtended": "GM0503",
@@ -8478,7 +8326,7 @@
     "solarEnergyGeneration": 31,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 31,
+    "totalEnergyGeneration": 198,
     "solarProjects": [
       {
         "nr": 7,
@@ -8548,7 +8396,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -8569,7 +8417,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Dordrecht",
     "population": 118654,
     "code": 505,
     "codeExtended": "GM0505",
@@ -8584,7 +8431,7 @@
     "solarEnergyGeneration": 31,
     "windEnergyGeneration": 58,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 355,
+    "totalEnergyGeneration": 1216,
     "solarProjects": [
       {
         "nr": 22,
@@ -8627,7 +8474,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Gorinchem",
     "population": 36682,
     "code": 512,
     "codeExtended": "GM0512",
@@ -8642,13 +8488,12 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 101,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Gouda",
     "population": 73181,
     "code": 513,
     "codeExtended": "GM0513",
@@ -8663,7 +8508,7 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 3,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 35,
+    "totalEnergyGeneration": 190,
     "solarProjects": [
       {
         "nr": 94,
@@ -8673,7 +8518,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -8685,7 +8530,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -8706,7 +8551,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Den Haag",
     "population": 537833,
     "code": 518,
     "codeExtended": "GM0518",
@@ -8721,7 +8565,7 @@
     "solarEnergyGeneration": 90,
     "windEnergyGeneration": 24,
     "biogasEnergyGeneration": 25,
-    "totalEnergyGeneration": 139,
+    "totalEnergyGeneration": 782,
     "solarProjects": [
       {
         "nr": 11,
@@ -8895,7 +8739,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Hardinxveld-Giessendam",
     "population": 18051,
     "code": 523,
     "codeExtended": "GM0523",
@@ -8910,13 +8753,12 @@
     "solarEnergyGeneration": 9,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 9,
+    "totalEnergyGeneration": 82,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Hellevoetsluis",
     "population": 40049,
     "code": 530,
     "codeExtended": "GM0530",
@@ -8931,13 +8773,12 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 15,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 31,
+    "totalEnergyGeneration": 99,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Hendrik-Ido-Ambacht",
     "population": 30966,
     "code": 531,
     "codeExtended": "GM0531",
@@ -8952,13 +8793,12 @@
     "solarEnergyGeneration": 10,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 10,
+    "totalEnergyGeneration": 68,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Stede Broec",
     "population": 21706,
     "code": 532,
     "codeExtended": "GM0532",
@@ -8973,7 +8813,7 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 20,
+    "totalEnergyGeneration": 53,
     "solarProjects": [
       {
         "nr": 88,
@@ -9004,7 +8844,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Hillegom",
     "population": 21966,
     "code": 534,
     "codeExtended": "GM0534",
@@ -9019,13 +8858,12 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 47,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Katwijk",
     "population": 65302,
     "code": 537,
     "codeExtended": "GM0537",
@@ -9040,13 +8878,12 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 24,
+    "totalEnergyGeneration": 126,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Krimpen aan den IJssel",
     "population": 29376,
     "code": 542,
     "codeExtended": "GM0542",
@@ -9061,13 +8898,12 @@
     "solarEnergyGeneration": 10,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 10,
+    "totalEnergyGeneration": 43,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Leiden",
     "population": 124899,
     "code": 546,
     "codeExtended": "GM0546",
@@ -9082,7 +8918,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 35,
+    "totalEnergyGeneration": 248,
     "solarProjects": [
       {
         "nr": 29,
@@ -9113,7 +8949,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Leiderdorp",
     "population": 27109,
     "code": 547,
     "codeExtended": "GM0547",
@@ -9128,13 +8963,12 @@
     "solarEnergyGeneration": 12,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 12,
+    "totalEnergyGeneration": 65,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Lisse",
     "population": 22800,
     "code": 553,
     "codeExtended": "GM0553",
@@ -9149,13 +8983,12 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 14,
+    "totalEnergyGeneration": 55,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Maassluis",
     "population": 32768,
     "code": 556,
     "codeExtended": "GM0556",
@@ -9170,13 +9003,12 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 38,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Nieuwkoop",
     "population": 28625,
     "code": 569,
     "codeExtended": "GM0569",
@@ -9191,7 +9023,7 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 20,
+    "totalEnergyGeneration": 102,
     "solarProjects": [
       {
         "nr": 32,
@@ -9294,7 +9126,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Noordwijk",
     "population": 42859,
     "code": 575,
     "codeExtended": "GM0575",
@@ -9309,7 +9140,7 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 24,
+    "totalEnergyGeneration": 105,
     "solarProjects": [
       {
         "nr": 72,
@@ -9328,7 +9159,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Oegstgeest",
     "population": 24426,
     "code": 579,
     "codeExtended": "GM0579",
@@ -9343,7 +9173,7 @@
     "solarEnergyGeneration": 9,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 9,
+    "totalEnergyGeneration": 64,
     "solarProjects": [
       {
         "nr": 73,
@@ -9362,7 +9192,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Oudewater",
     "population": 10201,
     "code": 589,
     "codeExtended": "GM0589",
@@ -9377,13 +9206,12 @@
     "solarEnergyGeneration": 10,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 10,
+    "totalEnergyGeneration": 30,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Papendrecht",
     "population": 32290,
     "code": 590,
     "codeExtended": "GM0590",
@@ -9398,7 +9226,7 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 13,
+    "totalEnergyGeneration": 82,
     "solarProjects": [
       {
         "nr": 74,
@@ -9417,7 +9245,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Ridderkerk",
     "population": 46241,
     "code": 597,
     "codeExtended": "GM0597",
@@ -9432,7 +9259,7 @@
     "solarEnergyGeneration": 22,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 22,
+    "totalEnergyGeneration": 146,
     "solarProjects": [
       {
         "nr": 34,
@@ -9466,7 +9293,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       }
@@ -9487,7 +9314,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Rotterdam",
     "population": 644618,
     "code": 599,
     "codeExtended": "GM0599",
@@ -9502,7 +9328,7 @@
     "solarEnergyGeneration": 94,
     "windEnergyGeneration": 1295,
     "biogasEnergyGeneration": 32,
-    "totalEnergyGeneration": 2368,
+    "totalEnergyGeneration": 7820,
     "solarProjects": [
       {
         "nr": 35,
@@ -9617,7 +9443,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Rijswijk",
     "population": 53467,
     "code": 603,
     "codeExtended": "GM0603",
@@ -9632,7 +9457,7 @@
     "solarEnergyGeneration": 22,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 22,
+    "totalEnergyGeneration": 89,
     "solarProjects": [
       {
         "nr": 77,
@@ -9651,7 +9476,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Schiedam",
     "population": 77999,
     "code": 606,
     "codeExtended": "GM0606",
@@ -9666,7 +9490,7 @@
     "solarEnergyGeneration": 12,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 12,
+    "totalEnergyGeneration": 128,
     "solarProjects": [
       {
         "nr": 41,
@@ -9720,7 +9544,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Sliedrecht",
     "population": 25026,
     "code": 610,
     "codeExtended": "GM0610",
@@ -9735,13 +9558,12 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 75,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Albrandswaard",
     "population": 25271,
     "code": 613,
     "codeExtended": "GM0613",
@@ -9756,7 +9578,7 @@
     "solarEnergyGeneration": 10,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 10,
+    "totalEnergyGeneration": 60,
     "solarProjects": [
       {
         "nr": 49,
@@ -9775,7 +9597,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Westvoorne",
     "population": 14626,
     "code": 614,
     "codeExtended": "GM0614",
@@ -9790,13 +9611,12 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 11,
+    "totalEnergyGeneration": 58,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Vlaardingen",
     "population": 72404,
     "code": 622,
     "codeExtended": "GM0622",
@@ -9811,7 +9631,7 @@
     "solarEnergyGeneration": 15,
     "windEnergyGeneration": 32,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 53,
+    "totalEnergyGeneration": 284,
     "solarProjects": [
       {
         "nr": 81,
@@ -9854,7 +9674,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Voorschoten",
     "population": 25479,
     "code": 626,
     "codeExtended": "GM0626",
@@ -9869,7 +9688,7 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 38,
     "solarProjects": [
       {
         "nr": 42,
@@ -9888,7 +9707,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Waddinxveen",
     "population": 28316,
     "code": 627,
     "codeExtended": "GM0627",
@@ -9903,13 +9721,12 @@
     "solarEnergyGeneration": 18,
     "windEnergyGeneration": 72,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 90,
+    "totalEnergyGeneration": 223,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Wassenaar",
     "population": 26211,
     "code": 629,
     "codeExtended": "GM0629",
@@ -9924,13 +9741,12 @@
     "solarEnergyGeneration": 7,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 7,
+    "totalEnergyGeneration": 75,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Woerden",
     "population": 52199,
     "code": 632,
     "codeExtended": "GM0632",
@@ -9945,7 +9761,7 @@
     "solarEnergyGeneration": 42,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 42,
+    "totalEnergyGeneration": 257,
     "solarProjects": [
       {
         "nr": 32,
@@ -9976,7 +9792,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Zoetermeer",
     "population": 124944,
     "code": 637,
     "codeExtended": "GM0637",
@@ -9991,7 +9806,7 @@
     "solarEnergyGeneration": 50,
     "windEnergyGeneration": 45,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 95,
+    "totalEnergyGeneration": 289,
     "solarProjects": [
       {
         "nr": 44,
@@ -10034,7 +9849,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Zoeterwoude",
     "population": 8450,
     "code": 638,
     "codeExtended": "GM0638",
@@ -10049,7 +9863,7 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 74,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 91,
+    "totalEnergyGeneration": 124,
     "solarProjects": [
       {
         "nr": 87,
@@ -10068,7 +9882,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Zwijndrecht",
     "population": 44639,
     "code": 642,
     "codeExtended": "GM0642",
@@ -10083,7 +9896,7 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 89,
     "solarProjects": [
       {
         "nr": 45,
@@ -10138,7 +9951,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Borsele",
     "population": 22800,
     "code": 654,
     "codeExtended": "GM0654",
@@ -10153,13 +9965,12 @@
     "solarEnergyGeneration": 74,
     "windEnergyGeneration": 375,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 460,
+    "totalEnergyGeneration": 546,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Goes",
     "population": 37653,
     "code": 664,
     "codeExtended": "GM0664",
@@ -10174,7 +9985,7 @@
     "solarEnergyGeneration": 42,
     "windEnergyGeneration": 1,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 54,
+    "totalEnergyGeneration": 244,
     "solarProjects": [],
     "windProjects": [
       {
@@ -10203,7 +10014,6 @@
     "location": "Coast"
   },
   {
-    "regio": "West Maas en Waal",
     "population": 19076,
     "code": 668,
     "codeExtended": "GM0668",
@@ -10218,7 +10028,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 92,
+    "totalEnergyGeneration": 158,
     "solarProjects": [
       {
         "nr": 89,
@@ -10237,7 +10047,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Hulst",
     "population": 27524,
     "code": 677,
     "codeExtended": "GM0677",
@@ -10252,7 +10061,7 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 125,
     "solarProjects": [
       {
         "nr": 3,
@@ -10310,7 +10119,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -10319,7 +10128,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Kapelle",
     "population": 12785,
     "code": 678,
     "codeExtended": "GM0678",
@@ -10334,7 +10142,7 @@
     "solarEnergyGeneration": 22,
     "windEnergyGeneration": 59,
     "biogasEnergyGeneration": 5,
-    "totalEnergyGeneration": 86,
+    "totalEnergyGeneration": 167,
     "solarProjects": [],
     "windProjects": [
       {
@@ -10355,7 +10163,7 @@
         "status": "voorbereiding",
         "realisatiejaar": 2021,
         "type": "windcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -10363,7 +10171,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Middelburg",
     "population": 48544,
     "code": 687,
     "codeExtended": "GM0687",
@@ -10378,7 +10185,7 @@
     "solarEnergyGeneration": 77,
     "windEnergyGeneration": 37,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 114,
+    "totalEnergyGeneration": 194,
     "solarProjects": [
       {
         "nr": 6,
@@ -10421,7 +10228,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Reimerswaal",
     "population": 22678,
     "code": 703,
     "codeExtended": "GM0703",
@@ -10436,7 +10242,7 @@
     "solarEnergyGeneration": 35,
     "windEnergyGeneration": 774,
     "biogasEnergyGeneration": 11,
-    "totalEnergyGeneration": 830,
+    "totalEnergyGeneration": 1214,
     "solarProjects": [
       {
         "nr": 21,
@@ -10446,7 +10252,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       }
@@ -10478,7 +10284,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Terneuzen",
     "population": 54589,
     "code": 715,
     "codeExtended": "GM0715",
@@ -10493,7 +10298,7 @@
     "solarEnergyGeneration": 48,
     "windEnergyGeneration": 304,
     "biogasEnergyGeneration": 35,
-    "totalEnergyGeneration": 380,
+    "totalEnergyGeneration": 578,
     "solarProjects": [
       {
         "nr": 16,
@@ -10536,7 +10341,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Tholen",
     "population": 25780,
     "code": 716,
     "codeExtended": "GM0716",
@@ -10551,7 +10355,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 274,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 302,
+    "totalEnergyGeneration": 370,
     "solarProjects": [],
     "windProjects": [
       {
@@ -10591,7 +10395,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Veere",
     "population": 21835,
     "code": 717,
     "codeExtended": "GM0717",
@@ -10606,7 +10409,7 @@
     "solarEnergyGeneration": 41,
     "windEnergyGeneration": 344,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 384,
+    "totalEnergyGeneration": 456,
     "solarProjects": [
       {
         "nr": 26,
@@ -10683,7 +10486,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Vlissingen",
     "population": 44371,
     "code": 718,
     "codeExtended": "GM0718",
@@ -10698,13 +10500,12 @@
     "solarEnergyGeneration": 36,
     "windEnergyGeneration": 147,
     "biogasEnergyGeneration": 13,
-    "totalEnergyGeneration": 196,
+    "totalEnergyGeneration": 272,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "De Ronde Venen",
     "population": 44059,
     "code": 736,
     "codeExtended": "GM0736",
@@ -10719,7 +10520,7 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 18,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 53,
+    "totalEnergyGeneration": 232,
     "solarProjects": [
       {
         "nr": 10,
@@ -10754,7 +10555,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "windcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -10762,7 +10563,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Tytsjerksteradiel",
     "population": 31780,
     "code": 737,
     "codeExtended": "GM0737",
@@ -10777,7 +10577,7 @@
     "solarEnergyGeneration": 51,
     "windEnergyGeneration": 4,
     "biogasEnergyGeneration": 26,
-    "totalEnergyGeneration": 70,
+    "totalEnergyGeneration": 726,
     "solarProjects": [
       {
         "nr": 19,
@@ -10844,7 +10644,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Asten",
     "population": 16710,
     "code": 743,
     "codeExtended": "GM0743",
@@ -10859,13 +10658,12 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 114,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Baarle-Nassau",
     "population": 6847,
     "code": 744,
     "codeExtended": "GM0744",
@@ -10880,13 +10678,12 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 30,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Bergen op Zoom",
     "population": 66811,
     "code": 748,
     "codeExtended": "GM0748",
@@ -10901,7 +10698,7 @@
     "solarEnergyGeneration": 35,
     "windEnergyGeneration": 38,
     "biogasEnergyGeneration": 3,
-    "totalEnergyGeneration": 84,
+    "totalEnergyGeneration": 234,
     "solarProjects": [
       {
         "nr": 51,
@@ -10932,7 +10729,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Best",
     "population": 29821,
     "code": 753,
     "codeExtended": "GM0753",
@@ -10947,13 +10743,12 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 27,
+    "totalEnergyGeneration": 160,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Boekel",
     "population": 10588,
     "code": 755,
     "codeExtended": "GM0755",
@@ -10968,7 +10763,7 @@
     "solarEnergyGeneration": 22,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 22,
+    "totalEnergyGeneration": 65,
     "solarProjects": [
       {
         "nr": 3,
@@ -10999,7 +10794,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Boxmeer",
     "population": 29065,
     "code": 756,
     "codeExtended": "GM0756",
@@ -11014,7 +10808,7 @@
     "solarEnergyGeneration": 47,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 47,
+    "totalEnergyGeneration": 139,
     "solarProjects": [
       {
         "nr": 4,
@@ -11033,7 +10827,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Boxtel",
     "population": 30747,
     "code": 757,
     "codeExtended": "GM0757",
@@ -11048,13 +10841,12 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 28,
+    "totalEnergyGeneration": 244,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Breda",
     "population": 183873,
     "code": 758,
     "codeExtended": "GM0758",
@@ -11069,7 +10861,7 @@
     "solarEnergyGeneration": 78,
     "windEnergyGeneration": 65,
     "biogasEnergyGeneration": 28,
-    "totalEnergyGeneration": 172,
+    "totalEnergyGeneration": 856,
     "solarProjects": [
       {
         "nr": 5,
@@ -11163,7 +10955,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -11175,7 +10967,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -11188,7 +10980,7 @@
         "status": "Plannen stop-gezet",
         "realisatiejaar": "",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -11196,7 +10988,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Deurne",
     "population": 32362,
     "code": 762,
     "codeExtended": "GM0762",
@@ -11211,7 +11002,7 @@
     "solarEnergyGeneration": 38,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 38,
+    "totalEnergyGeneration": 177,
     "solarProjects": [
       {
         "nr": 16,
@@ -11230,7 +11021,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Pekela",
     "population": 12214,
     "code": 765,
     "codeExtended": "GM0765",
@@ -11245,7 +11035,7 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 11,
+    "totalEnergyGeneration": 60,
     "solarProjects": [
       {
         "nr": 21,
@@ -11276,7 +11066,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Dongen",
     "population": 26051,
     "code": 766,
     "codeExtended": "GM0766",
@@ -11291,7 +11080,7 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 82,
     "solarProjects": [
       {
         "nr": 17,
@@ -11334,7 +11123,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Eersel",
     "population": 19110,
     "code": 770,
     "codeExtended": "GM0770",
@@ -11349,7 +11137,7 @@
     "solarEnergyGeneration": 31,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 31,
+    "totalEnergyGeneration": 122,
     "solarProjects": [
       {
         "nr": 19,
@@ -11380,7 +11168,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Eindhoven",
     "population": 231642,
     "code": 772,
     "codeExtended": "GM0772",
@@ -11395,7 +11182,7 @@
     "solarEnergyGeneration": 115,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 141,
+    "totalEnergyGeneration": 870,
     "solarProjects": [
       {
         "nr": 20,
@@ -11438,7 +11225,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Etten-Leur",
     "population": 43774,
     "code": 777,
     "codeExtended": "GM0777",
@@ -11453,7 +11239,7 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 198,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 225,
+    "totalEnergyGeneration": 337,
     "solarProjects": [
       {
         "nr": 77,
@@ -11475,7 +11261,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -11484,7 +11270,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Geertruidenberg",
     "population": 21515,
     "code": 779,
     "codeExtended": "GM0779",
@@ -11499,13 +11284,12 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 1483,
+    "totalEnergyGeneration": 1917,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Gilze en Rijen",
     "population": 26431,
     "code": 784,
     "codeExtended": "GM0784",
@@ -11520,7 +11304,7 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 32,
+    "totalEnergyGeneration": 163,
     "solarProjects": [
       {
         "nr": 26,
@@ -11563,7 +11347,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Goirle",
     "population": 23793,
     "code": 785,
     "codeExtended": "GM0785",
@@ -11578,7 +11361,7 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 19,
+    "totalEnergyGeneration": 111,
     "solarProjects": [
       {
         "nr": 27,
@@ -11645,7 +11428,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Grave",
     "population": 12483,
     "code": 786,
     "codeExtended": "GM0786",
@@ -11660,7 +11442,7 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 43,
     "solarProjects": [
       {
         "nr": 31,
@@ -11703,7 +11485,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Haaren",
     "population": 14195,
     "code": 788,
     "codeExtended": "GM0788",
@@ -11718,7 +11499,7 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 13,
+    "totalEnergyGeneration": 54,
     "solarProjects": [
       {
         "nr": 34,
@@ -11737,7 +11518,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Helmond",
     "population": 91524,
     "code": 794,
     "codeExtended": "GM0794",
@@ -11752,13 +11532,12 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 205,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Den Bosch",
     "population": 154205,
     "code": 796,
     "codeExtended": "GM0796",
@@ -11803,7 +11582,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Heusden",
     "population": 44135,
     "code": 797,
     "codeExtended": "GM0797",
@@ -11818,7 +11596,7 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 36,
+    "totalEnergyGeneration": 159,
     "solarProjects": [
       {
         "nr": 37,
@@ -11876,7 +11654,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "onbekend",
         "": ""
       },
@@ -11897,7 +11675,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hilvarenbeek",
     "population": 15334,
     "code": 798,
     "codeExtended": "GM0798",
@@ -11912,7 +11689,7 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 35,
-    "totalEnergyGeneration": 85,
+    "totalEnergyGeneration": 210,
     "solarProjects": [
       {
         "nr": 81,
@@ -11922,7 +11699,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE/",
         "": ""
       }
@@ -11931,7 +11708,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Loon op Zand",
     "population": 23327,
     "code": 809,
     "codeExtended": "GM0809",
@@ -11946,7 +11722,7 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 14,
+    "totalEnergyGeneration": 122,
     "solarProjects": [
       {
         "nr": 39,
@@ -11977,7 +11753,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Mill en Sint Hubert",
     "population": 10891,
     "code": 815,
     "codeExtended": "GM0815",
@@ -11992,13 +11767,12 @@
     "solarEnergyGeneration": 12,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 69,
-    "totalEnergyGeneration": 165,
+    "totalEnergyGeneration": 435,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Nuenen, Gerwen en Nederwetten",
     "population": 23186,
     "code": 820,
     "codeExtended": "GM0820",
@@ -12058,7 +11832,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -12067,7 +11841,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Oirschot",
     "population": 18623,
     "code": 823,
     "codeExtended": "GM0823",
@@ -12082,7 +11855,7 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 50,
     "biogasEnergyGeneration": 42,
-    "totalEnergyGeneration": 112,
+    "totalEnergyGeneration": 275,
     "solarProjects": [
       {
         "nr": 45,
@@ -12113,7 +11886,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Oisterwijk",
     "population": 26140,
     "code": 824,
     "codeExtended": "GM0824",
@@ -12128,13 +11900,12 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 34,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 53,
+    "totalEnergyGeneration": 140,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Oosterhout",
     "population": 55616,
     "code": 826,
     "codeExtended": "GM0826",
@@ -12149,13 +11920,12 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 96,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 131,
+    "totalEnergyGeneration": 308,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Oss",
     "population": 91451,
     "code": 828,
     "codeExtended": "GM0828",
@@ -12170,7 +11940,7 @@
     "solarEnergyGeneration": 73,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 139,
+    "totalEnergyGeneration": 411,
     "solarProjects": [
       {
         "nr": 46,
@@ -12201,7 +11971,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Rucphen",
     "population": 22572,
     "code": 840,
     "codeExtended": "GM0840",
@@ -12216,13 +11985,12 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 14,
+    "totalEnergyGeneration": 99,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Sint-Michielsgestel",
     "population": 28991,
     "code": 845,
     "codeExtended": "GM0845",
@@ -12237,13 +12005,12 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 28,
+    "totalEnergyGeneration": 121,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Someren",
     "population": 19322,
     "code": 847,
     "codeExtended": "GM0847",
@@ -12258,7 +12025,7 @@
     "solarEnergyGeneration": 42,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 24,
-    "totalEnergyGeneration": 66,
+    "totalEnergyGeneration": 203,
     "solarProjects": [],
     "windProjects": [
       {
@@ -12268,7 +12035,7 @@
         "status": "voorbereiding",
         "realisatiejaar": 2021,
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -12276,7 +12043,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Son en Breugel",
     "population": 16904,
     "code": 848,
     "codeExtended": "GM0848",
@@ -12291,13 +12057,12 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 126,
+    "totalEnergyGeneration": 1020,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Steenbergen",
     "population": 25054,
     "code": 851,
     "codeExtended": "GM0851",
@@ -12312,13 +12077,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 193,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 218,
+    "totalEnergyGeneration": 323,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Waterland",
     "population": 17315,
     "code": 852,
     "codeExtended": "GM0852",
@@ -12333,7 +12097,7 @@
     "solarEnergyGeneration": 9,
     "windEnergyGeneration": 23,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 86,
     "solarProjects": [
       {
         "nr": 92,
@@ -12448,7 +12212,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Tilburg",
     "population": 217259,
     "code": 855,
     "codeExtended": "GM0855",
@@ -12463,7 +12226,7 @@
     "solarEnergyGeneration": 144,
     "windEnergyGeneration": 88,
     "biogasEnergyGeneration": 36,
-    "totalEnergyGeneration": 268,
+    "totalEnergyGeneration": 888,
     "solarProjects": [
       {
         "nr": 70,
@@ -12494,7 +12257,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Uden",
     "population": 41782,
     "code": 856,
     "codeExtended": "GM0856",
@@ -12509,7 +12271,7 @@
     "solarEnergyGeneration": 66,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 68,
+    "totalEnergyGeneration": 410,
     "solarProjects": [
       {
         "nr": 71,
@@ -12528,7 +12290,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Valkenswaard",
     "population": 30910,
     "code": 858,
     "codeExtended": "GM0858",
@@ -12543,13 +12304,12 @@
     "solarEnergyGeneration": 16,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 86,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Veldhoven",
     "population": 45337,
     "code": 861,
     "codeExtended": "GM0861",
@@ -12564,13 +12324,12 @@
     "solarEnergyGeneration": 31,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 31,
+    "totalEnergyGeneration": 135,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Vught",
     "population": 26396,
     "code": 865,
     "codeExtended": "GM0865",
@@ -12585,7 +12344,7 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 11,
+    "totalEnergyGeneration": 93,
     "solarProjects": [
       {
         "nr": 47,
@@ -12620,7 +12379,7 @@
         "status": "onbekend",
         "realisatiejaar": 2021,
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -12628,7 +12387,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Waalre",
     "population": 17247,
     "code": 866,
     "codeExtended": "GM0866",
@@ -12643,7 +12401,7 @@
     "solarEnergyGeneration": 12,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 12,
+    "totalEnergyGeneration": 72,
     "solarProjects": [
       {
         "nr": 49,
@@ -12686,7 +12444,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Waalwijk",
     "population": 48240,
     "code": 867,
     "codeExtended": "GM0867",
@@ -12701,7 +12458,7 @@
     "solarEnergyGeneration": 38,
     "windEnergyGeneration": 37,
     "biogasEnergyGeneration": 3,
-    "totalEnergyGeneration": 77,
+    "totalEnergyGeneration": 226,
     "solarProjects": [
       {
         "nr": 85,
@@ -12711,7 +12468,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE/",
         "": ""
       }
@@ -12720,7 +12477,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Woensdrecht",
     "population": 21866,
     "code": 873,
     "codeExtended": "GM0873",
@@ -12735,13 +12491,12 @@
     "solarEnergyGeneration": 18,
     "windEnergyGeneration": 5,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 22,
+    "totalEnergyGeneration": 150,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Zundert",
     "population": 21612,
     "code": 879,
     "codeExtended": "GM0879",
@@ -12756,7 +12511,7 @@
     "solarEnergyGeneration": 23,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 23,
+    "totalEnergyGeneration": 92,
     "solarProjects": [],
     "windProjects": [
       {
@@ -12766,7 +12521,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2016,
         "type": "participatie/coop",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -12785,7 +12540,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Wormerland",
     "population": 16329,
     "code": 880,
     "codeExtended": "GM0880",
@@ -12800,7 +12554,7 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 66,
     "solarProjects": [
       {
         "nr": 98,
@@ -12819,7 +12573,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Landgraaf",
     "population": 37591,
     "code": 882,
     "codeExtended": "GM0882",
@@ -12834,13 +12587,12 @@
     "solarEnergyGeneration": 38,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 45,
+    "totalEnergyGeneration": 109,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Beek",
     "population": 15929,
     "code": 888,
     "codeExtended": "GM0888",
@@ -12855,7 +12607,7 @@
     "solarEnergyGeneration": 18,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 18,
+    "totalEnergyGeneration": 86,
     "solarProjects": [
       {
         "nr": 7,
@@ -12874,7 +12626,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Beesel",
     "population": 13519,
     "code": 889,
     "codeExtended": "GM0889",
@@ -12889,7 +12640,7 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 14,
+    "totalEnergyGeneration": 68,
     "solarProjects": [
       {
         "nr": 8,
@@ -12908,7 +12659,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Bergen (L.)",
     "population": 13140,
     "code": 893,
     "codeExtended": "GM0893",
@@ -12923,13 +12673,12 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 67,
+    "totalEnergyGeneration": 282,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Brunssum",
     "population": 28103,
     "code": 899,
     "codeExtended": "GM0899",
@@ -12944,13 +12693,12 @@
     "solarEnergyGeneration": 21,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 21,
+    "totalEnergyGeneration": 66,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Gennep",
     "population": 17071,
     "code": 907,
     "codeExtended": "GM0907",
@@ -12965,13 +12713,12 @@
     "solarEnergyGeneration": 15,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 15,
+    "totalEnergyGeneration": 69,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Heerlen",
     "population": 86832,
     "code": 917,
     "codeExtended": "GM0917",
@@ -12986,7 +12733,7 @@
     "solarEnergyGeneration": 54,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 54,
+    "totalEnergyGeneration": 284,
     "solarProjects": [
       {
         "nr": 18,
@@ -13005,7 +12752,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Kerkrade",
     "population": 45642,
     "code": 928,
     "codeExtended": "GM0928",
@@ -13020,13 +12766,12 @@
     "solarEnergyGeneration": 39,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 39,
+    "totalEnergyGeneration": 111,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Maastricht",
     "population": 121565,
     "code": 935,
     "codeExtended": "GM0935",
@@ -13041,7 +12786,7 @@
     "solarEnergyGeneration": 53,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 5,
-    "totalEnergyGeneration": 59,
+    "totalEnergyGeneration": 711,
     "solarProjects": [
       {
         "nr": 13,
@@ -13063,7 +12808,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -13084,7 +12829,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Meerssen",
     "population": 18923,
     "code": 938,
     "codeExtended": "GM0938",
@@ -13099,13 +12843,12 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 19,
+    "totalEnergyGeneration": 83,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Mook en Middelaar",
     "population": 7806,
     "code": 944,
     "codeExtended": "GM0944",
@@ -13120,13 +12863,12 @@
     "solarEnergyGeneration": 8,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 8,
+    "totalEnergyGeneration": 28,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Nederweert",
     "population": 17001,
     "code": 946,
     "codeExtended": "GM0946",
@@ -13141,7 +12883,7 @@
     "solarEnergyGeneration": 53,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 53,
+    "totalEnergyGeneration": 104,
     "solarProjects": [
       {
         "nr": 22,
@@ -13172,7 +12914,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Roermond",
     "population": 58209,
     "code": 957,
     "codeExtended": "GM0957",
@@ -13187,13 +12928,12 @@
     "solarEnergyGeneration": 45,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 9,
-    "totalEnergyGeneration": 57,
+    "totalEnergyGeneration": 165,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Simpelveld",
     "population": 10516,
     "code": 965,
     "codeExtended": "GM0965",
@@ -13208,13 +12948,12 @@
     "solarEnergyGeneration": 11,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 11,
+    "totalEnergyGeneration": 40,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Stein",
     "population": 24961,
     "code": 971,
     "codeExtended": "GM0971",
@@ -13229,13 +12968,12 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 31,
+    "totalEnergyGeneration": 190,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Vaals",
     "population": 10092,
     "code": 981,
     "codeExtended": "GM0981",
@@ -13250,13 +12988,12 @@
     "solarEnergyGeneration": 7,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 7,
+    "totalEnergyGeneration": 25,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Venlo",
     "population": 101603,
     "code": 983,
     "codeExtended": "GM0983",
@@ -13271,7 +13008,7 @@
     "solarEnergyGeneration": 96,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 115,
+    "totalEnergyGeneration": 509,
     "solarProjects": [
       {
         "nr": 23,
@@ -13302,7 +13039,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Venray",
     "population": 43326,
     "code": 984,
     "codeExtended": "GM0984",
@@ -13317,7 +13053,7 @@
     "solarEnergyGeneration": 77,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 73,
-    "totalEnergyGeneration": 187,
+    "totalEnergyGeneration": 934,
     "solarProjects": [
       {
         "nr": 24,
@@ -13327,7 +13063,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE",
         "": ""
       }
@@ -13336,7 +13072,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Voerendaal",
     "population": 12452,
     "code": 986,
     "codeExtended": "GM0986",
@@ -13351,13 +13086,12 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 14,
+    "totalEnergyGeneration": 57,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Weert",
     "population": 49842,
     "code": 988,
     "codeExtended": "GM0988",
@@ -13372,7 +13106,7 @@
     "solarEnergyGeneration": 60,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 7,
-    "totalEnergyGeneration": 68,
+    "totalEnergyGeneration": 252,
     "solarProjects": [
       {
         "nr": 5,
@@ -13415,7 +13149,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Valkenburg aan de Geul",
     "population": 16470,
     "code": 994,
     "codeExtended": "GM0994",
@@ -13430,13 +13163,12 @@
     "solarEnergyGeneration": 15,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 15,
+    "totalEnergyGeneration": 62,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Lelystad",
     "population": 77893,
     "code": 995,
     "codeExtended": "GM0995",
@@ -13451,13 +13183,12 @@
     "solarEnergyGeneration": 77,
     "windEnergyGeneration": 1203,
     "biogasEnergyGeneration": 6,
-    "totalEnergyGeneration": 1303,
+    "totalEnergyGeneration": 1746,
     "solarProjects": [],
     "windProjects": [],
     "location": "Lake"
   },
   {
-    "regio": "Horst aan de Maas",
     "population": 42291,
     "code": 1507,
     "codeExtended": "GM1507",
@@ -13472,7 +13203,7 @@
     "solarEnergyGeneration": 76,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 53,
-    "totalEnergyGeneration": 120,
+    "totalEnergyGeneration": 753,
     "solarProjects": [
       {
         "nr": 11,
@@ -13503,7 +13234,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Oude IJsselstreek",
     "population": 39473,
     "code": 1509,
     "codeExtended": "GM1509",
@@ -13518,7 +13248,7 @@
     "solarEnergyGeneration": 44,
     "windEnergyGeneration": 51,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 104,
+    "totalEnergyGeneration": 300,
     "solarProjects": [
       {
         "nr": 73,
@@ -13528,7 +13258,7 @@
         "realisatiejaar": 2016,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "salderen",
         "": ""
       },
@@ -13553,7 +13283,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2016,
         "type": "participatie (via coöperatie)",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -13561,7 +13291,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Teylingen",
     "population": 37061,
     "code": 1525,
     "codeExtended": "GM1525",
@@ -13576,13 +13305,12 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 113,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Utrechtse Heuvelrug",
     "population": 49515,
     "code": 1581,
     "codeExtended": "GM1581",
@@ -13597,7 +13325,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 4,
-    "totalEnergyGeneration": 34,
+    "totalEnergyGeneration": 174,
     "solarProjects": [
       {
         "nr": 27,
@@ -13631,7 +13359,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -13643,7 +13371,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -13652,7 +13380,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Oost Gelre",
     "population": 29704,
     "code": 1586,
     "codeExtended": "GM1586",
@@ -13667,13 +13394,12 @@
     "solarEnergyGeneration": 42,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 9,
-    "totalEnergyGeneration": 71,
+    "totalEnergyGeneration": 288,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Koggenland",
     "population": 22738,
     "code": 1598,
     "codeExtended": "GM1598",
@@ -13688,13 +13414,12 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 77,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 104,
+    "totalEnergyGeneration": 212,
     "solarProjects": [],
     "windProjects": [],
     "location": "Lake"
   },
   {
-    "regio": "Lansingerland",
     "population": 61601,
     "code": 1621,
     "codeExtended": "GM1621",
@@ -13709,7 +13434,7 @@
     "solarEnergyGeneration": 59,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 88,
+    "totalEnergyGeneration": 1083,
     "solarProjects": [
       {
         "nr": 28,
@@ -13740,7 +13465,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Leudal",
     "population": 35681,
     "code": 1640,
     "codeExtended": "GM1640",
@@ -13755,7 +13479,7 @@
     "solarEnergyGeneration": 67,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 29,
-    "totalEnergyGeneration": 92,
+    "totalEnergyGeneration": 363,
     "solarProjects": [
       {
         "nr": 1,
@@ -13844,7 +13568,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Maasgouw",
     "population": 23716,
     "code": 1641,
     "codeExtended": "GM1641",
@@ -13859,13 +13582,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 127,
+    "totalEnergyGeneration": 218,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Gemert-Bakel",
     "population": 30447,
     "code": 1652,
     "codeExtended": "GM1652",
@@ -13880,7 +13602,7 @@
     "solarEnergyGeneration": 38,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 32,
-    "totalEnergyGeneration": 113,
+    "totalEnergyGeneration": 292,
     "solarProjects": [
       {
         "nr": 24,
@@ -13923,7 +13645,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Halderberge",
     "population": 30194,
     "code": 1655,
     "codeExtended": "GM1655",
@@ -13938,7 +13659,7 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 245,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 272,
+    "totalEnergyGeneration": 421,
     "solarProjects": [
       {
         "nr": 35,
@@ -13972,7 +13693,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -13984,7 +13705,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE/",
         "": ""
       }
@@ -13993,7 +13714,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Heeze-Leende",
     "population": 15964,
     "code": 1658,
     "codeExtended": "GM1658",
@@ -14008,13 +13728,12 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 11,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 139,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Laarbeek",
     "population": 22333,
     "code": 1659,
     "codeExtended": "GM1659",
@@ -14029,13 +13748,12 @@
     "solarEnergyGeneration": 21,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 32,
+    "totalEnergyGeneration": 124,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Reusel-De Mierden",
     "population": 13060,
     "code": 1667,
     "codeExtended": "GM1667",
@@ -14050,7 +13768,7 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 98,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 127,
+    "totalEnergyGeneration": 191,
     "solarProjects": [
       {
         "nr": 69,
@@ -14069,7 +13787,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Roerdalen",
     "population": 20615,
     "code": 1669,
     "codeExtended": "GM1669",
@@ -14084,7 +13801,7 @@
     "solarEnergyGeneration": 22,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 3,
-    "totalEnergyGeneration": 25,
+    "totalEnergyGeneration": 100,
     "solarProjects": [
       {
         "nr": 14,
@@ -14103,7 +13820,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Roosendaal",
     "population": 77032,
     "code": 1674,
     "codeExtended": "GM1674",
@@ -14118,13 +13834,12 @@
     "solarEnergyGeneration": 48,
     "windEnergyGeneration": 59,
     "biogasEnergyGeneration": 30,
-    "totalEnergyGeneration": 654,
+    "totalEnergyGeneration": 942,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Schouwen-Duiveland",
     "population": 33779,
     "code": 1676,
     "codeExtended": "GM1676",
@@ -14139,13 +13854,12 @@
     "solarEnergyGeneration": 51,
     "windEnergyGeneration": 794,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 845,
+    "totalEnergyGeneration": 989,
     "solarProjects": [],
     "windProjects": [],
     "location": "Coast"
   },
   {
-    "regio": "Aa en Hunze",
     "population": 25386,
     "code": 1680,
     "codeExtended": "GM1680",
@@ -14160,13 +13874,12 @@
     "solarEnergyGeneration": 48,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 21,
-    "totalEnergyGeneration": 68,
+    "totalEnergyGeneration": 222,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Borger-Odoorn",
     "population": 25372,
     "code": 1681,
     "codeExtended": "GM1681",
@@ -14181,7 +13894,7 @@
     "solarEnergyGeneration": 46,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 25,
-    "totalEnergyGeneration": 74,
+    "totalEnergyGeneration": 198,
     "solarProjects": [],
     "windProjects": [
       {
@@ -14199,7 +13912,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Cuijk",
     "population": 24931,
     "code": 1684,
     "codeExtended": "GM1684",
@@ -14214,7 +13926,7 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 11,
-    "totalEnergyGeneration": 161,
+    "totalEnergyGeneration": 859,
     "solarProjects": [
       {
         "nr": 12,
@@ -14245,7 +13957,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Landerd",
     "population": 15529,
     "code": 1685,
     "codeExtended": "GM1685",
@@ -14260,13 +13971,12 @@
     "solarEnergyGeneration": 17,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 17,
+    "totalEnergyGeneration": 95,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "De Wolden",
     "population": 24110,
     "code": 1690,
     "codeExtended": "GM1690",
@@ -14281,7 +13991,7 @@
     "solarEnergyGeneration": 41,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 41,
+    "totalEnergyGeneration": 146,
     "solarProjects": [
       {
         "nr": 5,
@@ -14363,7 +14073,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -14372,7 +14082,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Noord-Beveland",
     "population": 7308,
     "code": 1695,
     "codeExtended": "GM1695",
@@ -14387,7 +14096,7 @@
     "solarEnergyGeneration": 18,
     "windEnergyGeneration": 238,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 268,
+    "totalEnergyGeneration": 307,
     "solarProjects": [
       {
         "nr": 20,
@@ -14429,7 +14138,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Wijdemeren",
     "population": 24013,
     "code": 1696,
     "codeExtended": "GM1696",
@@ -14444,7 +14152,7 @@
     "solarEnergyGeneration": 13,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 23,
+    "totalEnergyGeneration": 92,
     "solarProjects": [
       {
         "nr": 145,
@@ -14463,7 +14171,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Noordenveld",
     "population": 31290,
     "code": 1699,
     "codeExtended": "GM1699",
@@ -14478,7 +14185,7 @@
     "solarEnergyGeneration": 34,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 47,
+    "totalEnergyGeneration": 196,
     "solarProjects": [
       {
         "nr": 16,
@@ -14500,7 +14207,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE/postcoderoos",
         "": ""
       }
@@ -14509,7 +14216,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Twenterand",
     "population": 33792,
     "code": 1700,
     "codeExtended": "GM1700",
@@ -14524,13 +14230,12 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 212,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Westerveld",
     "population": 19348,
     "code": 1701,
     "codeExtended": "GM1701",
@@ -14545,7 +14250,7 @@
     "solarEnergyGeneration": 32,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 115,
     "solarProjects": [
       {
         "nr": 18,
@@ -14564,7 +14269,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Sint Anthonis",
     "population": 11606,
     "code": 1702,
     "codeExtended": "GM1702",
@@ -14579,13 +14283,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 138,
-    "totalEnergyGeneration": 165,
+    "totalEnergyGeneration": 400,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Lingewaard",
     "population": 46475,
     "code": 1705,
     "codeExtended": "GM1705",
@@ -14600,7 +14303,7 @@
     "solarEnergyGeneration": 37,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 37,
+    "totalEnergyGeneration": 265,
     "solarProjects": [
       {
         "nr": 43,
@@ -14619,7 +14322,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Cranendonck",
     "population": 20440,
     "code": 1706,
     "codeExtended": "GM1706",
@@ -14634,13 +14336,12 @@
     "solarEnergyGeneration": 26,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 26,
+    "totalEnergyGeneration": 113,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Steenwijkerland",
     "population": 43940,
     "code": 1708,
     "codeExtended": "GM1708",
@@ -14655,7 +14356,7 @@
     "solarEnergyGeneration": 44,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 53,
-    "totalEnergyGeneration": 92,
+    "totalEnergyGeneration": 304,
     "solarProjects": [
       {
         "nr": 12,
@@ -14710,7 +14411,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Moerdijk",
     "population": 36961,
     "code": 1709,
     "codeExtended": "GM1709",
@@ -14725,7 +14425,7 @@
     "solarEnergyGeneration": 52,
     "windEnergyGeneration": 285,
     "biogasEnergyGeneration": 3,
-    "totalEnergyGeneration": 2546,
+    "totalEnergyGeneration": 3808,
     "solarProjects": [
       {
         "nr": 82,
@@ -14735,7 +14435,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -14756,7 +14456,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Echt-Susteren",
     "population": 31638,
     "code": 1711,
     "codeExtended": "GM1711",
@@ -14771,7 +14470,7 @@
     "solarEnergyGeneration": 42,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 10,
-    "totalEnergyGeneration": 53,
+    "totalEnergyGeneration": 218,
     "solarProjects": [
       {
         "nr": 17,
@@ -14781,7 +14480,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -14790,7 +14489,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Sluis",
     "population": 23386,
     "code": 1714,
     "codeExtended": "GM1714",
@@ -14805,7 +14503,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 76,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 106,
+    "totalEnergyGeneration": 228,
     "solarProjects": [
       {
         "nr": 10,
@@ -14908,7 +14606,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Drimmelen",
     "population": 27150,
     "code": 1719,
     "codeExtended": "GM1719",
@@ -14923,7 +14620,7 @@
     "solarEnergyGeneration": 15,
     "windEnergyGeneration": 1,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 119,
     "solarProjects": [
       {
         "nr": 56,
@@ -14933,7 +14630,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -14966,7 +14663,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Bernheze",
     "population": 30806,
     "code": 1721,
     "codeExtended": "GM1721",
@@ -14981,7 +14677,7 @@
     "solarEnergyGeneration": 35,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 16,
-    "totalEnergyGeneration": 86,
+    "totalEnergyGeneration": 363,
     "solarProjects": [
       {
         "nr": 1,
@@ -15024,7 +14720,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Alphen-Chaam",
     "population": 10149,
     "code": 1723,
     "codeExtended": "GM1723",
@@ -15039,13 +14734,12 @@
     "solarEnergyGeneration": 12,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 12,
+    "totalEnergyGeneration": 46,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Bergeijk",
     "population": 18491,
     "code": 1724,
     "codeExtended": "GM1724",
@@ -15060,7 +14754,7 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 27,
+    "totalEnergyGeneration": 92,
     "solarProjects": [
       {
         "nr": 73,
@@ -15070,7 +14764,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -15079,7 +14773,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Bladel",
     "population": 20175,
     "code": 1728,
     "codeExtended": "GM1728",
@@ -15094,13 +14787,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 25,
+    "totalEnergyGeneration": 108,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Gulpen-Wittem",
     "population": 14246,
     "code": 1729,
     "codeExtended": "GM1729",
@@ -15115,7 +14807,7 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 16,
+    "totalEnergyGeneration": 64,
     "solarProjects": [
       {
         "nr": 10,
@@ -15134,7 +14826,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Tynaarlo",
     "population": 33698,
     "code": 1730,
     "codeExtended": "GM1730",
@@ -15149,7 +14840,7 @@
     "solarEnergyGeneration": 38,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 59,
-    "totalEnergyGeneration": 114,
+    "totalEnergyGeneration": 305,
     "solarProjects": [
       {
         "nr": 27,
@@ -15168,7 +14859,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Midden-Drenthe",
     "population": 33178,
     "code": 1731,
     "codeExtended": "GM1731",
@@ -15183,7 +14873,7 @@
     "solarEnergyGeneration": 55,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 61,
-    "totalEnergyGeneration": 869,
+    "totalEnergyGeneration": 1422,
     "solarProjects": [
       {
         "nr": 24,
@@ -15205,7 +14895,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -15217,7 +14907,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "grond",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE",
         "": ""
       }
@@ -15226,7 +14916,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Overbetuwe",
     "population": 47543,
     "code": 1734,
     "codeExtended": "GM1734",
@@ -15241,7 +14930,7 @@
     "solarEnergyGeneration": 37,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 37,
+    "totalEnergyGeneration": 268,
     "solarProjects": [
       {
         "nr": 74,
@@ -15284,7 +14973,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hof van Twente",
     "population": 34940,
     "code": 1735,
     "codeExtended": "GM1735",
@@ -15299,7 +14987,7 @@
     "solarEnergyGeneration": 57,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 12,
-    "totalEnergyGeneration": 72,
+    "totalEnergyGeneration": 305,
     "solarProjects": [
       {
         "nr": 11,
@@ -15354,7 +15042,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Neder-Betuwe",
     "population": 24026,
     "code": 1740,
     "codeExtended": "GM1740",
@@ -15369,7 +15056,7 @@
     "solarEnergyGeneration": 29,
     "windEnergyGeneration": 51,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 80,
+    "totalEnergyGeneration": 434,
     "solarProjects": [
       {
         "nr": 53,
@@ -15427,7 +15114,7 @@
         "realisatiejaar": 2016,
         "dak/grond": "dak",
         "type": "participatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE",
         "": ""
       }
@@ -15436,7 +15123,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Rijssen-Holten",
     "population": 38300,
     "code": 1742,
     "codeExtended": "GM1742",
@@ -15451,7 +15137,7 @@
     "solarEnergyGeneration": 32,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 2,
-    "totalEnergyGeneration": 34,
+    "totalEnergyGeneration": 303,
     "solarProjects": [
       {
         "nr": 26,
@@ -15470,7 +15156,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Geldrop-Mierlo",
     "population": 39595,
     "code": 1771,
     "codeExtended": "GM1771",
@@ -15485,13 +15170,12 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 25,
+    "totalEnergyGeneration": 138,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Olst-Wijhe",
     "population": 18071,
     "code": 1773,
     "codeExtended": "GM1773",
@@ -15506,7 +15190,7 @@
     "solarEnergyGeneration": 29,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 29,
+    "totalEnergyGeneration": 112,
     "solarProjects": [
       {
         "nr": 34,
@@ -15529,7 +15213,7 @@
         "status": "oriëntatie",
         "realisatiejaar": 2022,
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -15537,7 +15221,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Dinkelland",
     "population": 26350,
     "code": 1774,
     "codeExtended": "GM1774",
@@ -15552,13 +15235,12 @@
     "solarEnergyGeneration": 47,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 47,
+    "totalEnergyGeneration": 192,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Westland",
     "population": 108603,
     "code": 1783,
     "codeExtended": "GM1783",
@@ -15573,7 +15255,7 @@
     "solarEnergyGeneration": 104,
     "windEnergyGeneration": 10,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 118,
+    "totalEnergyGeneration": 1675,
     "solarProjects": [
       {
         "nr": 43,
@@ -15592,7 +15274,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Midden-Delfland",
     "population": 19391,
     "code": 1842,
     "codeExtended": "GM1842",
@@ -15607,13 +15288,12 @@
     "solarEnergyGeneration": 20,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 61,
-    "totalEnergyGeneration": 81,
+    "totalEnergyGeneration": 550,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Berkelland",
     "population": 43904,
     "code": 1859,
     "codeExtended": "GM1859",
@@ -15628,7 +15308,7 @@
     "solarEnergyGeneration": 58,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 12,
-    "totalEnergyGeneration": 71,
+    "totalEnergyGeneration": 1540,
     "solarProjects": [
       {
         "nr": 18,
@@ -15698,7 +15378,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -15707,7 +15387,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Bronckhorst",
     "population": 36212,
     "code": 1876,
     "codeExtended": "GM1876",
@@ -15722,7 +15401,7 @@
     "solarEnergyGeneration": 51,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 4,
-    "totalEnergyGeneration": 64,
+    "totalEnergyGeneration": 241,
     "solarProjects": [
       {
         "nr": 23,
@@ -15840,7 +15519,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -15849,7 +15528,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Sittard-Geleen",
     "population": 92661,
     "code": 1883,
     "codeExtended": "GM1883",
@@ -15864,7 +15542,7 @@
     "solarEnergyGeneration": 65,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 76,
+    "totalEnergyGeneration": 642,
     "solarProjects": [
       {
         "nr": 15,
@@ -15907,7 +15585,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Kaag en Braassem",
     "population": 26866,
     "code": 1884,
     "codeExtended": "GM1884",
@@ -15922,7 +15599,7 @@
     "solarEnergyGeneration": 23,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 23,
+    "totalEnergyGeneration": 186,
     "solarProjects": [
       {
         "nr": 61,
@@ -15953,7 +15630,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Dantumadiel",
     "population": 18923,
     "code": 1891,
     "codeExtended": "GM1891",
@@ -15968,13 +15644,12 @@
     "solarEnergyGeneration": 14,
     "windEnergyGeneration": 1,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 15,
+    "totalEnergyGeneration": 83,
     "solarProjects": [],
     "windProjects": [],
     "location": "Rural"
   },
   {
-    "regio": "Zuidplas",
     "population": 42762,
     "code": 1892,
     "codeExtended": "GM1892",
@@ -15989,7 +15664,7 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 218,
     "solarProjects": [
       {
         "nr": 100,
@@ -15999,7 +15674,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -16032,7 +15707,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Peel en Maas",
     "population": 43311,
     "code": 1894,
     "codeExtended": "GM1894",
@@ -16047,7 +15721,7 @@
     "solarEnergyGeneration": 60,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 11,
-    "totalEnergyGeneration": 69,
+    "totalEnergyGeneration": 303,
     "solarProjects": [
       {
         "nr": 4,
@@ -16078,7 +15752,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Oldambt",
     "population": 38129,
     "code": 1895,
     "codeExtended": "GM1895",
@@ -16093,7 +15766,7 @@
     "solarEnergyGeneration": 53,
     "windEnergyGeneration": 1,
     "biogasEnergyGeneration": 83,
-    "totalEnergyGeneration": 108,
+    "totalEnergyGeneration": 410,
     "solarProjects": [
       {
         "nr": 64,
@@ -16103,7 +15776,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "onbe- kend",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "SDE",
         "": ""
       },
@@ -16115,7 +15788,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -16124,7 +15797,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Zwartewaterland",
     "population": 22503,
     "code": 1896,
     "codeExtended": "GM1896",
@@ -16139,7 +15811,7 @@
     "solarEnergyGeneration": 36,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 36,
+    "totalEnergyGeneration": 98,
     "solarProjects": [
       {
         "nr": 16,
@@ -16158,7 +15830,6 @@
     "location": "Rural"
   },
   {
-    "regio": "Súdwest-Fryslân",
     "population": 89710,
     "code": 1900,
     "codeExtended": "GM1900",
@@ -16173,7 +15844,7 @@
     "solarEnergyGeneration": 108,
     "windEnergyGeneration": 589,
     "biogasEnergyGeneration": 36,
-    "totalEnergyGeneration": 728,
+    "totalEnergyGeneration": 1124,
     "solarProjects": [
       {
         "nr": 15,
@@ -16303,7 +15974,7 @@
         "status": "gepland",
         "realisatiejaar": 2019,
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -16314,7 +15985,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -16325,7 +15996,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": "",
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -16336,7 +16007,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -16347,7 +16018,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -16358,7 +16029,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -16391,7 +16062,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -16399,7 +16070,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Bodegraven-Reeuwijk",
     "population": 34463,
     "code": 1901,
     "codeExtended": "GM1901",
@@ -16414,13 +16084,12 @@
     "solarEnergyGeneration": 29,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 29,
+    "totalEnergyGeneration": 221,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Eijsden-Margraten",
     "population": 25658,
     "code": 1903,
     "codeExtended": "GM1903",
@@ -16435,13 +16104,12 @@
     "solarEnergyGeneration": 33,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 33,
+    "totalEnergyGeneration": 114,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Stichtse Vecht",
     "population": 64336,
     "code": 1904,
     "codeExtended": "GM1904",
@@ -16456,7 +16124,7 @@
     "solarEnergyGeneration": 28,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 28,
+    "totalEnergyGeneration": 274,
     "solarProjects": [
       {
         "nr": 18,
@@ -16499,7 +16167,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Hollands Kroon",
     "population": 47815,
     "code": 1911,
     "codeExtended": "GM1911",
@@ -16514,7 +16181,7 @@
     "solarEnergyGeneration": 119,
     "windEnergyGeneration": 854,
     "biogasEnergyGeneration": 9,
-    "totalEnergyGeneration": 976,
+    "totalEnergyGeneration": 1846,
     "solarProjects": [
       {
         "nr": 133,
@@ -16533,7 +16200,6 @@
     "location": "Lake"
   },
   {
-    "regio": "Leidschendam-Voorburg",
     "population": 75425,
     "code": 1916,
     "codeExtended": "GM1916",
@@ -16548,7 +16214,7 @@
     "solarEnergyGeneration": 19,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 19,
+    "totalEnergyGeneration": 147,
     "solarProjects": [
       {
         "nr": 64,
@@ -16558,7 +16224,7 @@
         "realisatiejaar": 2019,
         "dak/grond": "dak",
         "type": "projectcoöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       },
@@ -16579,7 +16245,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Goeree-Overflakkee",
     "population": 49611,
     "code": 1924,
     "codeExtended": "GM1924",
@@ -16594,7 +16259,7 @@
     "solarEnergyGeneration": 139,
     "windEnergyGeneration": 472,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 611,
+    "totalEnergyGeneration": 813,
     "solarProjects": [
       {
         "nr": 25,
@@ -16637,7 +16302,6 @@
     "location": "Coast"
   },
   {
-    "regio": "Pijnacker-Nootdorp",
     "population": 54331,
     "code": 1926,
     "codeExtended": "GM1926",
@@ -16652,13 +16316,12 @@
     "solarEnergyGeneration": 37,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 40,
+    "totalEnergyGeneration": 543,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Nissewaard",
     "population": 84797,
     "code": 1930,
     "codeExtended": "GM1930",
@@ -16673,13 +16336,12 @@
     "solarEnergyGeneration": 30,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 30,
+    "totalEnergyGeneration": 109,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Krimpenerwaard",
     "population": 56048,
     "code": 1931,
     "codeExtended": "GM1931",
@@ -16694,13 +16356,12 @@
     "solarEnergyGeneration": 27,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 27,
+    "totalEnergyGeneration": 205,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "De Fryske Marren",
     "population": 51430,
     "code": 1940,
     "codeExtended": "GM1940",
@@ -16710,7 +16371,7 @@
     "solarEnergyGeneration": 60,
     "windEnergyGeneration": 228,
     "biogasEnergyGeneration": 13,
-    "totalEnergyGeneration": 332,
+    "totalEnergyGeneration": 960,
     "solarProjects": [
       {
         "nr": 4,
@@ -16741,7 +16402,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Gooise Meren",
     "population": 57715,
     "code": 1942,
     "codeExtended": "GM1942",
@@ -16751,7 +16411,7 @@
     "solarEnergyGeneration": 15,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 15,
+    "totalEnergyGeneration": 207,
     "solarProjects": [
       {
         "nr": 57,
@@ -16794,7 +16454,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Berg en Dal",
     "population": 34798,
     "code": 1945,
     "codeExtended": "GM1945",
@@ -16804,7 +16463,7 @@
     "solarEnergyGeneration": 25,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 25,
+    "totalEnergyGeneration": 118,
     "solarProjects": [
       {
         "nr": 104,
@@ -16859,7 +16518,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Meierijstad",
     "population": 80815,
     "code": 1948,
     "codeExtended": "GM1948",
@@ -16869,7 +16527,7 @@
     "solarEnergyGeneration": 118,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 1,
-    "totalEnergyGeneration": 125,
+    "totalEnergyGeneration": 570,
     "solarProjects": [
       {
         "nr": 40,
@@ -16912,7 +16570,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Waadhoeke",
     "population": 46039,
     "code": 1949,
     "codeExtended": "GM1949",
@@ -16922,7 +16579,7 @@
     "solarEnergyGeneration": 89,
     "windEnergyGeneration": 228,
     "biogasEnergyGeneration": 40,
-    "totalEnergyGeneration": 354,
+    "totalEnergyGeneration": 773,
     "solarProjects": [
       {
         "nr": 21,
@@ -17112,7 +16769,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       },
@@ -17123,7 +16780,7 @@
         "status": "gerealiseerd",
         "realisatiejaar": 2011,
         "type": "dorpsmolen",
-        "vermogen": "",
+        "vermogen": 0,
         "(aan)deelgroterwindpark": "",
         "": ""
       }
@@ -17131,7 +16788,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Westerwolde",
     "population": 25199,
     "code": 1950,
     "codeExtended": "GM1950",
@@ -17141,7 +16797,7 @@
     "solarEnergyGeneration": 24,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 8,
-    "totalEnergyGeneration": 27,
+    "totalEnergyGeneration": 79,
     "solarProjects": [
       {
         "nr": 66,
@@ -17151,7 +16807,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -17160,7 +16816,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Midden-Groningen",
     "population": 60899,
     "code": 1952,
     "codeExtended": "GM1952",
@@ -17170,7 +16825,7 @@
     "solarEnergyGeneration": 78,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 68,
-    "totalEnergyGeneration": 128,
+    "totalEnergyGeneration": 560,
     "solarProjects": [
       {
         "nr": 20,
@@ -17192,7 +16847,7 @@
         "realisatiejaar": 2020,
         "dak/grond": "dak",
         "type": "lokale coöperatie",
-        "vermogen": "",
+        "vermogen": 0,
         "regeling": "postcoderoos",
         "": ""
       }
@@ -17201,7 +16856,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Beekdaelen",
     "population": 35727,
     "code": 1954,
     "codeExtended": "GM1954",
@@ -17211,13 +16865,12 @@
     "solarEnergyGeneration": 43,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 6,
-    "totalEnergyGeneration": 49,
+    "totalEnergyGeneration": 143,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Montferland",
     "population": 36026,
     "code": 1955,
     "codeExtended": "GM1955",
@@ -17232,7 +16885,7 @@
     "solarEnergyGeneration": 49,
     "windEnergyGeneration": 26,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 75,
+    "totalEnergyGeneration": 172,
     "solarProjects": [
       {
         "nr": 122,
@@ -17251,7 +16904,6 @@
     "location": "Urban"
   },
   {
-    "regio": "Altena",
     "population": 55386,
     "code": 1959,
     "codeExtended": "GM1959",
@@ -17261,13 +16913,12 @@
     "solarEnergyGeneration": 37,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 37,
+    "totalEnergyGeneration": 261,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "West Betuwe",
     "population": 50697,
     "code": 1960,
     "codeExtended": "GM1960",
@@ -17277,13 +16928,12 @@
     "solarEnergyGeneration": 95,
     "windEnergyGeneration": 0,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 95,
+    "totalEnergyGeneration": 1016,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Vijfheerenlanden",
     "population": 55712,
     "code": 1961,
     "codeExtended": "GM1961",
@@ -17293,13 +16943,12 @@
     "solarEnergyGeneration": 50,
     "windEnergyGeneration": 86,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 135,
+    "totalEnergyGeneration": 402,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Hoeksche Waard",
     "population": 86656,
     "code": 1963,
     "codeExtended": "GM1963",
@@ -17309,13 +16958,12 @@
     "solarEnergyGeneration": 51,
     "windEnergyGeneration": 50,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 102,
+    "totalEnergyGeneration": 366,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Het Hogeland",
     "population": 47888,
     "code": 1966,
     "codeExtended": "GM1966",
@@ -17325,13 +16973,12 @@
     "solarEnergyGeneration": 91,
     "windEnergyGeneration": 2287,
     "biogasEnergyGeneration": 12,
-    "totalEnergyGeneration": 2383,
+    "totalEnergyGeneration": 2612,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Westerkwartier",
     "population": 63031,
     "code": 1969,
     "codeExtended": "GM1969",
@@ -17341,13 +16988,12 @@
     "solarEnergyGeneration": 72,
     "windEnergyGeneration": 1,
     "biogasEnergyGeneration": 15,
-    "totalEnergyGeneration": 82,
+    "totalEnergyGeneration": 468,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Noardeast-Fryslân",
     "population": 45181,
     "code": 1970,
     "codeExtended": "GM1970",
@@ -17357,13 +17003,12 @@
     "solarEnergyGeneration": 43,
     "windEnergyGeneration": 100,
     "biogasEnergyGeneration": 72,
-    "totalEnergyGeneration": 185,
+    "totalEnergyGeneration": 408,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"
   },
   {
-    "regio": "Molenlanden",
     "population": 43858,
     "code": 1978,
     "codeExtended": "GM1978",
@@ -17373,7 +17018,7 @@
     "solarEnergyGeneration": 41,
     "windEnergyGeneration": 54,
     "biogasEnergyGeneration": 0,
-    "totalEnergyGeneration": 95,
+    "totalEnergyGeneration": 239,
     "solarProjects": [],
     "windProjects": [],
     "location": "Urban"

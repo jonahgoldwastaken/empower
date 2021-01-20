@@ -7,6 +7,7 @@
   export let i
   export let arc
   export let keys
+  export let intersecting
 </script>
 
 {#each keys as key (key)}
@@ -14,6 +15,7 @@
     end={d[key]}
     start={calculateStart(data[i], keys, key)}
     bind:arc
+    bind:intersecting
     {i}
     energyType={key.toLowerCase().includes('wind')
       ? 'wind'

@@ -8,6 +8,7 @@
   export let i
   export let arc
   export let energyType
+  export let intersecting
 
   const path = tweened(
     {
@@ -15,17 +16,17 @@
       end: 0,
     },
     {
-      delay: 1000,
       duration: 750,
       easing: quintInOut,
       interpolate,
     }
   )
 
-  $: path.set({
-    start,
-    end: end + start,
-  })
+  $: intersecting &&
+    path.set({
+      start,
+      end: end + start,
+    })
 </script>
 
 <style>

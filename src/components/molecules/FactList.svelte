@@ -6,42 +6,25 @@
   export let municipality
   export let i
 
-  const solarAmount = tweened(0, {
-    duration: 1000,
-    easing: quintInOut,
-  })
-
-  const windAmount = tweened(0, {
-    duration: 1000,
-    easing: quintInOut,
-  })
-
-  const biogasAmount = tweened(0, {
-    duration: 1000,
-    easing: quintInOut,
-  })
-
-  $: municipality?.solarProjects.length &&
-    solarAmount.set(
-      +(
+  $: solarAmount = municipality?.solarProjects.length
+    ? +(
         municipality.solarProjects.reduce(
           (acc, curr) => (curr.vermogen ? acc + curr.vermogen : acc),
           0
-        ) / municipality.solarProjects.filter(d => d.vermogen).length
+        ) / municipality.solarProjects.filter(d => d.vermogen > -1).length
       ).toFixed(0)
-    )
+    : 0
 
-  $: municipality?.windProjects.length &&
-    windAmount.set(
-      +(
+  $: windAmount = municipality?.windProjects.length
+    ? +(
         municipality.windProjects.reduce(
           (acc, curr) => (curr.vermogen ? acc + curr.vermogen : acc),
           0
-        ) / municipality.windProjects.filter(d => d.vermogen).length
+        ) / municipality.windProjects.filter(d => d.vermogen > -1).length
       ).toFixed(0)
-    )
+    : 0
 
-  $: biogasAmount.set(+municipality.biogasEnergyGeneration)
+  $: biogasAmount = +municipality.biogasEnergyGeneration
 </script>
 
 <style>
@@ -90,17 +73,17 @@
   <FactCard
     background={i === 0 ? 'dark-green' : i === 1 ? 'green' : 'blue'}
     energyType="solar"
-    amount={$solarAmount.toFixed(0)}
+    bind:amount={solarAmount}
   />
   <FactCard
     background={i === 0 ? 'dark-green' : i === 1 ? 'green' : 'blue'}
     energyType="wind"
-    amount={$windAmount.toFixed(0)}
+    bind:amount={windAmount}
   />
   <FactCard
     background={i === 0 ? 'dark-green' : i === 1 ? 'green' : 'blue'}
     energyType="biogas"
-    amount={$biogasAmount.toFixed(0)}
+    bind:amount={biogasAmount}
   >
     <p>TJ of biogas energy generation in total</p>
   </FactCard>

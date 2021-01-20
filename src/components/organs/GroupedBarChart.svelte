@@ -1,4 +1,5 @@
 <script>
+  import IntersectionObserver from 'svelte-intersection-observer'
   import { scaleLinear, scaleBand, max } from 'd3'
   import { comparingMunicipalities } from '../../store/municipality'
   import BarChartBarGroup from '../molecules/BarChartBarGroup.svelte'
@@ -12,6 +13,8 @@
     bottom: 20,
     right: 10,
   }
+  let svg
+  let intersecting
   let width = 0
 
   $: data = $comparingMunicipalities
@@ -78,17 +81,20 @@
     scaleBand().domain(keys).rangeRound([0, x1Scale.bandwidth()]).padding(0.25)
 </script>
 
-<GraphSVG bind:width bind:height>
-  {#each data as datum (datum[groupKey])}
-    <BarChartBarGroup
-      {datum}
-      bind:groupKey
-      bind:keys
-      bind:x1Scale
-      bind:x2Scale
-      bind:yScale
-    />
-  {/each}
-  <BarChartBottomAxis {margin} bind:height bind:x1Scale />
-  <BarChartLeftAxis {margin} bind:yScale />
-</GraphSVG>
+<IntersectionObserver threshold={0.75} element={svg} bind:intersecting>
+  <GraphSVG bind:svg bind:width bind:height>
+    {#each data as datum (datum[groupKey])}
+      <BarChartBarGroup
+        {datum}
+        bind:groupKey
+        bind:keys
+        bind:x1Scale
+        bind:x2Scale
+        bind:yScale
+        bind:intersecting
+      />
+    {/each}
+    <BarChartBottomAxis {margin} bind:height bind:x1Scale />
+    <BarChartLeftAxis {margin} bind:yScale />
+  </GraphSVG>
+</IntersectionObserver>

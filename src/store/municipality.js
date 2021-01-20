@@ -33,8 +33,8 @@ export const recommendedMunicipalities = derived(
   [data, comparingMunicipalities, interact],
   ([$data, $comparingMunicipalities, $interact]) => {
     if (
-      $comparingMunicipalities.length === 0 ||
-      $comparingMunicipalities.length >= 3 ||
+      $comparingMunicipalities?.length === 0 ||
+      $comparingMunicipalities?.length >= 3 ||
       !$interact
     )
       return []

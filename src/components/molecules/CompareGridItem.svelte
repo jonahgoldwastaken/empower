@@ -12,9 +12,8 @@
     background: var(--white);
     padding: var(--step-1);
     display: grid;
-    grid-template-columns: auto min-content;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content 1fr;
-    grid-column-gap: var(--step-0);
   }
 
   .content {

@@ -88,7 +88,7 @@
   h3 {
     margin: 0;
     width: 100%;
-    color: var(--text-primary);
+    color: var(--black);
     font-weight: 400;
     margin-right: auto;
   }
@@ -98,6 +98,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+
+  header :global(button img) {
+    width: var(--step-1) !important;
+    height: var(--step-1) !important;
   }
 
   section :global(a) {

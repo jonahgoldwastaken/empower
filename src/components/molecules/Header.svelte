@@ -52,7 +52,8 @@
   }
 
   .active img {
-    margin-left: -2px;
+    margin-left: -4px;
+    width: calc(4px + 100%);
   }
 
   .disabled {

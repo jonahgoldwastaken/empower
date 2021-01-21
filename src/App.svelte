@@ -111,7 +111,7 @@
         loader={() => import('./pages/Compare.svelte')}
         {params}
       >
-        <slot slot="loading" />
+        <slot slot="loading"><Loader /></slot>
       </Loadable>
     </Route>
     <Route path="/compare/:munOne/:munTwo/:munThree" let:params>

@@ -1,8 +1,9 @@
 <script>
+  import Loader from '../atoms/Loader.svelte'
   import MapRenderer from '../organs/MapRenderer.svelte'
   import MapTooltip from '../molecules/MapTooltip.svelte'
   import MapLegend from '../molecules/MapLegend.svelte'
-  import { width, height, interact } from '../../store/map.js'
+  import { width, height, interact, townships } from '../../store/map.js'
 
   export let legend = false
   export let interaction = true
@@ -24,12 +25,16 @@
   }
 </style>
 
-<div bind:offsetHeight={divHeight} bind:offsetWidth={divWidth}>
-  <MapRenderer bind:page />
-  {#if $interact}
-    <MapTooltip />
-  {/if}
-  {#if legend}
-    <MapLegend />
-  {/if}
-</div>
+{#await $townships}
+  <Loader>Loading map data</Loader>
+{:then}
+  <div bind:offsetHeight={divHeight} bind:offsetWidth={divWidth}>
+    <MapRenderer bind:page />
+    {#if $interact}
+      <MapTooltip />
+    {/if}
+    {#if legend}
+      <MapLegend />
+    {/if}
+  </div>
+{/await}

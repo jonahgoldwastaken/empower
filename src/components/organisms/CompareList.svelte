@@ -10,12 +10,16 @@
   let noAnimate = false
   let unsub = comparingMunicipalities.subscribe(val => {
     if (section && val?.length > 0 && !noAnimate) {
-      if (section.classList.contains('animating'))
+      if (section.classList.contains('animating')) {
         section.classList.remove('animating')
-      section.classList.add('animating')
-    } else if (val?.length === 0) {
-      noAnimate = false
-    }
+        section.classList.add('animating-in')
+      } else if (section.classList.contains('animating-in')) {
+        section.classList.remove('animating-in')
+        setTimeout(() => section.classList.add('animating-in'), 5)
+      } else {
+        section.classList.add('animating')
+      }
+    } else if (val?.length === 0) noAnimate = false
   })
 
   function clearQueueHandler() {
@@ -24,12 +28,14 @@
 
   function animationEndHandler() {
     section.classList.remove('animating')
+    section.classList.remove('animating-in')
     noAnimate = false
   }
 
   function hoverHandler(e) {
     noAnimate = e.type === 'mouseover'
     section.classList.remove('animating')
+    section.classList.remove('animating-in')
   }
 
   onMount(() => {
@@ -114,6 +120,11 @@
     animation: slide-out 2s ease-in-out forwards;
   }
 
+  :global(.animating-in):not(:hover) {
+    transition: none;
+    animation: slide-in 2s ease-in-out forwards;
+  }
+
   @keyframes slide-out {
     from,
     to {
@@ -122,6 +133,16 @@
     20%,
     80% {
       left: var(--sidebar-width);
+    }
+  }
+
+  @keyframes slide-in {
+    from,
+    80% {
+      left: var(--sidebar-width);
+    }
+    to {
+      left: calc(var(--sidebar-width) / 4);
     }
   }
 </style>

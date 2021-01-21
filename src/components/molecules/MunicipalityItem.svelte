@@ -7,7 +7,6 @@
   export let municipality
 
   function clickHandler(e) {
-    console.log(e.target)
     if (e.target.type !== 'label' && e.target.type !== 'checkbox')
       currentFocus.set(municipality)
   }

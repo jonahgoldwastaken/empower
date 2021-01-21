@@ -62,6 +62,7 @@
     text-decoration: none;
     transition: opacity 0.1s ease-in-out;
     border-radius: inherit;
+    z-index: 100;
   }
 
   .map a span {

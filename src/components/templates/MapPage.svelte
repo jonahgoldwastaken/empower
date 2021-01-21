@@ -15,6 +15,7 @@
 
   main {
     overflow: hidden;
+    position: relative;
   }
 </style>
 

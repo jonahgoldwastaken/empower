@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import { comparingMunicipalities } from '../store/municipality'
   import CompareDashboard from '../components/organisms/CompareDashboard.svelte'
+  import Loader from '../components/atoms/Loader.svelte'
   import FactListGroup from '../components/organs/FactListGroup.svelte'
   import CompareGridItem from '../components/molecules/CompareGridItem.svelte'
   import NotificationList from '../components/molecules/NotificationList.svelte'
@@ -46,40 +47,45 @@
     <CompareGridItem area="heading">
       <h1>{title}</h1>
     </CompareGridItem>
-    <CompareGridItem area="map">
-      <MapComponent interaction={false} />
-    </CompareGridItem>
-    <CompareGridItem area="notifications">
-      <NotificationList />
-    </CompareGridItem>
-    <CompareGridItem area="graph-1">
-      <slot slot="heading">Green energy production gained over the years</slot>
-      <slot slot="legend">
-        <BarChartLegend />
-      </slot>
-      <GroupedBarChart />
-    </CompareGridItem>
-    <CompareGridItem area="graph-2">
-      <slot slot="heading">Total renewable energy production compared</slot>
-      <slot slot="legend">
-        <RadialChartLegend />
-      </slot>
-      <RadialStackedBarChart />
-      <RadialStackedBarChart divideByHoudeholds />
-    </CompareGridItem>
-    <CompareGridItem area="table">
-      <slot slot="heading">General information</slot>
-      <Table />
-    </CompareGridItem>
-    <CompareGridItem area="facts">
-      <slot slot="heading">Energy facts</slot>
-      <FactListGroup />
-    </CompareGridItem>
-    <CompareGridItem area="cta">
-      <CTA />
-    </CompareGridItem>
-    <CompareGridItem area="share">
-      <ShareButtons />
-    </CompareGridItem>
+    {#if $comparingMunicipalities.length}
+      <CompareGridItem area="map">
+        <MapComponent interaction={false} />
+      </CompareGridItem>
+      <CompareGridItem area="notifications">
+        <NotificationList />
+      </CompareGridItem>
+      <CompareGridItem area="graph-1">
+        <slot slot="heading">Green energy production gained over the years</slot
+        >
+        <slot slot="legend">
+          <BarChartLegend />
+        </slot>
+        <GroupedBarChart />
+      </CompareGridItem>
+      <CompareGridItem area="graph-2">
+        <slot slot="heading">Total renewable energy production compared</slot>
+        <slot slot="legend">
+          <RadialChartLegend />
+        </slot>
+        <RadialStackedBarChart />
+        <RadialStackedBarChart divideByHoudeholds />
+      </CompareGridItem>
+      <CompareGridItem area="table">
+        <slot slot="heading">General information</slot>
+        <Table />
+      </CompareGridItem>
+      <CompareGridItem area="facts">
+        <slot slot="heading">Energy facts</slot>
+        <FactListGroup />
+      </CompareGridItem>
+      <CompareGridItem area="cta">
+        <CTA />
+      </CompareGridItem>
+      <CompareGridItem area="share">
+        <ShareButtons />
+      </CompareGridItem>
+    {:else}
+      <Loader>Loading municipality data</Loader>
+    {/if}
   </CompareDashboard>
 </main>

@@ -60,7 +60,7 @@
       })
       return newAcc
     }, [])
-    .sort((a, b) => a.name > b.name)
+    .sort((a, b) => (a.name > b.name ? 1 : a.name < b.name ? -1 : 0))
 
   $: height = (width / 960) * 540
   $: groupKey = 'name'

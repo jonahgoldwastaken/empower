@@ -15,8 +15,6 @@
   let element
   let intersecting
 
-  $: console.log(intersecting, amount)
-
   $: intersecting && tweenAmount.set(amount)
 </script>
 

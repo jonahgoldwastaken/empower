@@ -49,16 +49,26 @@
             biogasEnergyGeneration,
       })
     )
-    .sort(
-      (a, b) =>
-        a.windEnergyGeneration +
-          a.solarEnergyGeneration +
-          a.biogasEnergyGeneration +
-          a.totalEnergyGeneration <
-        b.windEnergyGeneration +
-          b.solarEnergyGeneration +
-          b.biogasEnergyGeneration +
-          b.totalEnergyGeneration
+    .sort((a, b) =>
+      a.windEnergyGeneration +
+        a.solarEnergyGeneration +
+        a.biogasEnergyGeneration +
+        a.totalEnergyGeneration <
+      b.windEnergyGeneration +
+        b.solarEnergyGeneration +
+        b.biogasEnergyGeneration +
+        b.totalEnergyGeneration
+        ? 1
+        : a.windEnergyGeneration +
+            a.solarEnergyGeneration +
+            a.biogasEnergyGeneration +
+            a.totalEnergyGeneration >
+          b.windEnergyGeneration +
+            b.solarEnergyGeneration +
+            b.biogasEnergyGeneration +
+            b.totalEnergyGeneration
+        ? -1
+        : 0
     )
 
   $: groupKey = data.length && Object.keys(data[0])[0]

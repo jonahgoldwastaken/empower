@@ -19,6 +19,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background: var(--white);
   }
 
   video {

@@ -11,7 +11,7 @@
   }
 
   g.centered {
-    transform: translate(50%, 50%);
+    transform: translate(var(--x), var(--y));
   }
 
   p {
@@ -36,7 +36,7 @@
 <div class:centered bind:offsetWidth={width}>
   {#if width}
     <svg bind:this={svg} viewBox="0 0 {width} {height}">
-      <g class:centered>
+      <g style="--x: {width / 2}px; --y: {height / 2}px" class:centered>
         <slot />
       </g>
     </svg>

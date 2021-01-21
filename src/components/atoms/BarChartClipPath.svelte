@@ -15,7 +15,7 @@
     easing: quintInOut,
   })
 
-  $: actualHeight = height + 16
+  $: actualHeight = height + width / 3
 
   $: if (intersecting) {
     tweenY.set(isNaN(y) ? yScale(0) : y)

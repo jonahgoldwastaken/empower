@@ -1,6 +1,6 @@
 import { tweened } from 'svelte/motion'
 import { quintInOut } from 'svelte/easing'
-import { writable, readable, derived } from 'svelte/store'
+import { get, writable, readable, derived } from 'svelte/store'
 import { json, geoMercator, geoPath } from 'd3'
 
 export const interact = writable(true)
@@ -23,7 +23,7 @@ export const path = derived([projection], ([$projection]) =>
 )
 export const currentFocus = writable(null)
 export const scale = tweened(1, {
-  duration: 750,
+  duration: () => (get(interact) ? 750 : 0),
   easing: quintInOut,
 })
 export const translate = tweened(
@@ -32,7 +32,7 @@ export const translate = tweened(
     y: 0,
   },
   {
-    duration: 750,
+    duration: () => (get(interact) ? 750 : 0),
     easing: quintInOut,
   }
 )

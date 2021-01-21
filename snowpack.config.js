@@ -1,5 +1,3 @@
-const autoPreprocess = require('svelte-preprocess')
-
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
   mount: {
@@ -7,18 +5,7 @@ module.exports = {
     src: { url: '/dist' },
   },
   routes: [{ match: 'routes', src: '.*', dest: '/index.html' }],
-  plugins: [
-    [
-      '@snowpack/plugin-svelte',
-      {
-        preprocess: autoPreprocess({
-          typescript: false,
-          postcss: true,
-        }),
-      },
-    ],
-    '@snowpack/plugin-webpack',
-  ],
+  plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-webpack'],
   devOptions: {
     open: 'false',
     port: 5000,

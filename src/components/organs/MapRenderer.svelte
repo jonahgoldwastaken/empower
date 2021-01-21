@@ -16,6 +16,7 @@
 
   currentFocus.subscribe(val => {
     if ($interact && val) {
+      // With much help from:  https://bl.ocks.org/mbostock/2206590
       const geoTownship = $townships.features.find(
         d => val.municipality === d.properties.Gemeentenaam
       )

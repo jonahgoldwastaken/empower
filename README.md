@@ -40,6 +40,12 @@ $ yarn process # Runs dataprocessing/index.js
 - [Prettier](https://prettier.io)
 - [Netlify Functions](https://www.netlify.com/products/functions/)
 
+## Graph examples used
+
+- [Radial stacked bar chart by AntonOrlov](https://bl.ocks.org/AntonOrlov/6b42d8676943cc933f48a43a7c7e5b6c)
+- [D3 Grouped Bar Chart example](https://observablehq.com/@d3/grouped-bar-chart)
+- [Map click to zoom example by Mike Bostock](https://bl.ocks.org/mbostock/2206590)
+
 ## Datasets used
 
 - [Kerncijfers wijken en buurten (Core numbers), 2018 (by CBS)](https://www.cbs.nl/nl-nl/maatwerk/2018/30/kerncijfers-wijken-en-buurten-2018)

@@ -1,4 +1,6 @@
 <script>
+  // Created with much help of: https://observablehq.com/@d3/grouped-bar-chart
+
   import IntersectionObserver from 'svelte-intersection-observer'
   import { scaleLinear, scaleBand, max } from 'd3'
   import { comparingMunicipalities } from '../../store/municipality'

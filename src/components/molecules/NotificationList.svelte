@@ -122,8 +122,8 @@
               (solarEnergyGeneration * 1000) / (households * 90) > 0
             )
               return `${municipality} has already looked at generating solar energy, although there may still be some room for improvement left. They probably need to look at other options, like biogas or wind energy.`
-            else if ((totalEnergyGeneration * 1000) / (households * 90) > 0.05)
-              return `${municipality} is already well on their way to make the municipality greener with the projects you're working on. Keep up the good work!`
+            else if ((totalEnergyGeneration * 1000) / (households * 90) > 0.2)
+              return `${municipality} is already well on their way to make the municipality greener with the projects they're working on.`
             else
               return `${municipality} has already looked at generating green energy, but there seems to be a lot of potential out in the open.`
           case 'Lake':
@@ -138,7 +138,7 @@
               (windEnergyGeneration * 1000) / (households * 90) > 0
             )
               return `${municipality} has already looked at generating wind energy, but there is still be some room for improvement left.`
-            else if ((totalEnergyGeneration * 1000) / (households * 90) > 0.05)
+            else if ((totalEnergyGeneration * 1000) / (households * 90) > 0.15)
               return `${municipality} is already well on their way to make the municipality greener with the projects they're working on.`
             else
               return `${municipality} has already looked at generating green energy, but there seems to be a lot of potential out in the open.`
@@ -154,7 +154,7 @@
               (windEnergyGeneration * 1000) / (households * 90) > 0
             )
               return `It seems like ${municipality} could use their position at the coast more lucratively.`
-            else if ((totalEnergyGeneration * 1000) / (households * 90) > 0.05)
+            else if ((totalEnergyGeneration * 1000) / (households * 90) > 0.1)
               return `${municipality} is already well on their way to make the municipality greener with the projects they're working on.`
             else
               return `${municipality} has already looked at generating green energy, but there seems to be a lot of potential out in the open.`

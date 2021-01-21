@@ -2,6 +2,7 @@
   import { onDestroy, onMount } from 'svelte'
   import { link } from 'svelte-routing'
   import { globalHistory } from 'svelte-routing/src/history'
+  import { currentFocus } from '../../store/map'
   import { comparingMunicipalities } from '../../store/municipality'
 
   let pathname = window.location.pathname
@@ -10,6 +11,7 @@
   onMount(() => {
     unsub = globalHistory.listen(({ location, action }) => {
       pathname = location.pathname
+      currentFocus.update(v => v !== null && null)
     })
   })
 

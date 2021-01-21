@@ -17,9 +17,7 @@
 
   $: actualHeight = height + width / 3
 
-  $: if (intersecting) {
-    tweenY.set(isNaN(y) ? yScale(0) : y)
-  }
+  $: intersecting && tweenY.set(isNaN(y) ? yScale(0) : y)
 </script>
 
 <clipPath {id}>

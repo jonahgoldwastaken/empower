@@ -4,8 +4,10 @@
   import {
     data,
     filter,
+    filteredData,
     recommendedMunicipalities,
     comparingMunicipalities,
+    searchQuery,
   } from '../../store/municipality.js'
   import { currentFocus, interact } from '../../store/map.js'
   import { select } from 'd3'
@@ -30,16 +32,22 @@
       ? 4
       : 5)
   $: showColour = $interact
-    ? $filter === 'show all' ||
-      ($filter === '0-200' && level === 1) ||
-      ($filter === '200-400' && level === 2) ||
-      ($filter === '400-600' && level === 3) ||
-      ($filter === '600-800' && level === 4) ||
-      ($filter === '800' && level === 5)
-    : $comparingMunicipalities?.find(
-        d => datum?.municipality === d.municipality
-      )
-    ? true
+    ? $searchQuery.length
+      ? $filteredData.find(d => datum?.municipality === d.municipality)
+        ? true
+        : false
+      : $filter === 'show all' ||
+        ($filter === '0-200' && level === 1) ||
+        ($filter === '200-400' && level === 2) ||
+        ($filter === '400-600' && level === 3) ||
+        ($filter === '600-800' && level === 4) ||
+        ($filter === '800' && level === 5)
+      ? true
+      : $comparingMunicipalities?.find(
+          d => datum?.municipality === d.municipality
+        )
+      ? true
+      : false
     : false
   $: recommended = $recommendedMunicipalities?.find(
     d => d.municipality === datum?.municipality

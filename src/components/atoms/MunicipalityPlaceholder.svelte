@@ -1,6 +1,6 @@
 <style>
   li {
-    box-sizing: border-box;
+    
     height: calc(4 * var(--step-2));
     width: 100%;
     border: 2px dashed var(--dark-grey);

@@ -23,7 +23,7 @@
 <style>
   label {
     display: inline-block;
-    box-sizing: border-box;
+    
     position: relative;
     border: 1.5px solid var(--text-primary);
     color: var(--text-primary);

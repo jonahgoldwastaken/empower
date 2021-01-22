@@ -1,6 +1,6 @@
 <style>
   li {
-    box-sizing: border-box;
+    
     position: relative;
     margin: 0;
     padding: 1em 1.5em;

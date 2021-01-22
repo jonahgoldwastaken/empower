@@ -30,7 +30,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: min-content;
+    width: auto;
     transform: translate(-50%, calc(-100% - (var(--step-0) / 2)));
     border-radius: 0.75rem;
     padding: var(--step--1);

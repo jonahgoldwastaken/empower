@@ -6,7 +6,7 @@
 
 <style>
   li {
-    box-sizing: border-box;
+    
     width: calc(var(--step-4) * 2);
     height: calc(var(--step-4) * 2);
     border-radius: 0.5rem;

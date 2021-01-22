@@ -50,7 +50,7 @@
 
 <style>
   section {
-    box-sizing: border-box;
+    
     position: absolute;
     top: 0;
     left: 3rem;

@@ -4,7 +4,7 @@
 
 <style>
   section {
-    box-sizing: border-box;
+    
     position: absolute;
     bottom: 6rem;
     right: 1.25rem;

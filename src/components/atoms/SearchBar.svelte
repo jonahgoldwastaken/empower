@@ -23,7 +23,7 @@
   }
 
   div {
-    box-sizing: border-box;
+    
     font-size: var(--step-0);
     height: calc(var(--step-0) * 2);
     display: flex;
@@ -33,7 +33,7 @@
   }
 
   img {
-    box-sizing: border-box;
+    
     display: block;
     object-fit: contain;
     font-size: inherit;

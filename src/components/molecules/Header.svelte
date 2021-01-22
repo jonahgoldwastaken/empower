@@ -35,7 +35,7 @@
   }
 
   a {
-    box-sizing: border-box;
+    
     display: block;
     padding: 0.5em;
     display: flex;
@@ -68,7 +68,7 @@
 
   img[src='/empower-white.svg'] {
     pointer-events: none;
-    box-sizing: border-box;
+    
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

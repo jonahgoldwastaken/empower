@@ -1,6 +1,6 @@
 <style>
   img {
-    box-sizing: border-box;
+    
     display: block;
     position: absolute;
     bottom: 1.25em;

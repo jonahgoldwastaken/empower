@@ -65,8 +65,8 @@ export const recommendedMunicipalities = derived(
     const recommendations = $data
       .filter(
         d =>
-          d.totalArea / averageTotalArea < 1.25 &&
-          d.totalArea / averageTotalArea > 0.75
+          d.totalArea / averageTotalArea < 1.5 &&
+          d.totalArea / averageTotalArea > 0.5
       )
       .filter(
         d =>

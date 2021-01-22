@@ -19,7 +19,7 @@
 
   button,
   a {
-    box-sizing: border-box;
+    
     border: 1px solid transparent;
     padding: 0.75em;
     border-radius: 2px;

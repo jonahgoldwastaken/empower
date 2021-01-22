@@ -6,7 +6,7 @@
 
 <style>
   section {
-    box-sizing: border-box;
+    
     grid-area: var(--area);
     border-radius: 0.75rem;
     background: var(--white);
@@ -17,7 +17,7 @@
   }
 
   .content {
-    box-sizing: border-box;
+    
     display: block;
     width: 100%;
     height: 100%;

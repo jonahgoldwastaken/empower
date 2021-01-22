@@ -6,11 +6,16 @@
 </script>
 
 <style global>
-  @import url('https://unpkg.com/normalize.css@8.0.1/normalize.css');
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  @import url('normalize.css');
   @font-face {
     font-family: 'DIN Alternate';
     src: url(/din-alternate.ttf) format('ttf');
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
   }
 
   :root {

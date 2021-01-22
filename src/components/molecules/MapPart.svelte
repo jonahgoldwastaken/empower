@@ -90,8 +90,7 @@
       active={!$interact &&
         $comparingMunicipalities.find(
           d => d.municipality === geoTownship.properties.Gemeentenaam
-        )}
-    >{datum?.municipality}</MapText
+        )}>{datum?.municipality ?? 'Loading'}</MapText
     >
   {/if}
 </g>

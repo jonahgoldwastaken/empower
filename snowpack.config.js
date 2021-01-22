@@ -5,9 +5,16 @@ module.exports = {
     src: { url: '/dist' },
   },
   routes: [{ match: 'routes', src: '.*', dest: '/index.html' }],
-  plugins: ['@snowpack/plugin-svelte', '@snowpack/plugin-webpack'],
+  plugins: ['@snowpack/plugin-svelte'],
   devOptions: {
     open: 'false',
     port: 5000,
+  },
+  optimize: {
+    entrypoints: 'auto',
+    bundle: true,
+    minify: true,
+    splitting: true,
+    treeshake: true,
   },
 }

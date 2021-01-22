@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@snowpack/plugin-svelte": "^3.3.1",
+    "@snowpack/plugin-webpack": "^2.3.0",
     "autoprefixer": "^10.2.3",
     "convert-csv-to-json": "^1.2.0",
     "postcss": "^8.2.0",
